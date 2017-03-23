@@ -5,6 +5,7 @@
   <meta name="description" content="I’m an independent freelance creative Front-End and WordPress developer with 6+ years of professional experience. #html5 #css #js">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="referrer" content="origin">
   <meta property="og:image" content="path/to/image.jpg">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -148,13 +149,13 @@
         <form method="POST" action="http://formspree.io/kitcarver@outlook.com">
           <input type="hidden" name="_cc" value="nikitachigik@gmail.com">
           <div class="contact__input">
-            <input class="validate" id="name" type="text" name="name" placeholder="Name*" required>
+            <input id="name" type="text" name="name" placeholder="Name*" required>
           </div>
           <div class="contact__input">
-            <input class="validate" id="email" type="email" name="email" placeholder="E-Mail*" required>
+            <input id="email" type="email" name="_replyto" placeholder="E-Mail*" required>
           </div>
           <div class="contact__input">
-            <input class="validate" id="subject" type="text" name="_subject" placeholder="Subject">
+            <input id="subject" type="text" name="_subject" placeholder="Subject">
           </div>
           <div class="contact__input">
             <textarea id="message" name="message" placeholder="Message*" required></textarea>
