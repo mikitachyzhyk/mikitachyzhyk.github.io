@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="utf-8">
+  <title>us-sale.ru</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <body>
+    <div class="wrapper">
+      <!--Header-->
+      <header class="header">
+        <!--Navbar-->
+        <nav class="navbar custom-navbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-10 col-md-9 col-lg-8">
+                <div class="navbar-header">
+                  <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="/search.html">Как мы работаем</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Наши гарантии</a></li>
+                    <li><a href="#">Заказать</a></li>
+                    <li><a href="#">Калькулятор</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-2 col-md-3 col-lg-4">
+                <div class="custom-navbar_contact-info"><a class="custom-navbar__phone" href="tel:+78127777777">+7 (812) 777-77-77</a><a class="custom-navbar__email" href="mailto:info@ussale.ru">info@ussale.ru</a></div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3"><a class="logo" href="/">
+                  <div class="logo__title">us-<span class="text-accent">sale</span><small>.ru</small></div>
+                  <div class="logo__text">Товары со скидками из США</div></a></div>
+              <div class="col-sm-7">
+                <div class="header__middle">
+                  <div class="header__middle-text">Открой мир с US-SALE - <span class="text-accent">товары из Америки со скидкой</span></div>
+                  <form class="form-inline header__middle-form">
+                    <div class="form-group form-group--cat">
+                      <select class="form-control form-control--mod" id="resizing_select">
+                        <option value="Все категории">Все категории</option>
+                        <option value="Антиквариат">Антиквариат</option>
+                        <option value="Ребенок">Ребенок</option>
+                        <option value="Исскуство">Исскуство</option>
+                        <option value="Книги">Книги</option>
+                        <option value="Бизнес и индустрия">Бизнес и индустрия</option>
+                        <option value="Фотокамеры">Фотокамеры</option>
+                        <option value="Автомобили, катера">Автомобили, катера</option>
+                        <option value="Сотовые телефоны и КПК">Сотовые телефоны и КПК</option>
+                        <option value="Одежда, обувь">Одежда, обувь</option>
+                        <option value="Компьютеры и сети">Компьютеры и сети</option>
+                        <option value="Куклы и медведи">Куклы и медведи</option>
+                        <option value="DVD-диски и фильмы">DVD-диски и фильмы</option>
+                        <option value="Электроника">Электроника</option>
+                        <option value="Развлечения сувениры">Развлечения сувениры</option>
+                        <option value="Подарочные карты">Подарочные карты</option>
+                        <option value="Здоровье и красота">Здоровье и красота</option>
+                      </select>
+                      <select class="form-control" id="width_tmp_select">
+                        <option id="width_tmp_option">hidden text</option>
+                      </select>
+                    </div>
+                    <div class="form-group form-group--search">
+                      <input class="form-control" type="search" placeholder="Поиск среди товаров">
+                    </div>
+                    <button class="btn btn--search" type="submit"></button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="header__user-panel">
+                  <div class="header__user"><a class="header__user-link header__user-link--login" href="#"><span>Вход</span></a>
+                    <div class="header__user-wrap"><a class="header__user-link header__user-link--signup" href="#"><span class="text-accent">Регистрация</span></a><a class="header__user-link header__user-link--help" href="#">Помощь</a></div>
+                  </div><a class="header__cart" href="#"><span class="badge">10</span><span class="header__cart__cart">В корзине</span><span class="header__cart__goods"><span class="text-accent">10 товаров</span></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Main content-->
+      <div class="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 mod-col-cat">
+              <!--Sidebar-->
+              <aside class="sidebar">
+                <div class="sidebar-cat">Каталог <span class="text-bold">товаров</span>
+                  <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#sidebar-collapse" aria-expanded="false"><span class="navbar-toggle__wrap"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="sidebar-collapse">
+                  <ul class="nav">
+                    <li class="active"><a href="#">Антиквариат</a></li>
+                    <li><a href="#">Ребенок</a></li>
+                    <li><a href="#">Исскуство</a></li>
+                    <li><a href="#">Книги</a></li>
+                    <li><a href="#">Бизнес и индустрия</a></li>
+                    <li><a href="#">Фотокамеры</a></li>
+                    <li><a href="#">Автомобили, катера</a></li>
+                    <li><a href="#">Сотовые телефоны и КПК</a></li>
+                    <li><a href="#">Одежда, обувь</a></li>
+                    <li><a href="#">Компьютеры и сети</a></li>
+                    <li><a href="#">Куклы и медведи</a></li>
+                    <li><a href="#">DVD-диски и фильмы</a></li>
+                    <li><a href="#">Электроника</a></li>
+                    <li><a href="#">Развлечения сувениры</a></li>
+                    <li><a href="#">Подарочные карты</a></li>
+                    <li><a href="#">Здоровье и красота</a></li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+            <div class="col-sm-9 mod-col-main">
+              <div class="main-content">
+                <!--Slider-->
+                <div class="carousel slide" id="carousel-main" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active"><img src="img/slider/slide-1.jpg" alt="slide1"></div>
+                    <div class="item"><img src="img/slider/slide-1.jpg" alt="slide2"></div>
+                    <div class="item"><img src="img/slider/slide-1.jpg" alt="slide3"></div>
+                  </div><a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev"></a><a class="right carousel-control" href="#carousel-main" role="button" data-slide="next"></a>
+                </div>
+                <div class="wrapper-pop-goods" id="pop-goods">
+                  <h3 class="heading-underline">Популярые товары</h3>
+                  <div class="pop-goods clearfix">
+                    <div class="pop-goods__item"><a class="pop-goods__link" href="#"><img class="img-responsive" src="img/pop-goods/item1.jpg" alt="item1"></a><a class="btn btn-default btn--pop" href="#">Смартфоны</a></div>
+                    <div class="pop-goods__item"><a class="pop-goods__link" href="#"><img class="img-responsive" src="img/pop-goods/item1.jpg" alt="item1"></a><a class="btn btn-default btn--pop" href="#">Смартфоны</a></div>
+                    <div class="pop-goods__item"><a class="pop-goods__link" href="#"><img class="img-responsive" src="img/pop-goods/item1.jpg" alt="item1"></a><a class="btn btn-default btn--pop" href="#">Смартфоны</a></div>
+                    <div class="pop-goods__item"><a class="pop-goods__link" href="#"><img class="img-responsive" src="img/pop-goods/item1.jpg" alt="item1"></a><a class="btn btn-default btn--pop" href="#">Смартфоны</a></div>
+                    <div class="pop-goods__item"><a class="pop-goods__link" href="#"><img class="img-responsive" src="img/pop-goods/item1.jpg" alt="item1"></a><a class="btn btn-default btn--pop" href="#">Смартфоны</a></div>
+                    <div class="pop-goods__item"><a class="pop-goods__link" href="#"><img class="img-responsive" src="img/pop-goods/item1.jpg" alt="item1"></a><a class="btn btn-default btn--pop" href="#">Смартфоны</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="wrapper-special-offers" id="special-offers">
+                <h3 class="heading-underline heading--spec-off">Спецпредложения</h3>
+                <div class="special-offers clearfix">
+                  <div class="special-item special-item--best">
+                    <div class="special-item__badge">Лучшая цена</div>
+                    <div class="special-item__header">
+                      <div class="special-item__cat-text">Телефоны</div><a class="special-item__heading" href="page.html">Новый Huawei Honor 8 lite, две sim-до, заводская</a>
+                      <div class="special-item__img"><img src="img/goods/sample.jpg" alt="Sample"></div><a class="special-item__more-link" href="page.html">Подробнее ...</a>
+                    </div>
+                    <div class="special-item__footer">
+                      <div class="special-item__price clearfix">
+                        <div class="special-item__old-price">Старая цена<span>27 150 р.</span></div>
+                        <div class="special-item__new-price">Цена :<span>US $205,99</span></div>
+                      </div>
+                      <div class="special-item__btn"><a class="btn btn-default btn--special-offer" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="special-item">
+                    <div class="special-item__badge"></div>
+                    <div class="special-item__header">
+                      <div class="special-item__cat-text">Телефоны</div><a class="special-item__heading" href="#">Новый Huawei Honor 8 lite, две sim-до, заводская</a>
+                      <div class="special-item__img"><img src="img/goods/sample.jpg" alt="Sample"></div><a class="special-item__more-link" href="#">Подробнее ...</a>
+                    </div>
+                    <div class="special-item__footer">
+                      <div class="special-item__price clearfix">
+                        <div class="special-item__old-price">Старая цена<span>27 150 р.</span></div>
+                        <div class="special-item__new-price">Цена :<span>US $205,99</span></div>
+                      </div>
+                      <div class="special-item__btn"><a class="btn btn-default btn--special-offer" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="special-item special-item--hit">
+                    <div class="special-item__badge">Хит продаж</div>
+                    <div class="special-item__header">
+                      <div class="special-item__cat-text">Телефоны</div><a class="special-item__heading" href="#">Новый Huawei Honor 8 lite, две sim-до, заводская</a>
+                      <div class="special-item__img"><img src="img/goods/sample.jpg" alt="Sample"></div><a class="special-item__more-link" href="#">Подробнее ...</a>
+                    </div>
+                    <div class="special-item__footer">
+                      <div class="special-item__price clearfix">
+                        <div class="special-item__old-price">Старая цена<span>27 150 р.</span></div>
+                        <div class="special-item__new-price">Цена :<span>US $205,99</span></div>
+                      </div>
+                      <div class="special-item__btn"><a class="btn btn-default btn--special-offer" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="special-item">
+                    <div class="special-item__badge"></div>
+                    <div class="special-item__header">
+                      <div class="special-item__cat-text">Телефоны</div><a class="special-item__heading" href="#">Новый Huawei Honor 8 lite, две sim-до, заводская</a>
+                      <div class="special-item__img"><img src="img/goods/sample.jpg" alt="Sample"></div><a class="special-item__more-link" href="#">Подробнее ...</a>
+                    </div>
+                    <div class="special-item__footer">
+                      <div class="special-item__price clearfix">
+                        <div class="special-item__old-price">Старая цена<span>27 150 р.</span></div>
+                        <div class="special-item__new-price">Цена :<span>US $205,99</span></div>
+                      </div>
+                      <div class="special-item__btn"><a class="btn btn-default btn--special-offer" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="special-item special-item--best">
+                    <div class="special-item__badge">Лучшая цена</div>
+                    <div class="special-item__header">
+                      <div class="special-item__cat-text">Телефоны</div><a class="special-item__heading" href="page.html">Новый Huawei Honor 8 lite, две sim-до, заводская</a>
+                      <div class="special-item__img"><img src="img/goods/sample.jpg" alt="Sample"></div><a class="special-item__more-link" href="page.html">Подробнее ...</a>
+                    </div>
+                    <div class="special-item__footer">
+                      <div class="special-item__price clearfix">
+                        <div class="special-item__old-price">Старая цена<span>27 150 р.</span></div>
+                        <div class="special-item__new-price">Цена :<span>US $205,99</span></div>
+                      </div>
+                      <div class="special-item__btn"><a class="btn btn-default btn--special-offer" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="special-item">
+                    <div class="special-item__badge"></div>
+                    <div class="special-item__header">
+                      <div class="special-item__cat-text">Телефоны</div><a class="special-item__heading" href="#">Новый Huawei Honor 8 lite, две sim-до, заводская</a>
+                      <div class="special-item__img"><img src="img/goods/sample.jpg" alt="Sample"></div><a class="special-item__more-link" href="#">Подробнее ...</a>
+                    </div>
+                    <div class="special-item__footer">
+                      <div class="special-item__price clearfix">
+                        <div class="special-item__old-price">Старая цена<span>27 150 р.</span></div>
+                        <div class="special-item__new-price">Цена :<span>US $205,99</span></div>
+                      </div>
+                      <div class="special-item__btn"><a class="btn btn-default btn--special-offer" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="special-item special-item--hit">
+                    <div class="special-item__badge">Хит продаж</div>
+                    <div class="special-item__header">
+                      <div class="special-item__cat-text">Телефоны</div><a class="special-item__heading" href="#">Новый Huawei Honor 8 lite, две sim-до, заводская</a>
+                      <div class="special-item__img"><img src="img/goods/sample.jpg" alt="Sample"></div><a class="special-item__more-link" href="#">Подробнее ...</a>
+                    </div>
+                    <div class="special-item__footer">
+                      <div class="special-item__price clearfix">
+                        <div class="special-item__old-price">Старая цена<span>27 150 р.</span></div>
+                        <div class="special-item__new-price">Цена :<span>US $205,99</span></div>
+                      </div>
+                      <div class="special-item__btn"><a class="btn btn-default btn--special-offer" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="special-item">
+                    <div class="special-item__badge"></div>
+                    <div class="special-item__header">
+                      <div class="special-item__cat-text">Телефоны</div><a class="special-item__heading" href="#">Новый Huawei Honor 8 lite, две sim-до, заводская</a>
+                      <div class="special-item__img"><img src="img/goods/sample.jpg" alt="Sample"></div><a class="special-item__more-link" href="#">Подробнее ...</a>
+                    </div>
+                    <div class="special-item__footer">
+                      <div class="special-item__price clearfix">
+                        <div class="special-item__old-price">Старая цена<span>27 150 р.</span></div>
+                        <div class="special-item__new-price">Цена :<span>US $205,99</span></div>
+                      </div>
+                      <div class="special-item__btn"><a class="btn btn-default btn--special-offer" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="calculation">
+                <div class="calculation__text">Уже выбрали нужный товар на EBAY ? Просто вставьте ссылку <span class="text-accent">и мы рассчитаем стоимость доставки до Вашей двери!</span></div>
+                <div class="calculation__form-wrap">
+                  <form class="form-inline calculation__form">
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="Вставьте ссылку на товар">
+                    </div>
+                    <button class="btn btn-default btn--send" type="submit">отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4"><a class="logo logo--footer" href="/">
+                <div class="logo__title">us-<span class="text-accent">sale</span><small>.ru</small></div>
+                <div class="logo__text">Товары со скидками из США</div></a></div>
+            <div class="col-sm-4">
+              <div class="footer-text">
+                <p class="footer-text-lg">Доставка товаров с EBAY.com</p>
+                <p class="footer-text-sm">&copy; Все права пренадлежат US-SALE.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="social"><a class="social__link" href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="social__link" href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social__link" href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social__link" href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a class="social__link" href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Scripts-->
+      <script src="libs/jquery/dist/jquery.min.js"></script>
+      <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+      <script src="libs/touchSwipe/jquery.touchSwipe.min.js"></script>
+      <script src="libs/equalheights/jquery.equalheights.min.js"></script>
+      <script src="libs/slick/slick.js"></script>
+      <script src="js/common.js"></script>
+    </div>
+  </body>
+</html>

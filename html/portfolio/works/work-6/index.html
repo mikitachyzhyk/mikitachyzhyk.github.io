@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="utf-8">
+  <title>HABMANIA - Хабаровск - мой город</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <body>
+    <div class="wrapper">
+      <!--Header-->
+      <header class="header">
+        <div class="container">
+          <div class="header-inner">
+            <div class="row">
+              <div class="col-sm-6 col-lg-5">
+                <nav class="navbar">
+                  <div class="navbar-header"><a class="navbar-brand" href="/">
+                      <div class="logo"><img src="img/logo.png" alt="Logo"><span>Хабаровск - мой город!</span></div></a></div>
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="single.html">Объявления</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-sm-6 col-lg-7">
+                <div class="header-right-side clearfix">
+                  <div class="header-right-side__left">
+                    <form class="header-search-form">
+                      <div class="form-group"><i class="material-icons">search</i>
+                        <input class="form-control" type="search" placeholder="Что вы ищете?">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="header-right-side__right">
+                    <button class="bth-login">Войти</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Main content-->
+      <div class="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="post-nav">
+                <div class="post-nav__posts"><a class="post-nav__link post-nav__link-recent" href="#">Свежие посты</a><a class="post-nav__link post-nav__link-new" href="#">Написать пост</a></div>
+                <div class="post-nav__sort">
+                  <nav class="navbar">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#">Горячее</a></li>
+                      <li class="active"><a href="#">Новое</a></li>
+                      <li><a href="#">Лучшее</a></li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">за 24 часа<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider" role="separator"></li>
+                          <li><a href="#">Separated link</a></li>
+                          <li class="divider" role="separator"></li>
+                          <li><a href="#">One more separated link</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="post"><a class="post__link" href="#">
+                  <h2 class="post__heading">Почему нельзя обыграть букмекера</h2><img class="post__img img-responsive" src="img/post.jpg" alt="post"></a>
+                <p class="post__paragraph">Среди всех вариантов "легкого" заработка игра в букмекерских конторах всегда стоит особняком: не каждый юзер готов что-то вкладывать, все хотят получать с нуля. То, что так бывает только в сказках, их не смущает.</p>
+                <div class="post__info"><a class="post__author" href="#">Николай</a><a class="post__date" href="#">- 22 июня 2017 г.</a><a class="post__comments" href="#"><i class="material-icons">forum</i> 156</a></div>
+              </div>
+              <div class="post"><a class="post__link" href="#">
+                  <h2 class="post__heading">Почему нельзя обыграть букмекера</h2><img class="post__img img-responsive" src="img/post.jpg" alt="post"></a>
+                <p class="post__paragraph">Среди всех вариантов "легкого" заработка игра в букмекерских конторах всегда стоит особняком: не каждый юзер готов что-то вкладывать, все хотят получать с нуля. То, что так бывает только в сказках, их не смущает.</p>
+                <div class="post__info"><a class="post__author" href="#">Николай</a><a class="post__date" href="#">- 22 июня 2017 г.</a><a class="post__comments" href="#"><i class="material-icons">forum</i> 156</a></div>
+              </div>
+              <nav class="mod-pagination" aria-label="Page navigation">
+                <ul class="pagination">
+                  <li class="disabled"><a class="mod-pagination__pager mod-pagination__pager--prev" href="#" aria-label="Previous"><span aria-hidden="true"><span class="arr-l">&#9668;</span> Назад</span></a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">...</a></li>
+                  <li><a href="#">58</a></li>
+                  <li><a href="#">59</a></li>
+                  <li><a class="mod-pagination__pager mod-pagination__pager--next" href="#" aria-label="Next"><span aria-hidden="true">След <span class="arr-r">&#9658;</span></span></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-4">
+              <aside class="sidebar">
+                <div class="btn-wrapper text-center"><a class="btn btn--main-side" href="#">Подать объявление</a></div>
+                <div class="cat-list">
+                  <ul class="nav nav-pills">
+                    <li><a href="#">Авто</a></li>
+                    <li><a href="#">Недвижимость</a></li>
+                    <li><a href="#">Работа</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li class="active"><a href="#">Личные вещи</a></li>
+                    <li><a href="#">Для бизнеса</a></li>
+                    <li><a href="#">Хобби и отдых</a></li>
+                    <li><a href="#">Бытовая электроника</a></li>
+                    <li><a href="#">Животные</a></li>
+                    <li><a href="#">Разное</a></li>
+                  </ul>
+                </div>
+                <div class="sidebar__items"><a class="sidebar__item clearfix" href="#">
+                    <div class="sidebar__item-rigth-side">
+                      <div class="sidebar__item-img"><img src="img/item.png" alt="Item"></div>
+                    </div>
+                    <div class="sidebar__item-left-side">
+                      <div class="sidebar__item-cat">Личные вещи</div>
+                      <div class="sidebar__item-text">Видеокарты, Ферма для майнинга, Майнинг, Ethereum</div>
+                      <div class="sidebar__item-price"><small>Цена :</small> 233 490 <span class="rub">Р</span></div>
+                    </div></a><a class="sidebar__item clearfix" href="#">
+                    <div class="sidebar__item-rigth-side">
+                      <div class="sidebar__item-img"><img src="img/item.png" alt="Item"></div>
+                    </div>
+                    <div class="sidebar__item-left-side">
+                      <div class="sidebar__item-cat">Личные вещи</div>
+                      <div class="sidebar__item-text">Видеокарты, Ферма для майнинга, Майнинг, Ethereum</div>
+                      <div class="sidebar__item-price"><small>Цена :</small> 233 490 <span class="rub">Р</span></div>
+                    </div></a><a class="sidebar__item clearfix" href="#">
+                    <div class="sidebar__item-rigth-side">
+                      <div class="sidebar__item-img"><img src="img/item.png" alt="Item"></div>
+                    </div>
+                    <div class="sidebar__item-left-side">
+                      <div class="sidebar__item-cat">Личные вещи</div>
+                      <div class="sidebar__item-text">Видеокарты, Ферма для майнинга, Майнинг, Ethereum</div>
+                      <div class="sidebar__item-price"><small>Цена :</small> 233 490 <span class="rub">Р</span></div>
+                    </div></a><a class="sidebar__item clearfix" href="#">
+                    <div class="sidebar__item-rigth-side">
+                      <div class="sidebar__item-img"><img src="img/item.png" alt="Item"></div>
+                    </div>
+                    <div class="sidebar__item-left-side">
+                      <div class="sidebar__item-cat">Личные вещи</div>
+                      <div class="sidebar__item-text">Видеокарты, Ферма для майнинга, Майнинг, Ethereum</div>
+                      <div class="sidebar__item-price"><small>Цена :</small> 233 490 <span class="rub">Р</span></div>
+                    </div></a><a class="sidebar__item clearfix" href="#">
+                    <div class="sidebar__item-rigth-side">
+                      <div class="sidebar__item-img"><img src="img/item.png" alt="Item"></div>
+                    </div>
+                    <div class="sidebar__item-left-side">
+                      <div class="sidebar__item-cat">Личные вещи</div>
+                      <div class="sidebar__item-text">Видеокарты, Ферма для майнинга, Майнинг, Ethereum</div>
+                      <div class="sidebar__item-price"><small>Цена :</small> 233 490 <span class="rub">Р</span></div>
+                    </div></a><a class="sidebar__item clearfix" href="#">
+                    <div class="sidebar__item-rigth-side">
+                      <div class="sidebar__item-img"><img src="img/item.png" alt="Item"></div>
+                    </div>
+                    <div class="sidebar__item-left-side">
+                      <div class="sidebar__item-cat">Личные вещи</div>
+                      <div class="sidebar__item-text">Видеокарты, Ферма для майнинга, Майнинг, Ethereum</div>
+                      <div class="sidebar__item-price"><small>Цена :</small> 233 490 <span class="rub">Р</span></div>
+                    </div></a>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-9">
+              <nav class="navbar">
+                <div class="navbar-header"><a class="navbar-brand" href="/">
+                    <div class="logo logo--footer"><img src="img/logo-footer.png" alt="Logo"><span>Хабаровск - мой город!</span></div></a></div>
+                <ul class="nav navbar-nav">
+                  <li><a href="search.html">О проекте</a></li>
+                  <li><a href="catalog.html">Подать объявление</a></li>
+                  <li><a href="commentaries.html">Помощь</a></li>
+                  <li><a href="#">Реклама на сайте</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-12 col-md-3">
+              <div class="copyright">&copy; 2017 «Хабмания»</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Scripts-->
+      <script src="libs/jquery/dist/jquery.min.js"></script>
+      <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+      <script src="libs/slick/slick.js"></script>
+      <script src="js/common.js"></script>
+    </div>
+  </body>
+</html>

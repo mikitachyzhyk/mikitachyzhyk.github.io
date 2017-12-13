@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="utf-8">
+  <title>sb-market.ru</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="libs/custom-icon-pack/css/custom-icon-pack.css">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <body>
+    <div class="wrapper">
+      <!--Header-->
+      <header class="header">
+        <!--Navbar-->
+        <nav class="navbar header-top-menu">
+          <div class="container">
+            <div class="navbar-header">
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="category.html">Каталог товаров</a></li>
+                <li><a href="search.html"><i class="ic ic-warning"></i> Монтаж и оборудование</a></li>
+                <li><a href="delivery.html">Доставка и оплата</a></li>
+                <li><a href="single.html">О компании</a></li>
+                <li><a href="review.html">Отзывы</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!--Header Middle Section-->
+        <div class="header-middle-section">
+          <div class="container">
+            <!-- Logo--><a class="logo header-logo" href="/"><img src="img/logo.png" alt="Logo">
+              <div class="header-logo__text">работаем с 2006 года</div></a>
+            <div class="header-search">
+              <form class="form search-form">
+                <div class="form-group">
+                  <div class="search-form__head">
+                    <label for="search">Системы охраны и безопасности</label><a class="search-form__xml" href="#">Полный прайс xml<i class="ic ic-xml"></i></a>
+                  </div>
+                  <div class="input-group">
+                    <input class="form-control" id="search" name="search" type="search" placeholder="Что вы ищете">
+                    <div class="input-group-addon">
+                      <button type="submit"><i class="ic ic-search"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="header-right-panel">
+              <div class="header-info"><a class="header-info__phone" href="tel:+88126409505">8 (812) 640-95-05</a>
+                <address class="header-info__address">
+                  <button data-toggle="modal" data-target="#modalCity">Санкт-Петербург, <span class="caret"></span></button><span>пр. Просвещения 53/1, оф. 47</span>
+                </address>
+              </div>
+              <div class="header-user"><a class="header-user__login" href="cart-order.html">Войти</a><a class="header-user__cart" href="cart.html">на сумму <span class="badge">2</span>
+                  <div class="header-user__price">347 855<span class="rubble">q</span></div></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <nav class="navbar navbar-multinav">
+            <div class="navbar-header">
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#multinav" aria-expanded="false"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                <!-- span.navbar-multinav__name Каталог-->
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="multinav">
+              <ul class="nav navbar-nav multinav">
+                <li><a href="#">Видеонаблюдение</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Домофоны</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">Аудиотрубки</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">FE-KIT Квартира комплект</a></li>
+                        <li><a href="#">Falcon Eye FE-PLUS</a></li>
+                        <li><a href="#">FE-ORION Комплект FE-70CH+FE-305C</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Si</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">CTV-DP4101 AHD белый</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">VIZIT</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">FE-KIT Квартира комплект</a></li>
+                        <li><a href="#">Falcon Eye FE-PLUS</a></li>
+                        <li><a href="#">FE-ORION Комплект FE-70CH+FE-305C</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Si</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">CTV-DP4101 AHD белый</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">Готовые комплекты</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">CTV-DP4101 AHD белый</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">Мониторы видеодомофонов</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">FE-KIT Квартира комплект</a></li>
+                        <li><a href="#">Falcon Eye FE-PLUS</a></li>
+                        <li><a href="#">FE-ORION Комплект FE-70CH+FE-305C</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">CTV-DP4101 AHD белый</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">Видеопанели вызывные</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">FE-KIT Квартира комплект</a></li>
+                        <li><a href="#">Falcon Eye FE-PLUS</a></li>
+                        <li><a href="#">FE-ORION Комплект FE-70CH+FE-305C</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Si</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">CTV-DP4101 AHD белый</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">Аудиопанели вызывные</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">FE-KIT Квартира комплект</a></li>
+                        <li><a href="#">Falcon Eye FE-PLUS</a></li>
+                        <li><a href="#">FE-ORION Комплект FE-70CH+FE-305C</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Si</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">CTV-DP4101 AHD белый</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">IP домофоны</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">FE-KIT Квартира комплект</a></li>
+                        <li><a href="#">Falcon Eye FE-PLUS</a></li>
+                        <li><a href="#">FE-ORION Комплект FE-70CH+FE-305C</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Si</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Bl</a></li>
+                        <li><a href="#">CTV-DP4101 AHD белый</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">Доп. оборудование к вызывным панелям</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">FE-KIT Квартира комплект</a></li>
+                        <li><a href="#">Falcon Eye FE-PLUS</a></li>
+                        <li><a href="#">FE-ORION Комплект FE-70CH+FE-305C</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Si</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">CTV-DP4101 AHD белый</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">Переговорные устройства</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">Интеркомы</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">FE-KIT Квартира комплект</a></li>
+                        <li><a href="#">Falcon Eye FE-PLUS</a></li>
+                        <li><a href="#">FE-ORION Комплект FE-70CH+FE-305C</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Si</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">CTV-DP4101 AHD белый</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">Элтис</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">Цифрал</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">FE-KIT Квартира комплект</a></li>
+                        <li><a href="#">Falcon Eye FE-PLUS</a></li>
+                        <li><a href="#">FE-ORION Комплект FE-70CH+FE-305C</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Si</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">CTV-DP4101 AHD белый</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">Цифрал</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">FE-KIT Квартира комплект</a></li>
+                        <li><a href="#">Falcon Eye FE-PLUS</a></li>
+                        <li><a href="#">FE-ORION Комплект FE-70CH+FE-305C</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Si</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">CTV-DP4101 AHD белый</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">Оборудование Метаком</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">FE-924KIT (без панелей и камер)</a></li>
+                        <li><a href="#">FE-924KIT (+1 панель и 2 камеры)</a></li>
+                        <li><a href="#">FE-KIT Квартира комплект</a></li>
+                        <li><a href="#">Falcon Eye FE-PLUS</a></li>
+                        <li><a href="#">FE-ORION Комплект FE-70CH+FE-305C</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Si</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 B / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M B/412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Bl</a></li>
+                        <li><a href="#">TOR-NET TR-25 W / 412Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Si</a></li>
+                        <li><a href="#">TOR-NET TR-29M W/414Bl</a></li>
+                        <li><a href="#">CTV-DP4101 AHD белый</a></li>
+                        <li><a href="#">CTV-DP4101 AHD черный</a></li>
+                        <li><a href="#">CTV-DP2700ТМ DAX B</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M W</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700IP (W/B)</a></li>
+                        <li><a href="#">CTV-DP2700ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1700 (W/B)</a></li>
+                        <li><a href="#">CTV-DP2400ТМ (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400M B</a></li>
+                        <li><a href="#">CTV-DP1400 (W/B)</a></li>
+                        <li><a href="#">CTV-DP1400 Белый</a></li>
+                        <li><a href="#">CTV-DP3700 W (белый)</a></li>
+                        <li><a href="#">CTV-DP3110 B</a></li>
+                        <li><a href="#">CTV-DP3110 W</a></li>
+                        <li><a href="#">CTV-DP400 W (белый)</a></li>
+                        <li><a href="#">CTV-DP400 B (черный)</a></li>
+                        <li><a href="#">CTV-DP700 W (белый)</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Охрано-пожарная сигнализация</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">New dropdown</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">2nd level dropdown</a></li>
+                        <li><a href="#">2nd level dropdown</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="submenu-toggle" href="#">New dropdown</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                        <li><a href="#">2nd level dropdown 2</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">Шлагбаумы, СКУД</a></li>
+                <li><a href="#">GSM</a></li>
+                <li><a href="#">Кабель и расходники</a></li>
+              </ul>
+              <ul class="nav navbar-nav multinav">
+                <li><a href="#">GSM</a></li>
+                <li><a href="#">Шлагбаумы, СКУД</a></li>
+                <li><a href="#">Кабель</a></li>
+                <li><a href="#">Кабель и расходники</a></li>
+                <li><a href="#">Кабель и расходники</a></li>
+                <li><a href="#">Кабель и расходники</a></li>
+                <li><a href="#">GSM</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="multinav-overlay"></div>
+      </header>
+      <!--Main content-->
+      <div class="main main--review">
+        <div class="container">
+          <ol class="breadcrumb breadcrumb-mod">
+            <li><a href="/">Главная</a></li>
+            <li class="active">Контакты</li>
+          </ol>
+          <h2 class="heading heading--delivery">Контакты</h2>
+          <div class="contact-addresses clearfix">
+            <div class="contact-addresses__left">
+              <div class="contact-addresses-list">
+                <div class="contact-addresses-list__top">
+                  <dl class="contact-addresses-list-district">
+                    <dt>Наш адрес в Санкт-Петербурге: </dt>
+                    <dd>195274, г. Санкт-Петербург, пр. Просвещения 53, корпус 1, офис 47.</dd>
+                  </dl>
+                  <dl class="contact-addresses-list-phone">
+                    <dt>Телефон:</dt>
+                    <dd>+7 (812) 640 95 05 - многоканальный</dd>
+                    <dd>8 (800) 775 97 31</dd>
+                  </dl>
+                </div>
+                <div class="contact-addresses-list__bottom">
+                  <dl class="contact-addresses-list-schedule">
+                    <dt>Режим работы офиса:</dt>
+                    <dd><span>Пн - Пт:</span> с 10 до 18 часов</dd>
+                    <dd><span>Суббота:</span> с 10 до 16 часов</dd>
+                    <dd><span>Воскресенье:</span> выходной</dd>
+                  </dl>
+                  <dl class="contact-addresses-list-email">
+                    <dt></dt>
+                    <dd><a href="mailto:info@sb-market.ru">info@sb-market.ru</a></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="contact-addresses__right">
+              <div class="contact-map" id="contact-map"></div>
+            </div>
+          </div>
+          <h3 class="heading heading--delivery-h3">Наши реквизиты:</h3>
+          <div class="delivery-tables">
+            <ul class="delivery-table">
+              <li><b>ООО «Компания СБ-Маркет»</b></li>
+              <li>Юр. адрес: 195274, Российская Федерация,<br>Санкт-Петербург, пр. Просвещения, дом 53, корпус 1, литер А, пом. 47-Н</li>
+              <li>ОГРН 1127847147922 ОКПО 38109946</li>
+              <li>ИНН 7810862526 КПП 780401001</li>
+            </ul>
+            <ul class="delivery-table">
+              <li>Р/С 40702810180000005582 в БАНК: ПАО Банк ВТБ</li>
+              <li>к/с 30101810200000000704 филиал ОПЕРУ ПАО Банк ВТБ в г. Санкт-Петербурге</li>
+              <li>БИК 044030704</li>
+              <li><b>Генеральный директор: Бабанин Александр Евгеньевич</b></li>
+            </ul>
+          </div>
+          <div class="contact-images">
+            <div class="contact-image" style="background-image: url(&quot;img/contacts/contact-image-1.jpg&quot;);"></div>
+            <div class="contact-image">
+              <div class="contact-image-left" style="background-image: url(&quot;img/contacts/contact-image-2.jpg&quot;);"></div>
+              <div class="contact-image-right" style="background-image: url(&quot;img/contacts/contact-image-3.jpg&quot;);"></div>
+              <div class="contact-image-info">
+                <div class="contact-image-info__left">Наш склад</div>
+                <div class="contact-image-info__right">С обратной стороны здания (со двора).</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-bottom-text">Вход с пр. Просвещения в левом крыле здания рядом с 14-м подъездом. Ориентир: большая зеленая вывеска "НАЙДИ ОПОРУ"</div>
+        </div>
+      </div>
+            <!--Footer-->
+            <footer class="footer">
+              <div class="container">
+                      <div class="footer__bottom">
+                        <!-- Logo--><a class="logo footer__logo" href="/"><img src="img/logo.png" alt="Logo"></a>
+                        <div class="footer__copy">&copy; SB-Market - Интернет-магазин систем безопасности - оборудование для видеонаблюдения, видеокамеры, сигнализации в СПБ</div>
+                        <div class="footer__payments"><span>Принимаем:</span><img src="img/visa.png" alt="Visa"></div>
+                        <div class="footer__social"><a class="footer__social-link footer__fb" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="footer__social-link footer__tw" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="footer__social-link footer__vk" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="footer__social-link footer__ok" href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a><a class="footer__social-link footer__gp" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+                      </div>
+              </div>
+            </footer>
+            <!--Modal-->
+            <div class="modal modal-city fade" id="modalCity" tabindex="-1" role="dialog" aria-labelledby="modalCityLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="modalCityLabel">Ваш город <span class="modal-city__city">Санкт-Петербург</span>?</h4>
+                    <button class="btn btn--modal-city-header btn--accent" type="button">Да</button>
+                    <button class="btn btn--modal-city-header" type="button">Нет</button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form modal-city__form">
+                      <div class="form-group">
+                        <label for="city">Или введите другой населенный пункт:</label>
+                        <div class="input-group">
+                          <input class="form-control" id="city" name="city" type="text" placeholder="Введите город">
+                          <div class="input-group-addon">
+                            <button class="btn btn--accent" type="submit">Выбрать</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <!--Scripts-->
+      <script src="libs/jquery/dist/jquery.min.js"></script>
+      <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+      <script src="libs/carousel-menu/carousel-menu.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="libs/touchSwipe/jquery.touchSwipe.min.js"></script>
+      <script src="libs/slick/slick.js"></script>
+      <script src="libs/jquery-slider/jquery-ui.min.js"></script>
+      <script src="js/common.js"></script>
+    </div>
+  </body>
+</html>

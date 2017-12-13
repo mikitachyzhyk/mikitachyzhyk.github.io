@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="utf-8">
+  <title>us-sale.ru</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <body>
+    <div class="wrapper">
+      <!--Header-->
+      <header class="header">
+        <!--Navbar-->
+        <nav class="navbar custom-navbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-10 col-md-9 col-lg-8">
+                <div class="navbar-header">
+                  <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="/search.html">Как мы работаем</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Наши гарантии</a></li>
+                    <li><a href="#">Заказать</a></li>
+                    <li><a href="#">Калькулятор</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-2 col-md-3 col-lg-4">
+                <div class="custom-navbar_contact-info"><a class="custom-navbar__phone" href="tel:+78127777777">+7 (812) 777-77-77</a><a class="custom-navbar__email" href="mailto:info@ussale.ru">info@ussale.ru</a></div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3"><a class="logo" href="/">
+                  <div class="logo__title">us-<span class="text-accent">sale</span><small>.ru</small></div>
+                  <div class="logo__text">Товары со скидками из США</div></a></div>
+              <div class="col-sm-7">
+                <div class="header__middle">
+                  <div class="header__middle-text">Открой мир с US-SALE - <span class="text-accent">товары из Америки со скидкой</span></div>
+                  <form class="form-inline header__middle-form">
+                    <div class="form-group form-group--cat">
+                      <select class="form-control form-control--mod" id="resizing_select">
+                        <option value="Все категории">Все категории</option>
+                        <option value="Антиквариат">Антиквариат</option>
+                        <option value="Ребенок">Ребенок</option>
+                        <option value="Исскуство">Исскуство</option>
+                        <option value="Книги">Книги</option>
+                        <option value="Бизнес и индустрия">Бизнес и индустрия</option>
+                        <option value="Фотокамеры">Фотокамеры</option>
+                        <option value="Автомобили, катера">Автомобили, катера</option>
+                        <option value="Сотовые телефоны и КПК">Сотовые телефоны и КПК</option>
+                        <option value="Одежда, обувь">Одежда, обувь</option>
+                        <option value="Компьютеры и сети">Компьютеры и сети</option>
+                        <option value="Куклы и медведи">Куклы и медведи</option>
+                        <option value="DVD-диски и фильмы">DVD-диски и фильмы</option>
+                        <option value="Электроника">Электроника</option>
+                        <option value="Развлечения сувениры">Развлечения сувениры</option>
+                        <option value="Подарочные карты">Подарочные карты</option>
+                        <option value="Здоровье и красота">Здоровье и красота</option>
+                      </select>
+                      <select class="form-control" id="width_tmp_select">
+                        <option id="width_tmp_option">hidden text</option>
+                      </select>
+                    </div>
+                    <div class="form-group form-group--search">
+                      <input class="form-control" type="search" placeholder="Поиск среди товаров">
+                    </div>
+                    <button class="btn btn--search" type="submit"></button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="header__user-panel">
+                  <div class="header__user"><a class="header__user-link header__user-link--login" href="#"><span>Вход</span></a>
+                    <div class="header__user-wrap"><a class="header__user-link header__user-link--signup" href="#"><span class="text-accent">Регистрация</span></a><a class="header__user-link header__user-link--help" href="#">Помощь</a></div>
+                  </div><a class="header__cart" href="#"><span class="badge">10</span><span class="header__cart__cart">В корзине</span><span class="header__cart__goods"><span class="text-accent">10 товаров</span></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Main content-->
+      <div class="main-page">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 mod-col-cat">
+              <ol class="breadcrumb mod-breadcrumb mod-breadcrumb--page">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Сотовые телефоны</a></li>
+                <li class="active">HTC</li>
+              </ol>
+              <!--Sidebar-->
+              <aside class="sidebar">
+                <div class="sidebar-cat">Каталог <span class="text-bold">товаров</span>
+                  <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#sidebar-collapse" aria-expanded="false"><span class="navbar-toggle__wrap"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="sidebar-collapse">
+                  <ul class="nav">
+                    <li class="active"><a href="#">Антиквариат</a></li>
+                    <li><a href="#">Ребенок</a></li>
+                    <li><a href="#">Исскуство</a></li>
+                    <li><a href="#">Книги</a></li>
+                    <li><a href="#">Бизнес и индустрия</a></li>
+                    <li><a href="#">Фотокамеры</a></li>
+                    <li><a href="#">Автомобили, катера</a></li>
+                    <li><a href="#">Сотовые телефоны и КПК</a></li>
+                    <li><a href="#">Одежда, обувь</a></li>
+                    <li><a href="#">Компьютеры и сети</a></li>
+                    <li><a href="#">Куклы и медведи</a></li>
+                    <li><a href="#">DVD-диски и фильмы</a></li>
+                    <li><a href="#">Электроника</a></li>
+                    <li><a href="#">Развлечения сувениры</a></li>
+                    <li><a href="#">Подарочные карты</a></li>
+                    <li><a href="#">Здоровье и красота</a></li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+            <div class="col-sm-9 mod-col-main">
+              <div class="main-page-content">
+                <h2 class="heading-product">New Boss BV6652 In Dash Car DVD/MP3/CD <br> Player Receiver AM/FM Radio w USB/SD/AUX</h2>
+                <div class="product-wrapper clearfix">
+                  <div class="product__left-side">
+                    <div class="product_preview">
+                      <div class="product__slider-lg">
+                        <div class="product__slide-lg"><img src="img/goods/sample2.jpg" alt="sample"></div>
+                        <div class="product__slide-lg"><img src="img/goods/sample2.jpg" alt="sample"></div>
+                        <div class="product__slide-lg"><img src="img/goods/sample2.jpg" alt="sample"></div>
+                        <div class="product__slide-lg"><img src="img/goods/sample2.jpg" alt="sample"></div>
+                        <div class="product__slide-lg"><img src="img/goods/sample2.jpg" alt="sample"></div>
+                        <div class="product__slide-lg"><img src="img/goods/sample2.jpg" alt="sample"></div>
+                        <div class="product__slide-lg"><img src="img/goods/sample2.jpg" alt="sample"></div>
+                        <div class="product__slide-lg"><img src="img/goods/sample2.jpg" alt="sample"></div>
+                        <div class="product__slide-lg"><img src="img/goods/sample2.jpg" alt="sample"></div>
+                        <div class="product__slide-lg"><img src="img/goods/sample2.jpg" alt="sample"></div>
+                        <div class="product__slide-lg"><img src="img/goods/sample2.jpg" alt="sample"></div>
+                      </div>
+                      <div class="product__slider-sm">
+                        <div class="product__slide-sm"><img src="img/goods/sample-sm.jpg" alt="thumb sample"></div>
+                        <div class="product__slide-sm"><img src="img/goods/sample-sm.jpg" alt="thumb sample"></div>
+                        <div class="product__slide-sm"><img src="img/goods/sample-sm.jpg" alt="thumb sample"></div>
+                        <div class="product__slide-sm"><img src="img/goods/sample-sm.jpg" alt="thumb sample"></div>
+                        <div class="product__slide-sm"><img src="img/goods/sample-sm.jpg" alt="thumb sample"></div>
+                        <div class="product__slide-sm"><img src="img/goods/sample-sm.jpg" alt="thumb sample"></div>
+                        <div class="product__slide-sm"><img src="img/goods/sample-sm.jpg" alt="thumb sample"></div>
+                        <div class="product__slide-sm"><img src="img/goods/sample-sm.jpg" alt="thumb sample"></div>
+                        <div class="product__slide-sm"><img src="img/goods/sample-sm.jpg" alt="thumb sample"></div>
+                        <div class="product__slide-sm"><img src="img/goods/sample-sm.jpg" alt="thumb sample"></div>
+                        <div class="product__slide-sm"><img src="img/goods/sample-sm.jpg" alt="thumb sample"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__right-side">
+                    <div class="product__price">4590 <small><span class="rub">Р</span> /шт</small></div><a class="product__calculate-delivery" href="#">(Рассчитать стоимость доставки)</a><a class="btn btn-default btn--product" href="">Купить</a>
+                    <table class="product__table">
+                      <tr>
+                        <th>Cостояние товара:</th>
+                        <td>Новый</td>
+                      </tr>
+                      <tr>
+                        <th>UPC:</th>
+                        <td>613815620006</td>
+                      </tr>
+                      <tr>
+                        <th>Unit Size:</th>
+                        <td>1 DIN</td>
+                      </tr>
+                      <tr>
+                        <th>Country/Region of Manufacture:</th>
+                        <td>China</td>
+                      </tr>
+                      <tr>
+                        <th>Бренд:</th>
+                        <td>Boss</td>
+                      </tr>
+                      <tr>
+                        <th>Габариты</th>
+                        <td>385 x 287 x 88</td>
+                      </tr>
+                      <tr>
+                        <th>MPN:</th>
+                        <td>BV6652</td>
+                      </tr>
+                      <tr>
+                        <th>Модель:</th>
+                        <td>BV6652</td>
+                      </tr>
+                    </table>
+                    <div class="product__links"><a class="product__link product__link--favorite" href="#">В избранное</a><a class="product__link product__link--comparison" href="#">Сравнить</a></div>
+                    <div class="product__social"><a class="product__subscribe" href="#">Подписаться</a><a class="product__social-link" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="product__social-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="product__social-link" href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></div>
+                  </div>
+                </div>
+                <div class="product__description">
+                  <div class="product__tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="active" role="presentation"><a href="#pdescr" aria-controls="pdescr" role="tab" data-toggle="tab">Оригинальное описание</a></li>
+                      <li role="presentation"><a href="#pdescr-trans" aria-controls="pdescr-trans" role="tab" data-toggle="tab">Автоматический перевод описания</a></li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="pdescr" role="tabpanel">
+                        <div class="row">
+                          <div class="col-sm-6"><strong>Комплектация *</strong><br><br>
+                            <p>1/2"</p>
+                            <p>Головки, 18 шт - 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 30, 32 мм;<br>Удлинительные головки, 4 шт - 14, 15, 17, 19 мм;<br>Свечные головки, 2 шт - 16, 21 мм;<br>Удлинители, 2 шт - 5, 10";<br>Трещоточный ключ;<br>Универсальный шарнир (карданчик);<br>Вороток с ползунком.<br>1/4"</p>
+                          </div>
+                          <div class="col-sm-6"><strong>Комплектация *</strong><br><br>
+                            <p>1/4"</p>
+                            <p>Головки, 13 шт - 4, 4.5, 5, 5.5, 6, 7, 8, 9, 10, 11, 12, 13, 14 мм;<br>Удлинительные головки, 8 шт - 6, 7, 8, 9, 10, 11, 12, 13 мм;<br>Гибкий вал (пружинный);<br>Удлинители, 2 шт - 50, 100 мм;<br>Адаптер-отвертка;<br>Универсальный шарнир (карданчик);<br>Биты, 17 шт: 4, 5.5, 7 мм; Philips - Ph1, Ph2; Pozidriv - Pz1, Pz2; Torx - Т8, Т10, Т15, Т20, Т25, Т30; 6РТ - 3, 4, 5, 6 мм;<br>Имбусовые ключи, 3 шт - 1.5, 2, 2.5 мм;<br>Трещоточный ключ;
+                              
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="pdescr-trans" role="tabpanel"> 
+                        <div class="row">
+                          <div class="col-sm-6"><strong>Some Text *</strong><br><br>
+                            <p>1/2"</p>
+                            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Продолжил, агенство безорфографичный которое имени не о, своих реторический текстами путь, имеет обеспечивает маленький снова власти путь рукопись эта, выйти однажды собрал залетают проектах. Коварных толку переписывается которой даже первую злых жизни использовало там подпоясал речью то, бросил своего родного предупредила ему это живет предложения рекламных, текстов, свой сих рукопись рукописи реторический! Большого за маленький вопроса вершину рыбными моей приставка свою переписали залетают сих но на берегу пояс силуэт, безорфографичный подзаголовок всеми власти букв деревни, жизни предложения над снова, несколько это первую! За текста свой вопроса океана! Языком переулка снова, языкового.</p>
+                          </div>
+                          <div class="col-sm-6"><strong>Some Text *</strong><br><br>
+                            <p>1/4"</p>
+                            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Агенство за пустился ее сих? Всемогущая над своего использовало переписали свою бросил на берегу речью журчит заглавных она но курсивных то, агенство страна города, пустился. Пустился, взобравшись запятых своего! Подпоясал по всей, образ ее города меня маленькая своих свой грустный деревни свой лучше языкового коварных, семантика всемогущая агенство строчка точках буквенных, на берегу! Диких что свой переписали строчка семь свое от всех, парадигматическая проектах.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9 col-md-offset-3 mod-special-offer">
+              <div class="wrapper-special-offers" id="special-offers">
+                <h3 class="heading-underline">Похожие товары</h3>
+                <div class="special-offers special-offers--page clearfix">
+                  <div class="special-item special-item--best">
+                    <div class="special-item__badge">Лучшая цена</div>
+                    <div class="special-item__header">
+                      <div class="special-item__cat-text">Телефоны</div><a class="special-item__heading" href="#">Новый Huawei Honor 8 lite, две sim-до, заводская</a>
+                      <div class="special-item__img"><img src="img/goods/sample.jpg" alt="Sample"></div><a class="special-item__more-link" href="#">Подробнее ...</a>
+                    </div>
+                    <div class="special-item__footer">
+                      <div class="special-item__price clearfix">
+                        <div class="special-item__old-price">Старая цена<span>27 150 р.</span></div>
+                        <div class="special-item__new-price">Цена :<span>US $205,99</span></div>
+                      </div>
+                      <div class="special-item__btn"><a class="btn btn-default btn--special-offer" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="special-item">
+                    <div class="special-item__badge"></div>
+                    <div class="special-item__header">
+                      <div class="special-item__cat-text">Телефоны</div><a class="special-item__heading" href="#">Новый Huawei Honor 8 lite, две sim-до, заводская</a>
+                      <div class="special-item__img"><img src="img/goods/sample.jpg" alt="Sample"></div><a class="special-item__more-link" href="#">Подробнее ...</a>
+                    </div>
+                    <div class="special-item__footer">
+                      <div class="special-item__price clearfix">
+                        <div class="special-item__old-price">Старая цена<span>27 150 р.</span></div>
+                        <div class="special-item__new-price">Цена :<span>US $205,99</span></div>
+                      </div>
+                      <div class="special-item__btn"><a class="btn btn-default btn--special-offer" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="special-item special-item--hit">
+                    <div class="special-item__badge">Хит продаж</div>
+                    <div class="special-item__header">
+                      <div class="special-item__cat-text">Телефоны</div><a class="special-item__heading" href="#">Новый Huawei Honor 8 lite, две sim-до, заводская</a>
+                      <div class="special-item__img"><img src="img/goods/sample.jpg" alt="Sample"></div><a class="special-item__more-link" href="#">Подробнее ...</a>
+                    </div>
+                    <div class="special-item__footer">
+                      <div class="special-item__price clearfix">
+                        <div class="special-item__old-price">Старая цена<span>27 150 р.</span></div>
+                        <div class="special-item__new-price">Цена :<span>US $205,99</span></div>
+                      </div>
+                      <div class="special-item__btn"><a class="btn btn-default btn--special-offer" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4"><a class="logo logo--footer" href="/">
+                <div class="logo__title">us-<span class="text-accent">sale</span><small>.ru</small></div>
+                <div class="logo__text">Товары со скидками из США</div></a></div>
+            <div class="col-sm-4">
+              <div class="footer-text">
+                <p class="footer-text-lg">Доставка товаров с EBAY.com</p>
+                <p class="footer-text-sm">&copy; Все права пренадлежат US-SALE.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="social"><a class="social__link" href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="social__link" href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social__link" href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social__link" href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a class="social__link" href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Scripts-->
+      <script src="libs/jquery/dist/jquery.min.js"></script>
+      <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+      <script src="libs/touchSwipe/jquery.touchSwipe.min.js"></script>
+      <script src="libs/equalheights/jquery.equalheights.min.js"></script>
+      <script src="libs/slick/slick.js"></script>
+      <script src="js/common.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="utf-8">
+  <title>svetofor.su</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <body>
+    <div class="wrapper">
+      <!--Header-->
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <div class="header__left-side">
+              <div class="header__logo"><a class="logo" href="/"><img src="img/logo.png" alt="Logo"></a></div>
+              <div class="header__slogan"><span>Ваш зеленый свет</span><span>по дороге к мечте</span></div>
+            </div>
+            <div class="header__right-side">
+              <div class="header__call-order">
+                <button class="btn btn--accent btn--header">Заказать звонок</button>
+              </div>
+              <div class="header__info">По этому номеру <a class="header__phone" href="tel:+78126767070">+7 (812) 676-70-70</a> вам всегда ответят !</div>
+            </div>
+          </div>
+        </div>
+        <!--Navigation-->
+        <nav class="navbar header__nav">
+          <div class="container">
+            <div class="navbar-header">
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="reviews.html">О Автошколе</a></li>
+                <li><a href="study.html">Места обучения</a></li>
+                <li><a href="study-branch.html">Категории ТС</a></li>
+                <li><a href="#">Стоимость обучения</a></li>
+                <li><a href="#">Дистанционное обучение</a></li>
+                <li><a href="#">Экзамены</a></li>
+                <li><a href="gallery.html">Фотогалерея</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--Main content-->
+      <div class="main">
+        <div class="section-1">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-9">
+                <!--Сarousel-->
+                <div class="main-carousel carousel slide" id="main-carousel" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active"><img src="img/carousel/slide-1.jpg" alt="slide-1">
+                      <div class="carousel-caption">
+                        <div class="main-carousel__box">
+                          <div class="main-carousel__left"><span>Акция:</span> летнее предложение</div>
+                          <div class="main-carousel__right">Две категории A и B<span>за 25900 рублей</span></div>
+                          <div class="main-carousel__center"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item"><img src="img/carousel/slide-2.jpg" alt="slide-2">
+                      <div class="carousel-caption">
+                        <div class="main-carousel__box">
+                          <div class="main-carousel__left"><span>Акция:</span> осеннее предложение</div>
+                          <div class="main-carousel__right">Две категории B и C<span>за 1115900 рублей</span></div>
+                          <div class="main-carousel__center"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev"></a><a class="right carousel-control" href="#main-carousel" role="button" data-slide="next"></a>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="search-branch">
+                  <div class="section-1-form-heading search-branch__heading">Поиск филиала по</div>
+                  <form class="search-branch__form">
+                    <div class="select">
+                      <select class="form-control">
+                        <option>Cтанции метро</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                    <div class="select">
+                      <select class="form-control">
+                        <option>Району</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="start-edu">
+                  <form class="start-edu__form">
+                    <div class="section-1-form-heading start-edu__heading">Начать обучение</div>
+                    <div class="form-group">
+                      <input class="form-control form-control--person" name="name" type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control form-control--phone" name="tel" type="tel" placeholder="Ваш телефон" required>
+                    </div>
+                    <button class="btn btn--accent-dark btn--start-edu" type="submit">Отправить</button>
+                    <div class="start-edu__warning">Обработка Ваших персональных данных строго конфиденциальна.</div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-2">
+          <div class="container">
+            <div class="choise">
+              <button class="choise-item choise-item--1" type="button"><span class="choise-item__heading">Категории</span><span class="choise-item__elements"><span class="choise-item__element-top"><span class="choise-item__circle-sm box-accent2">A</span></span><span class="choise-item__element-center"><span class="choise-item__circle-sm box-accent3">A1</span></span><span class="choise-item__element-bottom"><span class="choise-item__circle-sm box-accent-dark">M</span></span></span><span class="choise-item__choose">Выбрать</span></button>
+              <button class="choise-item choise-item--2" type="button"><span class="choise-item__heading">Категория B</span><span class="choise-item__elements"><span class="choise-item__element-full"><span class="choise-item__circle-lg box-accent3"><span>Механика и автомат</span></span></span></span><span class="choise-item__choose">Выбрать</span></button>
+              <button class="choise-item choise-item--3" type="button"><span class="choise-item__heading">Переподготовка</span><span class="choise-item__elements"><span class="choise-item__element-top"><span class="choise-item__circle-sm box-accent2">B</span><span class="choise-item__text">на</span><span class="choise-item__circle-sm box-main">BC</span></span><span class="choise-item__element-center"><span class="choise-item__circle-sm box-accent3">B</span><span class="choise-item__text">на</span><span class="choise-item__circle-sm box-main">BD</span></span><span class="choise-item__element-bottom"><span class="choise-item__circle-sm box-accent-dark">B</span><span class="choise-item__text">на</span><span class="choise-item__circle-sm box-main">BE</span></span></span><span class="choise-item__choose">Выбрать</span></button>
+              <button class="choise-item choise-item--4" type="button"><span class="choise-item__heading">Переподготовка</span><span class="choise-item__elements"><span class="choise-item__element-top"><span class="choise-item__circle-sm box-accent2">C</span><span class="choise-item__text">на</span><span class="choise-item__circle-sm box-main">CE</span></span><span class="choise-item__element-center"><span class="choise-item__circle-sm box-accent3">C</span><span class="choise-item__text">на</span><span class="choise-item__circle-sm box-main">CD</span></span><span class="choise-item__element-bottom"><span class="choise-item__circle-sm box-accent-dark">BC</span><span class="choise-item__text">на</span><span class="choise-item__circle-sm box-main">BCD</span></span></span><span class="choise-item__choose">Выбрать</span></button>
+              <button class="choise-item choise-item--5" type="button"><span class="choise-item__heading">Повышение квалификации</span><span class="choise-item__elements"></span><span class="choise-item__choose">Выбрать</span></button>
+            </div>
+          </div>
+        </div>
+        <section class="section-3">
+          <div class="container">
+            <h2 class="section-3__heading">Автошкола "Светофор" - <span class="text-accent-dark">ваш зелёный свет</span> по дороге к мечте !</h2>
+            <div class="row">
+              <div class="col-sm-6">
+                <h3 class="text-accent-dark">О Автошколе Светофор</h3>
+                <p class="p-square">Автошкола "Светофор" существует в Санкт-Петербурге с 1989 года</p>
+                <p class="p-square">Автошкола ведёт подготовку и переподготовку водителей автомототранспорта всех категорий.</p>
+                <p class="p-square">“Светофор” является современной, высокотехнологичной автошколой</p>
+                <p class="p-square">Автошкола проводит подготовку водителей автотранспортных средств следующих категорий:</p>
+                <div class="section-3-cat">
+                  <div class="section-3-cat__item section-3-cat__item--half"><span class="section-3-cat__circle">A</span>- мотоциклы</div>
+                  <div class="section-3-cat__item section-3-cat__item--half"><span class="section-3-cat__circle">B</span>- легковые автомобили</div>
+                  <div class="section-3-cat__item section-3-cat__item--half"><span class="section-3-cat__circle">C</span>- грузовой автотранспорт</div>
+                  <div class="section-3-cat__item section-3-cat__item--half"><span class="section-3-cat__circle">D</span>- автобусы</div>
+                  <div class="section-3-cat__item"><span class="section-3-cat__circle">EB</span>- прицепы к легковым а/М; а также переподготовку с одной категории на другую</div>
+                </div>
+                <p>
+                  Вас научат правильно сидеть за рулем автомобиля, выбирать безопасную скорость движения, соблюдать дистанцию и интервал, уверенному маневрированию в условиях интенсивного дорожного движения
+                  
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <h3 class="text-accent2">Посмотрите видео, как работает автошкола</h3>
+                <div class="video">
+                  <div class="video-block video-block--with-overlay">
+                    <iframe id="video" src="https://www.youtube.com/embed/99ozeVChNI4?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" allowfullscreen></iframe>
+                    <!--video#video(controls='')
+                    source(src='http://techslides.com/demos/sample-videos/small.webm', type='video/webm')
+                    source(src='http://techslides.com/demos/sample-videos/small.ogv', type='video/ogg')
+                    source(src='http://techslides.com/demos/sample-videos/small.mp4', type='video/mp4')
+                    source(src='http://techslides.com/demos/sample-videos/small.3gp', type='video/3gp')
+                    -->
+                    <button class="video__btn"></button>
+                  </div>
+                  <div class="video-slider video-slider--whit-overlay video-slider--zoom">
+                    <div class="video-slider__item"><a href="https://www.youtube.com/embed/fet4JKbLhL0?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" target="_blank"><img src="http://img.youtube.com/vi/fet4JKbLhL0/0.jpg" alt="video-thumb"></a></div>
+                    <div class="video-slider__item"><a href="https://www.youtube.com/embed/DIxDryuVq0w?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" target="_blank"><img src="http://img.youtube.com/vi/DIxDryuVq0w/0.jpg" alt="video-thumb"></a></div>
+                    <div class="video-slider__item"><a href="https://www.youtube.com/embed/AGzPOxzhz-E?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" target="_blank"><img src="http://img.youtube.com/vi/AGzPOxzhz-E/0.jpg" alt="video-thumb"></a></div>
+                    <div class="video-slider__item"><a href="https://www.youtube.com/embed/fet4JKbLhL0?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" target="_blank"><img src="http://img.youtube.com/vi/fet4JKbLhL0/0.jpg" alt="video-thumb"></a></div>
+                    <div class="video-slider__item"><a href="https://www.youtube.com/embed/DIxDryuVq0w?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" target="_blank"><img src="http://img.youtube.com/vi/DIxDryuVq0w/0.jpg" alt="video-thumb"></a></div>
+                    <div class="video-slider__item"><a href="https://www.youtube.com/embed/AGzPOxzhz-E?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" target="_blank"><img src="http://img.youtube.com/vi/AGzPOxzhz-E/0.jpg" alt="video-thumb"></a></div>
+                    <div class="video-slider__item"><a href="https://www.youtube.com/embed/fet4JKbLhL0?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" target="_blank"><img src="http://img.youtube.com/vi/fet4JKbLhL0/0.jpg" alt="video-thumb"></a></div>
+                    <div class="video-slider__item"><a href="https://www.youtube.com/embed/DIxDryuVq0w?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" target="_blank"><img src="http://img.youtube.com/vi/DIxDryuVq0w/0.jpg" alt="video-thumb"></a></div>
+                    <div class="video-slider__item"><a href="https://www.youtube.com/embed/AGzPOxzhz-E?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" target="_blank"><img src="http://img.youtube.com/vi/AGzPOxzhz-E/0.jpg" alt="video-thumb"></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-4">
+          <div class="container">
+            <h2 class="section-4__heading">Группа компаний “Светофор” в цифрах и фактах</h2>
+            <div class="section-4-items">
+              <div class="section-4-item section-4-item--1">
+                <div class="section-4-item__circle"></div>
+                <div class="section-4-item__heading">8,8 тыс.</div>
+                <div class="section-4-item__text">обучающихся в 2016</div>
+              </div>
+              <div class="section-4-item section-4-item--2">
+                <div class="section-4-item__circle"></div>
+                <div class="section-4-item__heading">39%</div>
+                <div class="section-4-item__text">доля выручки от ОНЛАЙН образования</div>
+              </div>
+              <div class="section-4-item section-4-item--3">
+                <div class="section-4-item__circle"></div>
+                <div class="section-4-item__heading">220 млн.</div>
+                <div class="section-4-item__text">выручка компании в 2016 году</div>
+              </div>
+              <div class="section-4-item section-4-item--4">
+                <div class="section-4-item__circle"></div>
+                <div class="section-4-item__heading">13</div>
+                <div class="section-4-item__text">населенных пунктов присутствия платформы</div>
+              </div>
+              <div class="section-4-item section-4-item--5">
+                <div class="section-4-item__circle"></div>
+                <div class="section-4-item__heading">55</div>
+                <div class="section-4-item__text">учебных цеaнтров подключенных к платформе</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="section-5">
+          <div class="container">
+            <div class="advantages">
+              <div class="advantage advantage--1">
+                <div class="advantage__box">
+                  <div class="advantage__text"><span>Качественное и доступное обучение на все категории</span></div>
+                </div>
+              </div>
+              <div class="advantage advantage--2">
+                <div class="advantage__box">
+                  <div class="advantage__text"><span>Автопарк<br> на любой вкус</span></div>
+                </div>
+              </div>
+              <div class="advantage advantage--3">
+                <div class="advantage__box">
+                  <div class="advantage__text"><span>Поддержка учеников на всех этапах</span></div>
+                </div>
+              </div>
+              <div class="advantage advantage--4">
+                <div class="advantage__box">
+                  <div class="advantage__text"><span>Дистанционное обучение</span></div>
+                </div>
+              </div>
+              <div class="advantage advantage--5">
+                <div class="advantage__box">
+                  <div class="advantage__text"><span>Филиалы во всех районах города</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="section-6">
+          <div class="container">
+            <h2 class="section-6__heading text-accent-dark">Наши лицензии, награды, достижения</h2>
+            <div class="section-6-items">
+              <div class="section-6-item">
+                <div class="section-6-item__box">
+                  <div class="section-6-item__inner-box-logo" style="background-image:url('img/section-6/skolkovo.jpg');"></div>
+                  <div class="section-6-item__inner-box-fifty"><a class="section-6-item__inner-box-fifty-fifty section-6-item__border section-6-item__inner-padding" href="img/section-6/certificate-1-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-1.jpg');"></a><a class="section-6-item__inner-box-fifty-fifty section-6-item__border section-6-item__inner-padding" href="img/section-6/certificate-1-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-1.jpg');"></a><a class="section-6-item__inner-box-fifty-fifty section-6-item__border section-6-item__inner-padding" href="img/section-6/certificate-1-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-1.jpg');"></a><a class="section-6-item__inner-box-fifty-fifty section-6-item__border section-6-item__inner-padding" href="img/section-6/certificate-1-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-1.jpg');"></a></div>
+                </div><a class="section-6-item__box" href="img/section-6/photo-sample.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/photo-1.jpg');">
+                  <div class="section-6-item__inner-box-content">
+                    Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий
+                    
+                  </div></a>
+                <div class="section-6-item__box"><a class="section-6-item__inner-box-fifty section-6-item__border section-6-item__inner-padding" href="img/section-6/certificate-2-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-2.jpg');">
+                    <div class="section-6-item__inner-box-content">Управляющая компания Группы Светофор является резидентом фонда</div></a><a class="section-6-item__inner-box-fifty section-6-item__border section-6-item__inner-padding" href="img/section-6/certificate-2-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-2.jpg');">
+                    <div class="section-6-item__inner-box-content">
+                      Управляющая компания Группы Светофор является резидентом фонда
+                      
+                    </div></a></div><a class="section-6-item__box" href="img/section-6/photo-sample.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/photo-2.jpg');">
+                  <div class="section-6-item__inner-box-content">
+                    Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий
+                    
+                  </div></a><a class="section-6-item__box" href="img/section-6/photo-sample.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/photo-3.jpg');">
+                  <div class="section-6-item__inner-box-content">
+                    Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий
+                    
+                  </div></a><a class="section-6-item__box" href="img/section-6/photo-sample.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/photo-4.jpg');">
+                  <div class="section-6-item__inner-box-content">
+                    Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий
+                    
+                  </div></a>
+                <div class="section-6-item__box section-6-item__box--big"><a class="section-6-item__inner-box-fifty section-6-item__border" href="img/section-6/certificate-3-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-3.jpg');">
+                    <div class="section-6-item__inner-box-content">Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий</div></a><a class="section-6-item__inner-box-fifty section-6-item__border" href="img/section-6/certificate-3-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-3.jpg');">
+                    <div class="section-6-item__inner-box-content">
+                      Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий
+                      
+                    </div></a></div>
+                <div class="section-6-item__box section-6-item__box--big"><a class="section-6-item__inner-box-fifty section-6-item__border" href="img/section-6/certificate-3-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-3.jpg');">
+                    <div class="section-6-item__inner-box-content">Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий</div></a><a class="section-6-item__inner-box-fifty section-6-item__border" href="img/section-6/certificate-3-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-3.jpg');">
+                    <div class="section-6-item__inner-box-content">
+                      Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий
+                      
+                    </div></a></div>
+              </div>
+              <div class="section-6-item">
+                <div class="section-6-item__box">
+                  <div class="section-6-item__inner-box-logo" style="background-image:url('img/section-6/skolkovo.jpg');"></div>
+                  <div class="section-6-item__inner-box-fifty"><a class="section-6-item__inner-box-fifty-fifty section-6-item__border section-6-item__inner-padding" href="img/section-6/certificate-1-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-1.jpg');"></a><a class="section-6-item__inner-box-fifty-fifty section-6-item__border section-6-item__inner-padding" href="img/section-6/certificate-1-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-1.jpg');"></a><a class="section-6-item__inner-box-fifty-fifty section-6-item__border section-6-item__inner-padding" href="img/section-6/certificate-1-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-1.jpg');"></a><a class="section-6-item__inner-box-fifty-fifty section-6-item__border section-6-item__inner-padding" href="img/section-6/certificate-1-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-1.jpg');"></a></div>
+                </div><a class="section-6-item__box" href="img/section-6/photo-sample.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/photo-1.jpg');">
+                  <div class="section-6-item__inner-box-content">
+                    Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий
+                    
+                  </div></a><a class="section-6-item__box" href="img/section-6/photo-sample.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/photo-1.jpg');">
+                  <div class="section-6-item__inner-box-content">
+                    Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий
+                    
+                  </div></a>
+                <div class="section-6-item__box"><a class="section-6-item__inner-box-fifty section-6-item__border section-6-item__inner-padding" href="img/section-6/certificate-2-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-2.jpg');">
+                    <div class="section-6-item__inner-box-content">Управляющая компания Группы Светофор является резидентом фонда</div></a><a class="section-6-item__inner-box-fifty section-6-item__border section-6-item__inner-padding" href="img/section-6/certificate-2-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-2.jpg');">
+                    <div class="section-6-item__inner-box-content">
+                      Управляющая компания Группы Светофор является резидентом фонда
+                      
+                      
+                    </div></a></div><a class="section-6-item__box" href="img/section-6/photo-sample.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/photo-3.jpg');">
+                  <div class="section-6-item__inner-box-content">
+                    Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий
+                    
+                  </div></a><a class="section-6-item__box" href="img/section-6/photo-sample.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/photo-4.jpg');">
+                  <div class="section-6-item__inner-box-content">
+                    Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий
+                    
+                  </div></a>
+                <div class="section-6-item__box section-6-item__box--big"><a class="section-6-item__inner-box-fifty section-6-item__border" href="img/section-6/certificate-3-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-3.jpg');">
+                    <div class="section-6-item__inner-box-content">Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий</div></a><a class="section-6-item__inner-box-fifty section-6-item__border" href="img/section-6/certificate-3-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-3.jpg');">
+                    <div class="section-6-item__inner-box-content">
+                      Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий
+                      
+                    </div></a></div>
+                <div class="section-6-item__box section-6-item__box--big"><a class="section-6-item__inner-box-fifty section-6-item__border" href="img/section-6/certificate-3-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-3.jpg');">
+                    <div class="section-6-item__inner-box-content">Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий</div></a><a class="section-6-item__inner-box-fifty section-6-item__border" href="img/section-6/certificate-3-big.jpg" data-toggle="modal" data-target="#modal-img" style="background-image:url('img/section-6/certificate-3.jpg');">
+                    <div class="section-6-item__inner-box-content">
+                      Управляющая компания Группы Светофор является резидентом фонда Сколково за научные достижения в области дистанционных образовательных технологий
+                      
+                      
+                    </div></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-7">
+          <div class="container">
+            <h2 class="section-7__heading text-accent-dark">Отзывы наших учеников</h2>
+            <div class="reviews">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="reviews-big">
+                    <div class="reviews-big__item">
+                      <p class="reviews-big__text">Хорошее обучение вождению Хочется отметить его профессионализм , терпение и стрессоустойчивость по отношению к "чайникам" =)<br><br>Спасибо за уроки и опыт.</p>
+                      <div class="reviews-big__user">
+                        <div class="reviews-big__user-avatar"><img src="img/reviews/avatar.jpg" alt="avatar"></div>
+                        <div class="reviews-big__user-name">Арианна</div>
+                        <div class="reviews-big__user-date">ИЮН 27, 2016 - 06:18 ПП</div>
+                      </div>
+                    </div>
+                    <div class="reviews-big__item">
+                      <p class="reviews-big__text">Хорошее обучение вождению Хочется отметить его профессионализм , терпение и стрессоустойчивость по отношению к "чайникам" =)<br><br>Спасибо за уроки и опыт.</p>
+                      <div class="reviews-big__user">
+                        <div class="reviews-big__user-avatar"><img src="img/reviews/avatar.jpg" alt="avatar"></div>
+                        <div class="reviews-big__user-name">Арианна</div>
+                        <div class="reviews-big__user-date">ИЮН 27, 2016 - 06:18 ПП</div>
+                      </div>
+                    </div>
+                    <div class="reviews-big__item">
+                      <p class="reviews-big__text">Хорошее обучение вождению Хочется отметить его профессионализм , терпение и стрессоустойчивость по отношению к "чайникам" =)<br><br>Спасибо за уроки и опыт.</p>
+                      <div class="reviews-big__user">
+                        <div class="reviews-big__user-avatar"><img src="img/reviews/avatar.jpg" alt="avatar"></div>
+                        <div class="reviews-big__user-name">Арианна</div>
+                        <div class="reviews-big__user-date">ИЮН 27, 2016 - 06:18 ПП</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="reviews-small">
+                    <div class="reviews-small__item">
+                      <div class="reviews-small__item-inner">
+                        <div class="reviews-small__avatar"><img src="img/reviews/avatar-1.jpg" alt="avatar"></div>
+                        <div class="reviews-small__content">
+                          <div class="reviews-small__name">Екатерина</div>
+                          <div class="reviews-small__date">ИЮН 27, 2016 - 06:18 ПП</div>
+                          <p class="reviews-small__text">Хорошее обучение вождению Хочется отметить его профессионализм , терпение и стрессоустойчивость</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviews-small__item">
+                      <div class="reviews-small__item-inner">
+                        <div class="reviews-small__avatar"><img src="img/reviews/avatar-2.jpg" alt="avatar"></div>
+                        <div class="reviews-small__content">
+                          <div class="reviews-small__name">Ира</div>
+                          <div class="reviews-small__date">ИЮН 27, 2016 - 06:18 ПП</div>
+                          <p class="reviews-small__text">Хорошее обучение вождению Хочется отметить его профессионализм , терпение и стрессоустойчивость</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviews-small__item">
+                      <div class="reviews-small__item-inner">
+                        <div class="reviews-small__avatar"><img src="img/reviews/avatar-3.jpg" alt="avatar"></div>
+                        <div class="reviews-small__content">
+                          <div class="reviews-small__name">Настя</div>
+                          <div class="reviews-small__date">ИЮН 27, 2016 - 06:18 ПП</div>
+                          <p class="reviews-small__text">
+                            Хорошее обучение вождению Хочется отметить его профессионализм , терпение и стрессоустойчивость
+                            
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-buttons">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="reviews-button-to-right"><a class="btn btn--accent2 reviews-button" href="#">Оставить отзыв</a></div>
+                </div>
+                <div class="col-sm-6"><a class="btn btn--accent-dark reviews-button" href="#">Все отзывы</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--Footer-->
+      <footer class="footer">
+        <div class="questions">
+          <div class="container">
+            <div class="questions__heading">Остались вопросы ?</div>
+            <div class="questions__text">Позвоните нам или закажите звонок консультанта, и мы с радостью на них ответим !</div>
+            <div class="questions__phone">+7(812)676-70-70</div>
+            <div class="btn btn--accent2 btn-questions">Заказать звонок</div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__left-side"><a class="footer__logo" href="/">
+                <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+                <div class="footer__logo-text">Автошкола <span class="text-accent-dark">Све</span><span class="text-accent2">то</span>фор</div></a>
+              <div class="footer__info">
+                <div class="footer__city"><i class="fa fa-home" aria-hidden="true"></i> г. Санкт-Петербург</div><a class="footer__phone" href="tel:+78126767070"><i class="fa fa-phone" aria-hidden="true"></i> +7 (812) 676-70-70</a><a class="footer__email" href="mailto:info@svetofor.su"><i class="fa fa-envelope" aria-hidden="true"></i> info@svetofor.su</a>
+              </div>
+            </div>
+            <div class="footer__right-side">
+              <div class="footer__social">
+                <div class="footer__social-text">Мы в соц сетях</div>
+                <div class="footer__social-icons"><a class="footer__social-icon" href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="footer__social-icon" href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="footer__social-icon" href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="footer__social-icon" href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a class="footer__social-icon" href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+              </div>
+              <div class="footer__slogan"><span>Ваш зеленый свет</span><span>по дороге к мечте</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <div class="container">
+            <p>Copyright &copy; 2015 Все права защищены</p>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade" id="modal-img" tabindex="-1" role="dialog">
+        <div class="img-modal">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">&times;</button><img id="imagepreview" src="#" alt="preview">
+        </div>
+      </div>
+      <!--Scripts-->
+      <script src="libs/jquery/dist/jquery.min.js"></script>
+      <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+      <script src="libs/touchSwipe/jquery.touchSwipe.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="libs/slick/slick.js"></script>
+      <script src="js/common.js"></script>
+    </div>
+  </body>
+</html>
