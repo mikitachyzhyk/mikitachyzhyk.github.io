@@ -31,7 +31,7 @@ p {
 
 strong {
   font-weight: 400;
-  color: #000; }
+  color: #222; }
 
 .warning {
   padding: 8px 10px;
@@ -46,7 +46,7 @@ strong {
 
 a {
   position: relative;
-  color: #000;
+  color: #222;
   text-decoration: none;
   outline: none;
   font-weight: 400; }
@@ -59,30 +59,30 @@ a.link::before {
   right: 0;
   width: 100%;
   height: 10%;
-  background-color: rgba(153, 153, 153, 0.8);
+  background-color: rgba(170, 170, 170, 0.8);
   z-index: -1; }
 
 a.link:hover::before, a.link:focus::before {
   height: 100%; }
 
 a.link:active::before {
-  background-color: #999999; }
+  background-color: #aaaaaa; }
 
 .hr {
   position: relative;
   margin: 35px 0 30px;
   height: 1px;
   background-color: #aaaaaa; }
-  .hr.hr-first:before, .hr.hr-first:after {
+  .hr:before, .hr:after {
     content: '';
     position: absolute;
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #a2a2a2; }
-  .hr.hr-first:before {
+    background-color: #d0d0d0; }
+  .hr:before {
     top: -15px; }
-  .hr.hr-first:after {
+  .hr:after {
     top: 15px; }
 
 .container {
