@@ -12,6 +12,7 @@ body {
   min-width: 320px;
   line-height: 1.25;
   overflow-x: hidden;
+  background-color: #fff;
   color: #060606; }
 
 .wrapper {
