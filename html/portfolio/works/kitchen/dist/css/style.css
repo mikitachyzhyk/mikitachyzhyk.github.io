@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/* GLOBAL */
+*, :before, :after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  min-width: 320px;
+  line-height: 1.25;
+  overflow-x: hidden;
+  color: #060606; }
+
+.wrapper {
+  width: 1170px;
+  margin: 15px auto;
+  /* Должен быть бордюр, иначе глючит */
+  border: 1px solid transparent;
+  border: 1px solid #ddd; }
+
+/* Kitchen */
+.kitchen {
+  position: relative;
+  padding: 70px 0;
+  width: 1170px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .kitchen img {
+    display: inline-block; }
+
+/* Checkboxes */
+.kitchen .kitchen__checkbox {
+  position: absolute;
+  font-size: 0.7em;
+  line-height: 1.4; }
+  .kitchen .kitchen__checkbox label {
+    display: block;
+    position: relative;
+    padding: 5px 5px 5px 32px;
+    cursor: pointer; }
+    .kitchen .kitchen__checkbox label input {
+      position: absolute;
+      opacity: 0; }
+  .kitchen .kitchen__checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 5px;
+    height: 18px;
+    width: 18px;
+    background-color: #ddd;
+    -webkit-border-radius: 2px;
+            border-radius: 2px; }
+  .kitchen .kitchen__checkbox label:hover input ~ .checkmark {
+    background-color: #ccc; }
+  .kitchen .kitchen__checkbox label input:checked ~ .checkmark {
+    background-color: #0D80B0; }
+  .kitchen .kitchen__checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none; }
+  .kitchen .kitchen__checkbox label input:checked ~ .checkmark:after {
+    display: block; }
+  .kitchen .kitchen__checkbox label .checkmark:after {
+    top: 2px;
+    left: 6px;
+    width: 6px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .kitchen .kitchen__checkbox.kitchen__checkbox--reflect label {
+    padding: 5px 32px 5px 5px; }
+  .kitchen .kitchen__checkbox.kitchen__checkbox--reflect .checkmark {
+    left: auto;
+    right: 5px; }
+
+/* Inputs */
+.kitchen .kitchen__input {
+  position: absolute;
+  font-size: 0.8em;
+  width: 130px;
+  background-color: #ddd; }
+  .kitchen .kitchen__input label {
+    display: block;
+    padding: 5px;
+    font-weight: bold; }
+  .kitchen .kitchen__input input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 6px 12px;
+    font-size: 1em;
+    font-weight: bold;
+    outline: none;
+    background-color: #fafafa;
+    border: 2px solid #ddd; }
+    .kitchen .kitchen__input input:focus {
+      border-color: #ccc; }
+    .kitchen .kitchen__input input:valid {
+      border-color: #0D80B0; }
+    .kitchen .kitchen__input input::-webkit-input-placeholder {
+      color: #999 !important;
+      opacity: 1 !important; }
+    .kitchen .kitchen__input input:-moz-placeholder {
+      color: #999 !important;
+      opacity: 1 !important; }
+    .kitchen .kitchen__input input::-moz-placeholder {
+      color: #999 !important;
+      opacity: 1 !important; }
+    .kitchen .kitchen__input input:-ms-input-placeholder {
+      color: #999 !important;
+      opacity: 1 !important; }
+
+/* Kitchen 1 */
+.kitchen.kitchen--1 .kitchen__checkbox--1 {
+  top: 461px;
+  left: 139px; }
+
+.kitchen.kitchen--1 .kitchen__checkbox--2 {
+  top: 250px;
+  left: 115px; }
+
+.kitchen.kitchen--1 .kitchen__checkbox--3 {
+  top: 204px;
+  left: 208px; }
+
+.kitchen.kitchen--1 .kitchen__checkbox--4 {
+  top: 170px;
+  left: 300px; }
+
+.kitchen.kitchen--1 .kitchen__checkbox--5 {
+  top: 136px;
+  left: 368px; }
+
+.kitchen.kitchen--1 .kitchen__checkbox--6 {
+  top: 108px;
+  left: 444px; }
+
+.kitchen.kitchen--1 .kitchen__checkbox--7 {
+  top: 68px;
+  left: 530px; }
+
+.kitchen.kitchen--1 .kitchen__checkbox--8 {
+  top: 50px;
+  right: 140px; }
+
+.kitchen.kitchen--1 .kitchen__checkbox--9 {
+  top: 415px;
+  right: 199px; }
+
+.kitchen.kitchen--1 .kitchen__input--length {
+  top: 335px;
+  left: 120px; }
+
+.kitchen.kitchen--1 .kitchen__input--width {
+  top: 155px;
+  right: 102px; }
+
+/* Kitchen 2 */
+.kitchen.kitchen--2 .kitchen__checkbox--1 {
+  top: 443px;
+  left: 0; }
+
+.kitchen.kitchen--2 .kitchen__checkbox--2 {
+  top: 214px;
+  left: 1px; }
+
+.kitchen.kitchen--2 .kitchen__checkbox--3 {
+  top: 188px;
+  left: 62px; }
+
+.kitchen.kitchen--2 .kitchen__checkbox--4 {
+  top: 158px;
+  left: 155px; }
+
+.kitchen.kitchen--2 .kitchen__checkbox--5 {
+  top: 48px;
+  right: 298px; }
+
+.kitchen.kitchen--2 .kitchen__checkbox--6 {
+  top: 129px;
+  right: 176px; }
+
+.kitchen.kitchen--2 .kitchen__checkbox--7 {
+  top: 163px;
+  right: 90px; }
+
+.kitchen.kitchen--2 .kitchen__checkbox--8 {
+  top: 190px;
+  right: 16px; }
+
+.kitchen.kitchen--2 .kitchen__checkbox--9 {
+  top: 416px;
+  right: 0; }
+
+.kitchen.kitchen--2 .kitchen__checkbox--10 {
+  top: 474px;
+  left: 554px; }
+
+.kitchen.kitchen--2 .kitchen__input--length--1 {
+  top: 80px;
+  left: 380px; }
+
+.kitchen.kitchen--2 .kitchen__input--length--2 {
+  top: 100px;
+  right: 330px; }
+
+.kitchen.kitchen--2 .kitchen__input--width--1 {
+  top: 260px;
+  left: 20px; }
+
+.kitchen.kitchen--2 .kitchen__input--width--2 {
+  top: 240px;
+  right: 20px; }
+
+/* Kitchen 3 */
+.kitchen.kitchen--3 .kitchen__checkbox--1 {
+  top: 442px;
+  left: 12px; }
+
+.kitchen.kitchen--3 .kitchen__checkbox--2 {
+  top: 214px;
+  left: 23px; }
+
+.kitchen.kitchen--3 .kitchen__checkbox--3 {
+  top: 188px;
+  left: 84px; }
+
+.kitchen.kitchen--3 .kitchen__checkbox--4 {
+  top: 157px;
+  left: 176px; }
+
+.kitchen.kitchen--3 .kitchen__checkbox--5 {
+  top: 48px;
+  right: 277px; }
+
+.kitchen.kitchen--3 .kitchen__checkbox--6 {
+  top: 129px;
+  right: 155px; }
+
+.kitchen.kitchen--3 .kitchen__checkbox--7 {
+  top: 163px;
+  right: 69px; }
+
+.kitchen.kitchen--3 .kitchen__checkbox--8 {
+  top: 190px;
+  right: 0; }
+
+.kitchen.kitchen--3 .kitchen__checkbox--9 {
+  top: 544px;
+  right: 26px; }
+
+.kitchen.kitchen--3 .kitchen__checkbox--10 {
+  top: 526px;
+  left: 489px; }
+
+.kitchen.kitchen--3 .kitchen__input--length--1 {
+  top: 90px;
+  left: 380px; }
+
+.kitchen.kitchen--3 .kitchen__input--length--2 {
+  top: 100px;
+  right: 310px; }
+
+.kitchen.kitchen--3 .kitchen__input--length--3 {
+  top: 440px;
+  right: 280px; }
+
+.kitchen.kitchen--3 .kitchen__input--width--1 {
+  top: 260px;
+  left: 20px; }
+
+.kitchen.kitchen--3 .kitchen__input--width--2 {
+  top: 240px;
+  right: 10px; }
