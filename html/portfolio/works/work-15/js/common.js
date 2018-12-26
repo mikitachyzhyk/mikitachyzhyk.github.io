@@ -469,22 +469,22 @@ $(function() {
 	}
 
 	/* Новогоднее поздравление */
-	setTimeout(function() {
-		$('.popup-new-year').show();
-		bodyLockScroll();
-	}, 1000);
-	$('.popup .popup__close').click(function(e) {
-		e.stopPropagation();
-		e.preventDefault();
-		$(this).parents('.popup').hide();
-		bodyUnlockScroll();
-	});
-	$('.popup').click(function(e) {
-		if (e.target == this) {
-			$(this).hide();
-			bodyUnlockScroll();
-		}
-	});
+	// setTimeout(function() {
+	// 	$('.popup-new-year').show();
+	// 	bodyLockScroll();
+	// }, 1000);
+	// $('.popup .popup__close').click(function(e) {
+	// 	e.stopPropagation();
+	// 	e.preventDefault();
+	// 	$(this).parents('.popup').hide();
+	// 	bodyUnlockScroll();
+	// });
+	// $('.popup').click(function(e) {
+	// 	if (e.target == this) {
+	// 		$(this).hide();
+	// 		bodyUnlockScroll();
+	// 	}
+	// });
 
 	//Smooth scroll
 	$('a[href*="#"]:not([href="#"])').click(function() {
@@ -544,7 +544,7 @@ function init() {
 		// Origins, anchor positions and coordinates of the marker increase in the X
 		// direction to the right and in the Y direction down.
 		var image = {
-			url: '../img/marker.png',
+			url: 'img/marker.png',
 			// This marker is 20 pixels wide by 32 pixels high.
 			size: new google.maps.Size(79, 62),
 			// The origin for this image is (0, 0).
