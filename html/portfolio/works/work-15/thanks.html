@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="utf-8">
+  <title>Ю-СТРОЙ</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="robots" content="index,all">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="css/style.min.css">
+  <body>
+    <div class="wrapper">
+      <!--Header-->
+      <header class="header header--thanks">
+        <div class="header-top"><a class="header-logo" href="/"><img src="img/logo.svg" alt="Logo"></a><a class="header-phone" href="tel:89624485748"><span>тел.</span> 8 (962) 448-57-48</a><a class="header-callback modal-callback-open" href="#">Заказать звонок</a></div>
+        <div class="header-center">
+          <div class="container">
+            <div class="header-center__content">
+              <h1 class="thanks-title">Спасибо что выбрали<br> нашу компанию!</h1><a class="button" href="/">Вернуться на главную</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="modal modal-callback">
+        <form class="catalog-form" action="php/send-callback.php" method="post"><a class="button-close-modal button-close-modal--mini" href="#"></a>
+          <div class="catalog-form__title">Заказать обратный звонок</div>
+          <div class="catalog-form__p">Оставьте ваши контакты и наш менеджер свяжется с Вами в течении 15 минут.</div>
+          <div class="catalog-form__name">
+            <input type="text" name="callback-name" placeholder="Введите ваше имя" required>
+          </div>
+          <div class="catalog-form__phone">
+            <input class="phone-mask" type="text" name="callback-phone" placeholder="Номер телефона" required>
+          </div>
+          <button class="button" type="submit">Отправить заявку</button>
+          <div class="catalog-form__checkbox">
+            <input id="callback-checkbox" type="checkbox" name="callback-checkbox" checked>
+            <label for="callback-checkbox">Я согласен на обработку персональных данных согласно условиям указанным по <a href="#">ссылке</a>.</label>
+          </div>
+        </form>
+      </div>
+      <div class="popup popup-new-year">
+        <div class="popup__content">
+          <div class="popup__close" id="popup-close"></div>
+          <div class="popup__right-side">
+            <div class="popup__year">2019</div>
+            <div class="popup__congrats"><span>Компания Ю-Строй поздравляет</span><span>С наступающим Новым годом</span></div>
+          </div>
+          <div class="popup__left-side">
+            <div class="popup__date">с 12 по 30 декабря</div>
+            <div class="popup__title">Новогоднее чудо<br>для каждого</div>
+            <p>При заключении договора на строительство дома до 30 декабря фиксируем стоимость строительства на следующий год по ценам этого года. </p>
+            <p>При покупке готового дома - каждому покупателю подарок.</p>
+            <div class="popup__gift"><img src="img/popup/gift.png" alt="newyear gift"></div>
+          </div>
+        </div>
+      </div>
+      <!--Scripts-->
+      <script src="js/scripts.min.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANX74ev7avu-WSn5CSL1CKfbd9rJpmiq4&amp;callback=init"></script>
+    </div>
+  </body>
+</html>
