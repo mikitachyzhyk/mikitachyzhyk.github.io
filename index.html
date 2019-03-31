@@ -25,6 +25,29 @@
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
   <!-- <link rel="stylesheet" href="css/custom.min.css"> -->
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .under-construction {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    p {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      animation: animation 4s linear 0s infinite;
+    }
+    @keyframes animation {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+    }
+  </style>
   <!-- Chrome, Firefox OS and Opera-->
   <meta name="theme-color" content="#000">
   <!-- Windows Phone-->
@@ -41,8 +64,8 @@
     ga('send', 'pageview');
   </script>
   <body>
-    <div>
-      under construction
+    <div class="under-construction">
+      <p>under construction</p>
     </div>
     <!-- Yandex.Metrika counter-->
     <script type="text/javascript">
