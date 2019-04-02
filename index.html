@@ -40,12 +40,13 @@
       margin: 0;
       font-size: 24px;
       font-weight: bold;
-      color: #f899a9;
+      color: #9922ff;
       animation: animation 4s linear 0s infinite;
     }
     @keyframes animation {
-        from {transform: rotate(0deg);}
-        to {transform: rotate(360deg);}
+        0% {transform: rotate(0deg) scale(1);}
+        50% {transform: rotate(180deg) scale(2);}
+        100% {transform: rotate(360deg) scale(1);}
     }
   </style>
   <!-- Chrome, Firefox OS and Opera-->
