@@ -42,12 +42,20 @@
       font-size: 24px;
       font-weight: bold;
       color: #28a;
-      animation: animation 4s linear 0s infinite;
+      animation: animation 0.01s linear 0s infinite;
     }
     @keyframes animation {
-        0% {transform: rotate(0deg) scale(1); color: #28a;}
-        50% {transform: rotate(240deg) scale(2); color: #ff9922;}
-        100% {transform: rotate(360deg) scale(1); color: #28a;}
+        0% {transform: rotate(-5deg); color: #28a;}
+        10% {transform: rotate(5deg); color: #b00;}
+        20% {transform: rotate(-5deg); color: #080;}
+        30% {transform: rotate(5deg); color: #28a;}
+        40% {transform: rotate(-5deg); color: #b00;}
+        50% {transform: rotate(5deg); color: #080;}
+        60% {transform: rotate(-5deg); color: #28a;}
+        70% {transform: rotate(5deg); color: #b00;}
+        80% {transform: rotate(-5deg); color: #080;}
+        90% {transform: rotate(5deg); color: #28a;}
+        100% {transform: rotate(-5deg); color: #b00;}
     }
   </style>
   <!-- Chrome, Firefox OS and Opera-->
