@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="utf-8">
-  <title>Kit Carver: Freelance Front-End Web Developer</title>
-  <meta name="description" content="I’m an independent freelance creative Front-End and WordPress developer with 6+ years of professional experience. #html5 #css #js">
+  <title>Mikita Chyzhyk - Web Developer</title>
+  <meta name="description" content="I’m an independent freelance creative Web developer with 6+ years of professional experience. #html5 #css #js">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="referrer" content="origin">
-  <meta property="og:url" content="https://kitcarver.github.io/">
+<!--   <meta property="og:url" content="https://kitcarver.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Kit Carver: Freelance Front-End Web Developer">
   <meta property="og:description" content="I’m an independent freelance creative Front-End and WordPress developer with 6+ years of professional experience. #html5 #css #js">
@@ -19,46 +19,45 @@
   <meta name="twitter:creator" content="@KitCarver">
   <meta name="twitter:title" content="Kit Carver: Freelance Front-End Web Developer">
   <meta name="twitter:description" content="I’m an independent freelance creative Front-End and WordPress developer with 6+ years of professional experience. #html5 #css #js">
-  <meta name="twitter:image:src" content="https://kitcarver.github.io/img/share.png">
+  <meta name="twitter:image:src" content="https://kitcarver.github.io/img/share.png"> -->
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- <link rel="stylesheet" href="css/custom.min.css"> -->
   <style type="text/css">
     body {
       margin: 0;
-      padding: 0;
+      font-family: Consolas;
+      font-size: 16px;
       background-color: #111;
+      color: white;
     }
-    .under-construction {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    .container {
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 20px 40px 120px;
+      background: linear-gradient(to top, #111, #222);
+      border-radius: 5px;
     }
-    p {
+    ul {
       margin: 0;
-      font-size: 28px;
-      font-weight: bold;
-      color: #24c;
-      animation: animation 2s linear 0s infinite;
+      padding: 0;
+      list-style-type: none;
     }
-    p:hover {
-    	animation-play-state: paused;
+    ul > li {
+      margin-bottom: 4px;
     }
-    @keyframes animation {
-        0% {transform: rotate(-360deg); color: #24c;}
-        10% {transform: rotate(360deg); color: #b00;}
-        20% {transform: rotate(-360deg); color: #080;}
-        30% {transform: rotate(360deg); color: #24c;}
-        40% {transform: rotate(-360deg); color: #b00;}
-        50% {transform: rotate(360deg) scale(-2); color: #080;}
-        60% {transform: rotate(-360deg); color: #24c;}
-        70% {transform: rotate(360deg); color: #b00;}
-        80% {transform: rotate(-360deg); color: #080;}
-        90% {transform: rotate(360deg); color: #24c;}
-        100% {transform: rotate(-360deg); color: #b00;}
+    ul > li > a {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 14px;
+      color: white;
+    }
+    ul > li > a > i {
+      margin-right: 10px;
     }
   </style>
   <!-- Chrome, Firefox OS and Opera-->
@@ -77,9 +76,17 @@
     ga('send', 'pageview');
   </script>
   <body>
-    <div class="under-construction">
-      <p>under construction</p>
+    <div class="container">
+      <p>Hello, my name is Mikita Chyzhyk<br>I'm a Web Developer.</p>
+      <p>You can find me here:</p>
+      <ul>
+        <li><a target="_blank" href="https://twitter.com/michydev"><i class="fab fa-twitter"></i>@michydev</a></li>
+        <li><a target="_blank" href="https://github.com/mikitachyzhyk"><i class="fab fa-github"></i>GitHub</a></li>
+        <li><a target="_blank" href="https://codepen.io/michydev"><i class="fab fa-codepen"></i>codepen.io</a></li>
+        <li><a href="mailto:mikitachyzhyk@gmail.com"><i class="far fa-envelope"></i>mikitachyzhyk@gmail.com</a></li>
+      </ul>
     </div>
+
     <!-- Yandex.Metrika counter-->
     <script type="text/javascript">
       (function (d, w, c) {
