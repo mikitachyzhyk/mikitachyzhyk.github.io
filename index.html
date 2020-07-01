@@ -27,19 +27,28 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- <link rel="stylesheet" href="css/custom.min.css"> -->
   <style type="text/css">
+    * {box-sizing: border-box;}
     body {
       margin: 0;
       font-family: Consolas;
       font-size: 16px;
-      background-color: #111;
-      color: white;
+      background-color: #fafafa;
+      color: black;
     }
     .container {
-      max-width: 500px;
-      margin: 30px auto;
-      padding: 20px 40px 120px;
-      background: linear-gradient(to top, #111, #222);
-      border-radius: 5px;
+      max-width: 780px;
+      margin: 0 auto;
+      height: 100vh;
+      padding: 50px 40px 120px;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+    h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    h2 {
+      margin: 0 0 40px;
+      font-size: 22px;
     }
     ul {
       margin: 0;
@@ -54,7 +63,7 @@
       align-items: center;
       text-decoration: none;
       font-size: 14px;
-      color: white;
+      /*color: white;*/
     }
     ul > li > a > i {
       margin-right: 10px;
@@ -77,8 +86,9 @@
   </script>
   <body>
     <div class="container">
-      <p>Hello, my name is Mikita Chyzhyk<br>I'm a Web Developer.</p>
-      <p>You can find me here:</p>
+      <h1>Hello, my name is Mikita Chyzhyk</h1>
+      <h2>I'm a Web Developer.</h2>
+      <p><b>You can find me here:</b></p>
       <ul>
         <li><a target="_blank" href="https://twitter.com/michydev"><i class="fab fa-twitter"></i>@michydev</a></li>
         <li><a target="_blank" href="https://github.com/mikitachyzhyk"><i class="fab fa-github"></i>GitHub</a></li>
