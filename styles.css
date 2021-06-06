@@ -160,10 +160,10 @@ p {
 .work {
   width: 100%;
   /*margin: 0 1.5% 0 0;*/
-  color: white;
+  /*color: white;*/
   font-size: 0.8rem;
-  background: #333;
-  border: 1px solid lightgray;
+  /*background: lightgray;*/
+  border: 1px solid #e5e5e5;
   border-bottom-width: 3px;
   /*box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);*/
 }
@@ -223,7 +223,7 @@ blockquote {
   font-size: 0.925rem;
   /*background: #ececec;*/
   border-radius: 0 0 10%/10% 0;
-  border: 1px solid lightgray;
+  border: 1px solid #e5e5e5;
   border-bottom-width: 3px;
 }
 
