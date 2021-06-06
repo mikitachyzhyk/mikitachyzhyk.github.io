@@ -74,6 +74,10 @@ a {
   color: MediumBlue;
 }
 
+a:hover {
+  opacity: 0.7;
+}
+
 /* Lists */
 
 ul {
@@ -148,6 +152,7 @@ p {
 
 .mainNav ul li a:hover {
   border-bottom-color: currentColor;
+  opacity: 1;
 }
 
 /* Works section */
@@ -194,6 +199,7 @@ p {
 
 .work a:hover {
   filter: grayscale(0%);
+  opacity: 1;
 }
 
 .work img {
