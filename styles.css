@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: rgba(0, 0, 205, 0.7);
+  color: white;
+}
+
 body {
   margin: 0;
   /*font-family: Consolas;*/
@@ -111,7 +116,7 @@ h3 {
 /* Links */
 
 a {
-  color: MediumBlue;
+  color: mediumblue;
 }
 
 a:hover {
@@ -300,7 +305,7 @@ blockquote {
 
 .writeMe input:focus,
 .writeMe textarea:focus {
-  border-color: MediumBlue;
+  border-color: mediumblue;
   outline: none;
 }
 
@@ -321,7 +326,7 @@ blockquote {
   font-size: 1rem;
   font-weight: 600;
   color: white;
-  background: MediumBlue;
+  background: mediumblue;
   border: none;
   border-radius: 3px;
   cursor: pointer;
