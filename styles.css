@@ -18,7 +18,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   /*height: 100vh;*/
-  padding: 50px 20px;
+  padding: 50px 20px 150px;
   /*background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 1),
@@ -29,7 +29,47 @@ body {
 
 @media (min-width: 480px) {
   .container {
-    padding: 50px 50px;
+    padding: 50px 50px 250px;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Header */
+
+header {
+  position: relative;
+}
+
+/* Contacts */
+
+.contacts {
+  position: absolute;
+  top: -40px;
+  right: -10px;
+  display: flex;
+}
+
+.contact {
+  margin: 0;
+}
+
+.contact a {
+  display: block;
+  padding: 5px 10px;
+}
+
+.contact a i {
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .contacts {
+    top: 0;
+    right: -100px;
+    display: block;
   }
 }
 
@@ -195,11 +235,13 @@ p {
 .work a {
   display: block;
   filter: grayscale(100%);
+  /*transition: box-shadow 100ms;*/
 }
 
 .work a:hover {
   filter: grayscale(0%);
   opacity: 1;
+  /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
 }
 
 .work img {
@@ -237,4 +279,54 @@ blockquote {
 
 .accent {
   color: #333;
+}
+
+/* Write me */
+
+.writeMe label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.writeMe input,
+.writeMe textarea {
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  border: 2px solid #e5e5e5;
+}
+
+.writeMe input:focus,
+.writeMe textarea:focus {
+  border-color: MediumBlue;
+  outline: none;
+}
+
+.writeMe input {
+  height: 40px;
+}
+
+.writeMe textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 120px;
+}
+
+.writeMe button {
+  height: 44px;
+  padding: 0 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: MediumBlue;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.writeMe button:hover {
+  opacity: 0.7;
 }
