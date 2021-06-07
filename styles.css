@@ -133,9 +133,9 @@ ul > li {
 ul > li > a {
   display: inline-flex;
   align-items: center;
-  text-decoration: none;
+  font-family: Consolas;
   font-size: 1.1rem;
-  /*color: white;*/
+  text-decoration: none;
 }
 
 ul > li > a > i {
