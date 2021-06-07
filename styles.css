@@ -227,10 +227,10 @@ blockquote {
   margin: 0 0 20px;
   padding: 20px;
   font-size: 0.925rem;
-  /*background: #ececec;*/
+  background: #fff7e2;
   border-radius: 0 0 10%/10% 0;
-  border: 1px solid #e5e5e5;
-  border-bottom-width: 3px;
+  /*border: 1px solid #e5e5e5;*/
+  /*border-bottom-width: 3px;*/
 }
 
 /* Utilities */
