@@ -58,7 +58,7 @@ header {
 }
 
 .contact {
-  margin: 0;
+  margin: 0 0 5px;
 }
 
 .contact a {
@@ -75,6 +75,14 @@ header {
     top: 0;
     right: -100px;
     display: block;
+  }
+  .contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    background: white;
+    border-radius: 50%;
   }
 }
 
