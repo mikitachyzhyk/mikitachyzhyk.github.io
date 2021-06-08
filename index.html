@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="utf-8" />
-  <title>Mikita Chyzhyk - Web Developer</title>
-  <meta
-    name="description"
-    content="I’m an independent freelance creative Web developer with 6+ years of professional experience. #html5 #css #js"
-  />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1"
-  />
-  <meta name="referrer" content="origin" />
-  <!--   <meta property="og:url" content="https://kitcarver.github.io/">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-99007183-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'UA-99007183-1')
+    </script>
+
+    <meta charset="utf-8" />
+    <title>Mikita Chyzhyk - Web Developer</title>
+    <meta
+      name="description"
+      content="I’m an independent freelance creative Web developer with 6+ years of professional experience. #html5 #css #js"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="referrer" content="origin" />
+    <!--   <meta property="og:url" content="https://kitcarver.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Kit Carver: Freelance Front-End Web Developer">
   <meta property="og:description" content="I’m an independent freelance creative Front-End and WordPress developer with 6+ years of professional experience. #html5 #css #js">
@@ -26,62 +42,39 @@
   <meta name="twitter:title" content="Kit Carver: Freelance Front-End Web Developer">
   <meta name="twitter:description" content="I’m an independent freelance creative Front-End and WordPress developer with 6+ years of professional experience. #html5 #css #js">
   <meta name="twitter:image:src" content="https://kitcarver.github.io/img/share.png"> -->
-  <link
-    rel="shortcut icon"
-    href="img/favicon/favicon.ico"
-    type="image/x-icon"
-  />
-  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
-  <link
-    rel="apple-touch-icon"
-    sizes="72x72"
-    href="img/favicon/apple-touch-icon-72x72.png"
-  />
-  <link
-    rel="apple-touch-icon"
-    sizes="114x114"
-    href="img/favicon/apple-touch-icon-114x114.png"
-  />
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
-  />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Chrome, Firefox OS and Opera-->
-  <meta name="theme-color" content="#000" />
-  <!-- Windows Phone-->
-  <meta name="msapplication-navbutton-color" content="#000" />
-  <!-- iOS Safari-->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
-  <!-- Google Analytics-->
-  <script>
-    ;(function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r
-      ;(i[r] =
-        i[r] ||
-        function () {
-          ;(i[r].q = i[r].q || []).push(arguments)
-        }),
-        (i[r].l = 1 * new Date())
-      ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
-      a.async = 1
-      a.src = g
-      m.parentNode.insertBefore(a, m)
-    })(
-      window,
-      document,
-      'script',
-      'https://www.google-analytics.com/analytics.js',
-      'ga'
-    )
-    ga('create', 'UA-99007183-1', 'auto')
-    ga('send', 'pageview')
-  </script>
+    <link
+      rel="shortcut icon"
+      href="img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicon/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000" />
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+  </head>
   <body>
     <div class="container">
       <header>
@@ -292,43 +285,42 @@
       </section>
     </div>
 
-    <!-- Yandex.Metrika counter-->
+    <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
-      ;(function (d, w, c) {
-        ;(w[c] = w[c] || []).push(function () {
-          try {
-            w.yaCounter44705650 = new Ya.Metrika({
-              id: 44705650,
-              clickmap: true,
-              trackLinks: true,
-              accurateTrackBounce: true,
-            })
-          } catch (e) {}
-        })
-        var n = d.getElementsByTagName('script')[0],
-          s = d.createElement('script'),
-          f = function () {
-            n.parentNode.insertBefore(s, n)
+      ;(function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            ;(m[i].a = m[i].a || []).push(arguments)
           }
-        s.type = 'text/javascript'
-        s.async = true
-        s.src = 'https://mc.yandex.ru/metrika/watch.js'
-        if (w.opera == '[object Opera]') {
-          d.addEventListener('DOMContentLoaded', f, false)
-        } else {
-          f()
-        }
-      })(document, window, 'yandex_metrika_callbacks')
+        m[i].l = 1 * new Date()
+        ;(k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a)
+      })(
+        window,
+        document,
+        'script',
+        'https://mc.yandex.ru/metrika/tag.js',
+        'ym'
+      )
+
+      ym(44705650, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      })
     </script>
-    <noscript>
-      <div>
+    <noscript
+      ><div>
         <img
           src="https://mc.yandex.ru/watch/44705650"
           style="position: absolute; left: -9999px"
           alt=""
-        />
-      </div>
-    </noscript>
-    <!-- /Yandex.Metrika counter-->
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
   </body>
 </html>
