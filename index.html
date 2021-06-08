@@ -285,6 +285,46 @@
       </section>
     </div>
 
+    <script>
+      'use strict'
+
+      var darkCss =
+        '\n@media screen {\n\n/* Leading rule */\nhtml {\n  -webkit-filter: invert(100%) hue-rotate(180deg) brightness(80%) contrast(70%) grayscale(40%) !important;\n  filter: invert(100%) hue-rotate(180deg) brightness(80%) contrast(70%) grayscale(40%) !important;\n}\n\n/* Reverse rule */\nimg,\nvideo,\n:not(object):not(body)>embed,\nobject,\nsvg image,\n[style*="background:url"],\n[style*="background-image:url"],\n[style*="background: url"],\n[style*="background-image: url"] {\n  -webkit-filter: invert(100%) hue-rotate(180deg) !important;\n  filter: invert(100%) hue-rotate(180deg) !important;\n}\n[style*="background:url"] *,\n[style*="background-image:url"] *,\n[style*="background: url"] *,\n[style*="background-image: url"] *,\ninput,\n[background] * {\n  -webkit-filter: none !important;\n  filter: none !important;\n}\n\n/* Text contrast */\nhtml {\n  text-shadow: 0 0 0 !important;\n}\n\n/* Full screen */\n:-webkit-full-screen, :-webkit-full-screen * {\n  -webkit-filter: none !important;\n  filter: none !important;\n}\n:-moz-full-screen, :-moz-full-screen * {\n  -webkit-filter: none !important;\n  filter: none !important;\n}\n:fullscreen, :fullscreen * {\n  -webkit-filter: none !important;\n  filter: none !important;\n}\n\n/* Page background */\nhtml {\n  background: rgb(181,181,181) !important;\n}\n\n}\n'
+
+      checkTheme()
+
+      window
+        .matchMedia('(prefers-color-scheme: dark)')
+        .addEventListener('change', function (e) {
+          checkTheme()
+        })
+
+      function checkTheme() {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          switchTheme(true)
+        } else {
+          switchTheme(false)
+        }
+      }
+
+      function switchTheme() {
+        var dark =
+          arguments.length > 0 && arguments[0] !== undefined
+            ? arguments[0]
+            : false
+
+        if (dark) {
+          document.head.insertAdjacentHTML(
+            'beforeend',
+            '<style id="darkStyle">'.concat(darkCss, '</style>')
+          )
+        } else {
+          document.getElementById('darkStyle') &&
+            document.getElementById('darkStyle').remove()
+        }
+      }
+    </script>
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       ;(function (m, e, t, r, i, k, a) {
