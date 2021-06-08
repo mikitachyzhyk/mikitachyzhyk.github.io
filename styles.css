@@ -228,6 +228,10 @@ p {
   border-radius: 5px;
 }
 
+.work:not(:first-child) {
+  margin-top: 15px;
+}
+
 .work::after {
   content: '';
   position: absolute;
