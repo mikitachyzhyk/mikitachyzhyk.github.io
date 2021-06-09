@@ -228,6 +228,10 @@ p {
   border-radius: 5px;
 }
 
+.work img {
+  border-radius: 5px;
+}
+
 .work::after {
   content: '';
   position: absolute;
