@@ -102,7 +102,7 @@ section:not(:last-child) {
 h1,
 h2,
 h3 {
-  font-weight: 500;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -299,17 +299,48 @@ p {
 .reviews {
   margin-bottom: 40px;
 }
-.review {
-}
 
 blockquote {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin: 0 0 20px;
   padding: 20px;
   font-size: 0.925rem;
-  background: #fff7e2;
+  font-style: italic;
+  color: #777;
+  /*background: #fff7e2;*/
+  /*background: #fff8e6;*/
+  background: #fffaee;
   border-radius: 0 0 10%/10% 0;
   /*border: 1px solid #e5e5e5;*/
   /*border-bottom-width: 3px;*/
+}
+
+/* Review stars */
+
+.review__stars {
+  display: inline-block;
+  position: relative;
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.review__stars::before {
+  content: '★★★★★';
+  color: lightgray;
+}
+.review__stars > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  overflow: hidden;
+}
+.review__stars > span::before {
+  content: '★★★★★';
+  color: #febd30;
 }
 
 /* Utilities */
