@@ -312,6 +312,11 @@
           <button type="submit">Send</button>
         </form>
       </section>
+
+      <footer>
+        &copy; <span class="current-year">2049</span>
+        <a href="mailto:mikitachyzhyk@gmail.com">Mikita Chyzhyk</a>
+      </footer>
     </div>
 
     <script>
@@ -352,6 +357,12 @@
             document.getElementById('darkStyle').remove()
         }
       }
+
+      /* Current Year */
+      var currentYearElems = document.querySelectorAll('.current-year')
+      currentYearElems.forEach(function (cy) {
+        cy.textContent = new Date().getFullYear()
+      });
     </script>
 
     <!-- Yandex.Metrika counter -->
