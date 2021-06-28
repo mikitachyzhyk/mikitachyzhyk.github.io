@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  /*font-family: Consolas;*/
+  /*font-family: Consolas, monaco, monospace;*/
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   line-height: 1.6;
@@ -102,7 +102,7 @@ ul > li {
 ul > li > a {
   display: inline-flex;
   align-items: center;
-  font-family: Consolas;
+  font-family: Consolas, monaco, monospace;
   font-size: 1.1rem;
   text-decoration: none;
 }
@@ -128,7 +128,7 @@ header {
 .mainNav {
   margin: 0 -20px 30px;
   padding: 0 20px 20px;
-  font-family: Consolas;
+  font-family: Consolas, monaco, monospace;
   border-bottom: 1px solid #ececec;
 }
 
@@ -407,7 +407,7 @@ blockquote {
 
 footer {
   margin-top: 120px;
-  font-family: Consolas;
+  font-family: Consolas, monaco, monospace;
   font-size: 0.9rem;
   opacity: 0.7;
 }
