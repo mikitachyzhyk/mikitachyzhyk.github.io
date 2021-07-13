@@ -326,7 +326,8 @@ blockquote {
 .review__stars {
   display: inline-block;
   position: relative;
-  font-size: 1.4rem;
+  font-family: monospace;
+  font-size: 1.7rem;
   font-style: normal;
   line-height: 1;
   margin-bottom: 5px;
