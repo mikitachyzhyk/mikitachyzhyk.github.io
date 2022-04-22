@@ -1,0 +1,88 @@
+// vertical align mixin
+=vertical($elem)
+  position: relative
+  letter-spacing: -0.5em
+  & > *
+    letter-spacing: normal
+  &::after
+    content: ''
+    display: inline-block
+    height: 100%
+    width: 0
+    vertical-align: middle
+  >#{$elem}
+    display: inline-block
+    vertical-align: middle
+
+// Hover transitions
+=hover($opacity: .8, $duration: 0.15s)
+  transition-property: all
+  transition-duration: $duration
+  transition-timing-function: ease
+  &:hover, &:focus
+    // transition-duration: 0s
+    opacity: $opacity
+
+=trns($duration: 0.15s, $timing: ease)
+  transition-property: all
+  transition-duration: $duration
+  transition-timing-function: $timing
+  // &:hover, &:focus
+    // transition-duration: 0s
+
+// Text overflow
+=text-overflow
+  overflow: hidden
+  -ms-text-overflow: ellipsis
+  text-overflow: ellipsis
+  white-space: nowrap
+
+// Multiline text overflow (only webkit) (don't forget to set height !)
+=multi-overflow($lines: 2)
+  display: -webkit-box
+  -webkit-line-clamp: $lines
+  -webkit-box-orient: vertical
+  overflow: hidden
+  text-overflow: ellipsis
+
+// Default setting for custom icon packs from http://fontello.com
+=iconpack
+  font-family: "custom-icon-pack"
+  font-style: normal
+  font-weight: normal
+  speak: none
+  text-decoration: none
+  text-align: center
+  font-variant: normal
+  text-transform: none
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+// Justify menu (Only <ul>)
+=navjust
+  margin: 0 auto
+  display: table
+  table-layout: auto
+  float: none
+  width: 100%
+  li
+    display: table-cell
+    float: none
+    text-align: center
+  @media screen and (max-width : 767px)
+    // li
+      // display: block
+
+// https://css-tricks.com/snippets/css/clear-fix/
+=clearfix
+  &::after
+    content: ''
+    display: table
+    clear: both
+
+=flex-ie11-mih
+  &::after
+    content: ''
+    display: block
+    min-height: inherit
+    font-size: 0

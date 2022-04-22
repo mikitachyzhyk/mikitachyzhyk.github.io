@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <title>Kit Carver: Freelance Front-End Web Developer</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="css/frame.min.css">
+  <!-- Chrome, Firefox OS and Opera-->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone-->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari-->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <body>
+    <div class="screenBar">
+      <p class="info" id="info">FullScreen</p>
+      <button class="btn stretched disabled" id="stretch" title="Растянуть по высоте"></button>
+      <button class="btn" id="phone" title="Смартфон"></button>
+      <button class="btn btn--landscape" id="phone-landscape" title="Смартфон в горизонтальном положении"></button>
+      <button class="btn" id="tablet" title="Планшет"></button>
+      <button class="btn btn--landscape" id="tablet-landscape" title="Планшет в горизонтальном положении"></button>
+      <button class="btn active" id="fullscreen" title="На весь экрах"></button>
+      <button class="btn" id="close" title="Закрыть фрейм">Remove Frame</button>
+    </div>
+    <div id="mockup"></div>
+    <iframe class="frame" id="screen" name="frame" style="height: 100%;"></iframe>
+    <script src="js/frame.min.js"></script>
+  </body>
+</html>

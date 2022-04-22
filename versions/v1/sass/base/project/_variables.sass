@@ -1,0 +1,93 @@
+//@import "bourbon"
+
+/* _____ VARIABLES _____ */
+
+// Generic
+// ==========================================================================
+
+// Colors
+// ==========================================================================
+
+// links
+$link_color: #4488dd
+// Body ---> header ---> footer
+$body_bgc: #111 // <-- change the preloader if change it
+$body_color: rgba(#fff, .9) //#def //#e7e7e7
+$body_second_color: #fff //#fff
+$body_select_color: #26a//#888 //#456 //#660022 //#844
+$menu_bg: #070707
+$header_second_color: rgba($body_second_color, .6)
+$header_second_sel_color: #48d //rgba($body_second_color, 1)
+$haeder_border_color: rgba($body_second_color, .1)
+//footer
+$footer_bg: rgba(#111, .9) //rgba(#000, .4)
+$footer_color: $header_second_color
+$footer_color_hover: rgba($body_second_color, 1)
+$footer_internal_bg: #070707 //rgba($body_second_color,.1)
+$footer_internal_color: rgba($body_second_color, .6)
+$footer_devider_color: rgba($body_second_color, .1)
+//header menu
+$header_menu_bg: rgba(#000, .3) //rgba(#048, .4)
+$header_menu_focus_bg: rgba(#000, .4) //#002244
+
+// Sections
+$sections_bg: #1b1b1b //#1b1b1b
+$sections_color: #aaa
+$sections_select_color: lighten($sections_bg, 30%)
+$sections_heading_color: #fff
+$heading_border_bg: #048
+// About
+$section_1_bg: $sections_bg //#8b6
+$s1_text_color: $sections_color //#999
+$s1_text_sel_color: $sections_select_color
+$s1_heading_color: $sections_heading_color
+
+
+// Skills
+$section_2_bg: $sections_bg //#f76
+$s2_text_color: $sections_color //shade($section_2_bg, 60%)//tint(lighten($section_2_bg, 10%), 70%)
+$s2_text_sel_color: $sections_select_color
+$s2_bar_wrapper_bg: shade($section_2_bg, 40%)
+$s2_bar_bg: shade(darken($section_2_bg, 2%), 20%)
+$s2_bar_color: $sections_color //shade($section_2_bg, 60%)//lighten($section_2_bg, 18%)
+
+
+// Work
+$section_3_bg: $sections_bg //#3a7
+$s3_text_color: $sections_color
+//$s3_heading_color: #111
+$s3_text_sel_color: $sections_select_color
+
+//- __________ CONTACT SECTION __________ -//
+$section_4_bg: $sections_bg //#4ad
+$s4_text_color: $sections_color
+$s4_text_sel_color: $sections_select_color
+// Inputs
+$s4_input_bg: lighten($section_4_bg, 4%)
+$s4_input_color: lighten($heading_border_bg, 50%)
+$s4_input_border: darken($section_4_bg, 25%)
+$s4_input_focus_bg: lighten($section_4_bg, 3%)
+$s4_input_focus_color: $sections_heading_color
+$s4_input_focus_border: darken($heading_border_bg, 6%)
+// Button
+$s4_button_bg: $heading_border_bg
+$s4_button_color: #ddd
+$s4_button_border_color: darken($s4_button_bg, 10%)
+$s4_button_sel_bg: lighten($s4_button_bg, 2%)
+$s4_button_sel_color: #fff
+// Placeholder
+$inputPlaceholder: $s4_text_color
+// Webkit autofill
+$s4_autofill_bg: tint($heading_border_bg, 40%)
+$s4_autofill_color: #111
+
+//- MODAL -//
+$modal_bg: rgba(#000, .8)
+$modal_color: #fff
+$modal_btn_bg: #048
+
+
+// $inputRequireValid: $section_4_bg
+// $inputRequireValidBg: darken($section_4_bg, 10%)
+// $inputRequireInvalid: #666
+// $inputRequireInvalidBg: #e44

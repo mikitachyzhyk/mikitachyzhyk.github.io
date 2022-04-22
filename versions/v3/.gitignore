@@ -3,7 +3,5 @@
 /psd/
 /**/*.psd
 /**/Thumbs.db
-/**/.DS_Store
 /**/*cache
 sublime-gulp.log
-/token.txt

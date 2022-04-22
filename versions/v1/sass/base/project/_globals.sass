@@ -1,0 +1,1181 @@
+/**/
+
+/* _____ GLOBAL DEFAULTS _____ */
+
+// *::-webkit-input-placeholder
+// 	color: $inputPlaceholder
+// 	opacity: 1
+// *:-moz-placeholder
+// 	color: $inputPlaceholder
+// 	opacity: 1
+// *::-moz-placeholder
+// 	color: $inputPlaceholder
+// 	opacity: 1
+
+// *:-ms-input-placeholder
+// 	color: $inputPlaceholder
+// 	opacity: 1
+
+// body input:required:valid,
+// body textarea:required:valid
+// 	color: $inputRequireValid
+// body input:focus:required:invalid// body textarea:focus:required:invalid
+// 	color: $inputRequireInval6d
+
+
+// *,:before,:after
+// 	box-sizing: border-box
+
+html
+	& *
+		max-height: 1000000px // Вырубает font boosting на смартфонах
+
+html, body
+	height: 100%
+	//For gradient background
+	//min-height: 100%
+
+body
+	//position: relative
+	min-width: 320px
+	font-family: $defaultFontFamily
+	font-weight: 300
+	font-size: $baseFontSize
+	//line-height: 1.75
+	//+linear-gradient(#001, #344)
+	background-color: $body_bgc
+	color: $body_color
+	overflow-x: hidden
+	//background-image: url("http://lorempixel.com/1920/1080/nature")
+	//background-image: url("http://bento.cdn.pbs.org/hostedbento-prod/blog/20160519_143734_232045_ep2_blog_glossary.jpeg")
+	//background-image: url("https://c1.staticflickr.com/5/4086/5395702490_f8be5d93f3.jpg")
+	//background: url('https://static.pexels.com/photos/167895/pexels-photo-167895.jpeg') center / cover
+	//background: url('http://freewallpapers4desktop.com/wallpapers/crumbling_cracked_cement_texture-1920x1200.jpg') center / cover
+	//background: url('http://kingofwallpapers.com/mountains/mountains-007.jpg') center / cover
+	//background: url('https://www.textures.com/system/categories/12399/frontend-large.jpg') center
+	//background: url('../img/back.jpg') center / cover
+
+p
+	//
+
+h1,h2,h3,h4,h5,h6
+	//font-weight: normal
+	//margin: 5px
+
+a
+	color: $link_color
+	&:hover, &:active, &:focus
+		outline: none
+		text-decoration: none
+		color: lighten($link_color, 6%)
+	&:active
+		color: darken($link_color, 6%)
+
+::selection
+	background-color: transparent
+	// можно потом рандомный цвет ставить
+	//color: #f46
+	//color: #644
+	color: #333
+
+/*.img-responsive
+	display: block
+	max-width: 100%
+	height: auto*/
+
+ul
+	margin: 0
+	padding: 0
+	list-style: none
+	overflow: hidden
+
+@media (max-width: 767px)
+	.container
+		width: 100%
+	// @media (min-width: 768px)
+	// 	.container
+	// 		width: 768px
+@media (min-width: 992px)
+	.container
+		width: 790px
+@media (min-width: 1200px)
+	.container
+		width: 790px
+
+//- ______________________ SCROLLBAR ______________________ -//
+
+$scrollbar_bg: #333 //transparent
+$scrollbar_thumb: #048
+
+::-webkit-scrollbar-track
+	background-color: $scrollbar_bg
+
+::-webkit-scrollbar
+	width: 3px
+	background-color: $scrollbar_bg
+
+::-webkit-scrollbar-thumb
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+	background-color: $scrollbar_thumb
+
+//- ______________________ PRELOADER ______________________ -//
+#preloader
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+	z-index: 999
+	background-color: #111
+
+.preloader__icon
+	$prsz: 60px
+	$bdsz: 8px
+	$ansec: .25s
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-top: -$prsz/2
+	margin-left: -$prsz/2
+	width: $prsz
+	height: $prsz
+	//background-color: #111
+	border-radius: 50%
+	border-top: $bdsz solid #223959
+	border-right: $bdsz solid #222
+	border-bottom: $bdsz solid #222
+	border-left: $bdsz solid #222
+	//box-shadow: 0 0 40px #123, inset 0 0 20px #123
+
+	-webkit-animation: spin $ansec linear infinite
+	-moz-animation: spin $ansec linear infinite
+	animation: spin $ansec linear infinite
+
+$pdeg: 360deg
+@-moz-keyframes spin
+	100%
+		-moz-transform: rotate($pdeg)
+@-webkit-keyframes spin
+	100%
+		-webkit-transform: rotate($pdeg)
+@keyframes spin
+	100%
+		-webkit-transform: rotate($pdeg)
+		transform: rotate($pdeg)
+
+//- ______________________ MENU ______________________ -//
+
+.nav_container
+	max-width: 980px
+	margin: 0 auto
+
+.nav__wrapper
+	display: none
+	position: fixed
+	top: 0
+	z-index: 98
+	width: 100%
+	background-color: $menu_bg
+	//opacity: .8
+	//width: 140px
+	//height: 100%
+.nav__list
+	//text-align: center
+	//font-size: 0
+.nav__item
+	//display: inline-block
+	float: left
+	display: block
+	width: 20%
+	//font-size: $baseFontSize
+.nav__link
+	display: block
+	padding: 16px 0
+	text-align: center
+	font-size: em(19px)
+	color: rgba($body_second_color, .8)
+	&:hover,&:focus,&.active
+		text-decoration: none
+		color: rgba($body_second_color, 1)
+		background-color: #111
+.nav__link_1
+	&.active
+		background-color: $section_1_bg
+		color: $s1_text_color
+.nav__link_2
+	&.active
+		background-color: $section_2_bg
+		color: $s2_text_color
+.nav__link_3
+	&.active
+		background-color: $section_3_bg
+		color: $s3_text_color
+.nav__link_4
+	&.active
+		background-color: $section_4_bg
+		color: $s4_text_color
+
+// @media only screen and (max-width : 559px)
+// 	.nav_container
+// 		.nav__link
+// 			padding: 16px 3px
+// 			font-size: em(16px)
+@media only screen and (max-width : 425px)
+	.nav_container
+		.nav__link
+			font-size: em(16px)
+			line-height: 16px
+@media only screen and (max-width : 374px)
+	.nav_container
+		.nav__link
+			font-size: em(14px)
+			line-height: 16px
+
+//- ______________________ SECTIONS ______________________ -//
+
+.sections
+.sections_top
+	padding-top: 30px
+	padding-bottom: 60px
+	//min-height: 100%
+	//border-bottom: 1px solid $heading_border_bg
+	&:nth-child(odd)
+		background-color: lighten($sections_bg, 2%) !important
+.sections_top-js
+	min-height: 100%
+	padding-top: 60px
+	padding-bottom: 100px
+	&:nth-child(odd)
+		background-color: $sections_bg !important
+.sections_center
+	position: relative
+	height: 100%
+	letter-spacing: -0.5em
+	text-align: center
+.sections_center > *
+	letter-spacing: normal
+.sections_center::after
+	content: " "
+	display: inline-block
+	height: 100%
+	width: 0
+	vertical-align: middle
+.sections_center > div
+	display: inline-block
+	vertical-align: middle
+	//margin: 0
+	//padding: 20px
+	//background: black
+.heading
+	font-weight: normal
+	color: $s1_heading_color
+.heading_center
+	text-align: center
+.heading_remove-mb
+	margin-bottom: 0
+
+h3.heading
+	padding-bottom: 10px
+	font-size: em(22px)
+	border-bottom: 1px solid $heading_border_bg //#224
+	border-radius: 6%
+	// white-space: nowrap
+	// overflow: hidden
+	// text-overflow: ellipsis
+h4.heading
+	font-size: em(19px)
+	color: darken($sections_heading_color, 10%)
+	i
+		margin-right: 10px
+		color: darken($sections_color, 5%) //darken($sections_heading_color, 50%)
+#work h4.heading
+	font-weight: 300
+// 	margin-bottom: 24px
+
+@media only screen and (max-width : 425px)
+	.sections_top
+		padding-top: 0
+		padding-bottom: 30px
+	.sections_top-js
+		padding-top: 40px
+		padding-bottom: 80px
+
+	h3.heading
+		margin-bottom: 0
+		line-height: 28px
+	#contact h3.heading
+		margin-bottom: 0.9em
+
+//- ______________________ HEADER ______________________ -//
+
+#header
+	font-size: em(16px)
+	//background-image: url("../img/back-dark.png")
+	// background-repeat: no-repeat
+	// background-position: center bottom
+	//background: linear-gradient(-20deg, #111 0%, #111a2a 80%, #111f2f 100%)
+	//background: linear-gradient(150deg, rgba(#458977,.8) 0%, rgba(#458968,.8) 30%, rgba(#127845,.8) 100%)
+	//background: linear-gradient(145deg, #1b1b1b 0%, #111 100%)
+	//background: linear-gradient(145deg, rgba(#1b1b1b, 1) 0%, rgba(#012, .85) 100%)
+
+	// background: -moz-linear-gradient(-55deg, #1b1b1b 0%, #001929 100%) /* FF3.6-15 */
+	// background: -webkit-linear-gradient(-55deg, #1b1b1b 0%, #001929 100%) /* Chrome10-25,Safari5.1-6 */
+	// background: linear-gradient(145deg, #1b1b1b 0%, #001929 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b1b', endColorstr='#001929',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
+
+	background-color: #1b1b1b
+	//background-color: #111
+	//background: linear-gradient(90deg, rgba(#000, .9) 50%, rgba(#000, .92) 50%)
+	//background: linear-gradient(35deg, rgba(#070707, 1) 0%, rgba(#191919, 1) 100%)
+
+	*::selection
+		background-color: transparent
+		color: $body_select_color
+.header__content
+	padding: 0 20px 55px
+	text-align: center
+
+
+.header__heading
+	//font-family: 'Monoton', cursive
+	font-weight: 300
+	//text-shadow: 1px 0 0 #48d
+.header__heading_ultra
+	margin: 0
+	font-family: 'Exo 2', sans-serif
+	font-weight: 100
+	font-size: em(74px)
+	letter-spacing: -0.6px
+	//font-style: italic
+	text-transform: uppercase
+	//text-shadow: 1px 1px 0 rgba(#f48, 1), 2px 2px 0 rgba(#48f, 1)
+
+.header__heading_hypo
+	margin: 0
+	font-size: em(28px)
+	b
+		font-weight: normal
+		//color: tint($body_select_color, 70%)
+
+// shadow
+.header__heading,.header-list__item
+	//text-shadow: 2px 2px 0 rgba(#e44, .9)
+	// Как вариант можно прикрутить анимацию
+
+@media only screen and (max-width : 468px)
+	#header
+		font-size: em(14px)
+
+@media only screen and (max-width : 420px)
+	#header
+		font-size: em(13px)
+
+@media only screen and (max-width : 395px)
+	.header__heading_ultra
+		font-size: em(68px)
+		margin-bottom: 10px
+	.header__heading_hypo
+		font-size: em(26px)
+
+@media only screen and (max-width : 359px)
+	.header__heading_ultra
+		font-size: em(60px)
+
+//- ______________________ HEADER MENU ______________________ -//
+
+.header-list__wrapper
+	margin-top: 25px
+.header-list__list
+	text-align: center
+	font-size: 0
+.header-list__item
+	position: relative
+	display: inline-block
+	font-size: $baseFontSize
+	//border-right: 2px solid #2a2a2a
+	//border-right: 2px solid $haeder_border_color
+	margin-right: 4px
+	&:last-child
+		border-right: none
+		margin-right: 0
+.header-list__link
+	display: block
+	padding: 8px 14px
+	text-align: center
+	font-size: em(22px)
+	background-color: $header_menu_bg
+	color: $header_second_color
+	//text-shadow: 1px 1px 0 #48d
+	//border-top: 1px solid #048
+	//border-left: 1px solid #048
+	//border-top: 2px solid transparent
+	//border-right: 2px solid transparent
+	//border-radius: 2px
+	//text-transform: uppercase
+	//color: #666
+	transition: all 0.1s
+	&:hover,&:focus
+		text-decoration: none
+		background-color: $header_menu_focus_bg
+		color: $header_second_sel_color
+		//border-color: #048
+
+$hllbdrz: 5px
+.header-list__item:first-child .header-list__link
+	border-radius: $hllbdrz 0 0 $hllbdrz
+.header-list__item:last-child .header-list__link
+	border-radius: 0 $hllbdrz $hllbdrz 0
+
+@media only screen and (max-width : 599px)
+	.header-list__item
+		font-size: 14px
+	.header-list__link
+		margin-bottom: 4px
+
+@media only screen and (max-width : 425px)
+	.header-list__item
+		font-size: 13px
+
+// @media only screen and (max-width : 524px)
+// 	.header-list__item
+// 		display: block
+// 	.header-list__link
+// 		display: inline-block
+
+//- ______________________ ARROW ______________________ -//
+
+.header__arrow
+	position: absolute
+	display: block
+	width: 100%
+	text-align: center
+	bottom: 50px
+	//background-color: #FFF
+	i
+		font-size: em(52px)
+		color: rgba($body_second_color, .3)
+
+@media only screen and (max-height : 499px)
+	.header__arrow
+		display: none
+
+//- ______________________ ABOUT ______________________ -//
+
+#about
+	font-size: em(20px)
+	background-color: $section_1_bg
+	//background-image: url("../img/back1-dark.png")
+	color: $s1_text_color
+	//background: linear-gradient(180deg, #111 0%, #000 100%)
+	//background: linear-gradient(180deg, #1b1b1b 0%, #1b1b24 100%)
+	//background: linear-gradient(145deg, #ee4 0%, #ee5 100%)
+	//background: linear-gradient(180deg, #1b1b1b 0%, #222 100%)
+	*::selection
+		background-color: transparent
+		color: $s1_text_sel_color
+
+.about__wrapper
+	display: inline-block
+	text-align: left
+
+@media only screen and (max-width : 768px)
+	#about
+		font-size: em(18px)
+
+@media only screen and (max-width : 359px)
+	#about
+		font-size: em(16px)
+//- ______________________ SKILLS ______________________ -//
+
+#skills
+	font-size: em(20px)
+	background-color: $section_2_bg
+	color: $s2_text_color
+	*::selection
+		background-color: transparent
+		color: $s2_text_sel_color
+
+.skills__joint
+	@extend .clearfix
+.skills__left
+	position: relative
+	width: 50%
+	float: left
+	text-align: right
+	padding-right: 21px
+	&::before
+		content: ''
+		position: absolute
+		right: -14px
+		bottom: -11%
+		width: 30px
+		height: 30px
+		border-right: 1px solid $heading_border_bg
+		border-bottom: 1px solid $heading_border_bg
+		transform: rotate(45deg)
+	&::after
+		content: ''
+		position: absolute
+		z-index: 1
+		top: 0
+		right: 0
+		width: 1px
+		height: 112% //140%
+		background-color: $heading_border_bg
+		//background: linear-gradient(180deg, $heading_border_bg 0%, $sections_bg 100%)
+	//border-right: 1px solid #333
+.skills__right
+	width: 50%
+	float: right
+	text-align: left
+	padding-left: 20px
+	//border-left: 1px solid #333
+
+.skills__icons
+	text-align: center
+	margin-top: 40px
+.skills__icon
+	display: inline-block
+	vertical-align: top
+	width: 110px
+	height: 110px
+	margin: 0
+	margin-right: -10px
+	padding: 15px
+	//border-radius: 50%
+	//background-color: rgba(#000, .2)
+	opacity: .7
+	//filter: grayscale(100%)
+	// &:hover
+	// 	opacity: .8
+	img
+		width: 100%
+		height: auto
+
+.skills__list
+
+.skills__item
+
+
+@media only screen and (max-width : 768px)
+	#skills
+		font-size: em(18px)
+	.skills__icons
+		margin-top: 35px
+	.skills__icon
+		width: 90px
+		height: 90px
+
+@media only screen and (max-width : 510px)
+	#skills
+		font-size: em(16px)
+	.skills__icons
+		margin-top: 35px
+	.skills__icon
+		width: 80px
+		height: 80px
+		margin: 0
+		padding: 20px
+
+@media only screen and (max-width : 425px)
+	#skills
+		font-size: em(16px)
+		.heading_center
+			text-align: left
+		h4.heading
+			margin: 10px 0
+	.skills__joint
+		text-align: left
+	.skills__left
+		width: auto
+		float: none
+		text-align: inherit
+		padding-right: 0
+		&::before,
+		&::after
+			display: none
+	.skills__right
+		width: auto
+		float: none
+		text-align: inherit
+		padding-left: 0
+	.skills__icons
+		display: none
+		margin-top: 30px
+	.skills__icon
+		width: 60px
+		height: 60px
+		padding: 15px
+
+//- ______________________ RESUME ______________________ -//
+
+$resume_color: #fff
+
+.resume-wrapper
+	position: relative
+	z-index: 2
+	margin-top: 100px
+	font-size: em(18px)
+	color: $resume_color
+	text-align: center
+	i
+		display: block
+		font-size: em(33px)
+		color: #048 //rgba($resume_color, 1)
+
+.resume-text
+	position: relative
+	display: inline-block
+	&::after
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		bottom: -2px
+		width: 100%
+		height: 2px
+		background-color: rgba($resume_color, .2)
+
+.resume-link
+
+@media only screen and (max-width : 425px)
+	.resume-wrapper
+		margin-top: 20px
+		font-size: em(16px)
+		text-align: left
+
+//- ______________________ WORK ______________________ -//
+
+#work
+	font-size: em(18px)
+	background-color: $section_3_bg
+	color: $s3_text_color
+	*::selection
+		background-color: transparent
+		color: $s3_text_sel_color
+
+h4.heading.work__heading
+	margin: 0.93569em 0
+	strong
+		font-weight: inherit
+
+.work__link
+	position: relative
+	display: inline-block
+	margin-bottom: 6px
+	color: $s3_text_color
+	border-bottom: 2px solid darken($s3_text_color, 40%)
+	&::after
+		content: ''
+		position: absolute
+		left: auto
+		right: 0
+		//margin: 0 auto
+		bottom: -2px
+		width: 0
+		height: 2px
+		//background-color: darken($s3_text_color, 40%)
+		background-color: lighten($heading_border_bg, 35%)
+		transition: all .15s cubic-bezier(.18,.58,.57,.42)
+		box-shadow: inset -35px 0px 39px -18px rgba($body_bgc, .3), inset 35px 0px 39px -18px rgba($body_bgc, .3)
+	&:hover,&:focus
+		text-decoration: none
+		color: $s3_text_color
+		//border-bottom: 2px solid lighten($heading_border_bg, 10%)
+		//border-bottom: 2px solid darken($s3_text_color, 10%)
+		&::after
+			left: 0
+			right: auto
+			width: 100%
+			background-color: lighten($heading_border_bg, 10%)
+
+.examples__wrapper
+	@extend .clearfix
+	margin-left: -5px
+	margin-right: -5px
+.examples__item
+	float: left
+	width: 50%
+	padding: 5px
+	&:hover,&:focus
+		//background-color: lighten($section_3_bg, 10%)
+
+.examples__img-link
+	position: relative
+	display: block
+	overflow: hidden
+	&:hover,&:focus
+		text-decoration: none
+	&::before
+		$trn_bd_size: 56px
+		content: ''
+		position: absolute
+		top: -$trn_bd_size
+		right: -$trn_bd_size
+		border: $trn_bd_size solid transparent
+		background-color: #ccc // For Firefox
+		border-bottom-color: #ccc
+		transform: rotate(45deg);
+		//opacity: .6
+	&::after
+		content: '\f4a4'
+		position: absolute
+		top: 4px
+		right: 12px
+		font-family: "Ionicons"
+		//font-family: FontAwesome
+		font-size: em(28px)
+		color: $section_3_bg
+		opacity: .8
+	&:focus
+		//box-shadow: 0 0 10px darken($section_3_bg, 30%)
+		&::after
+			color: lighten($heading_border_bg, 10%)
+
+.examples__img
+	display: block
+	max-width: 100%
+	height: auto
+.examples__panel
+	@extend .clearfix
+	margin-top: 2px
+	overflow: hidden
+.examples__link
+	float: left
+	width: 50%
+	padding: 14px 6px 0
+	line-height: 16px
+	margin-bottom: -99999px
+	padding-bottom: 99999px
+	text-align: center
+	background-color: $heading_border_bg
+	color: #ddd
+	span
+		display: inline-block
+		padding-bottom: 14px
+	&:first-child
+		border-right: 1px solid darken($section_3_bg, 3%)
+	&:last-child
+		border-left: 1px solid darken($section_3_bg, 3%)
+	&:hover,&:focus
+		text-decoration: none
+		background-color: lighten($heading_border_bg, 4%)
+		background: linear-gradient(90deg, lighten($heading_border_bg, 4%) 0%, $heading_border_bg 100%)
+		color: #fff
+	&:active
+		background-color: lighten($heading_border_bg, 1%)
+		background: linear-gradient(90deg, lighten($heading_border_bg, 1%) 0%, darken($heading_border_bg, 3%) 100%)
+
+@media only screen and (max-width : 768px)
+	#work
+		font-size: em(17px)
+
+@media only screen and (max-width : 425px)
+	#work
+		font-size: em(16px)
+	.examples__item
+		float: none
+		width: auto
+	.examples__img-link
+		&::after
+			top: 6px
+
+@media only screen and (max-width : 360px)
+	.examples__link
+		padding-top: 11px
+		span
+			padding-bottom: 11px
+
+@media only screen and (max-width : 359px)
+	.examples__img-link
+		&::after
+			top: 1px
+			right: 9px
+		&::before
+			$trn_bd_size: 46px
+			top: -$trn_bd_size
+			right: -$trn_bd_size
+			border: $trn_bd_size solid transparent
+
+//- ______________________ CONTACT ______________________ -//
+
+#contact
+	position: relative
+	font-size: em(20px)
+	text-align: center
+	background-color: $section_4_bg
+	color: $s4_text_color
+	*::selection
+		background-color: transparent
+		color: $s4_text_sel_color
+
+.contact_heading
+	margin-top: 0
+
+.contact__input
+	$line-height: 32px
+	input, textarea
+		width: 90%
+		//margin-bottom: 12px
+		padding: 13px
+		border: none
+		//border-bottom: 2px solid $s4_input_border
+		outline: none
+		font-size: em(15px)
+		line-height: $line-height
+		background-color: $s4_input_bg
+		color: $s4_input_color
+		//border-radius: 3px
+		&:focus
+			//border: 3px solid $s4_input_focus_border
+			//border-color: lighten($heading_border_bg, 10%) //$s4_input_focus_border
+			//background-color: $s4_input_focus_bg
+			color: $s4_input_focus_color
+		&:hover
+			//border-color: lighten($section_4_bg, 10%)
+	input
+		height: 54px
+	textarea
+		resize: none
+		height: 10*$line-height
+		overflow: hidden
+
+.contact__input	input,.contact__input textarea,.button
+	//transition: all 0.15s
+
+.contact__input_hr
+	position: relative
+	margin: 0 auto
+	height: 2px
+	width: 90%
+	&:after
+		content: ''
+		position: absolute
+		left: auto
+		right: 0
+		width: 0%
+		height: 2px
+		background-color: lighten($s4_button_bg, 30%)
+		transition: all .15s cubic-bezier(.18,.58,.57,.42)
+		box-shadow: inset -35px 0px 39px -18px rgba($body_bgc, .3), inset 35px 0px 39px -18px rgba($body_bgc, .3)
+.contact__input
+	input:focus + .contact__input_hr,
+	textarea:focus + .contact__input_hr
+		&:after
+			left: 0
+			right: auto
+			width: 100%
+			background-color: $s4_button_bg
+
+textarea + .contact__input_hr
+	margin-top: -7px
+
+//- Contact info box
+.contact-wrapper
+	display: inline-block
+	width: 90%
+.contact-info__text
+	display: inline-block
+	cursor: pointer
+	margin: 10px 0
+	font-size: em(16px)
+	line-height: 22px
+	border-bottom: 1px dashed #555
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	transition: all 0.1s
+	&:hover
+		border-bottom-color: darken($s4_text_color, 15%)
+.contact-info__content
+	padding: 10px
+	text-align: left
+	font-size: em(14px)
+	color: rgba(#fff, .8)
+	background-color: rgba(#000, .4)
+.contact-info__item
+	cursor: default
+	i
+		width: 20px
+		margin-right: 3px
+		color: rgba(#fff, .5)
+	.fa-twitter
+		color: rgba(#1DA1F2, .8)
+	.fa-skype
+		color: rgba(#00AFF0, .8)
+	.fa-facebook-square
+		color: rgba(#3B5998, .8)
+
+
+// Placeholders
+*::-webkit-input-placeholder
+	color: $inputPlaceholder
+	opacity: 1
+
+*:-moz-placeholder
+	color: $inputPlaceholder
+	opacity: 1
+
+*::-moz-placeholder
+	color: $inputPlaceholder
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: $inputPlaceholder
+	opacity: 1
+
+// Chrome Autofill options
+// input:-webkit-autofill
+// 	-webkit-box-shadow: 0 0 0px 1000px $s4_autofill_bg inset
+// 	-webkit-text-fill-color: $s4_autofill_color !important
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus
+	-webkit-box-shadow: 0 0 0px 1000px $s4_autofill_bg inset
+	-webkit-text-fill-color: $s4_autofill_color !important
+	transition: background-color 5000s ease-in-out 0s
+
+// body input:required:valid,
+// body textarea:required:valid
+// 	background-color: $inputRequireValidBg
+// 	color: $inputRequireValid
+// body input:focus:required:invalid,
+// body textarea:focus:required:invalid
+// 	background-color: $inputRequireInvalidBg
+// 	color: $inputRequireInvalid
+
+@media only screen and (max-width : 768px)
+	#contact
+		font-size: em(18px)
+
+@media only screen and (max-width : 425px)
+	#contact
+		font-size: em(16px)
+	.contact-wrapper
+		margin-bottom: 15px
+	.contact__input
+		$line-height: 23px
+		input, textarea
+			//margin-bottom: 8px
+			line-height: $line-height
+		// don't forget change when change line-height
+		input
+			height: 47px
+		textarea
+			height: 7*$line-height
+
+	#contact.sections_top-js
+		padding-bottom: 40px !important
+	.contact-info__text
+		margin: 6px 0
+	.contact-info__content
+		margin-bottom: 20px
+
+//- ______________________ BUTTON ______________________ -//
+
+.button__wrapper
+	//text-align: left
+	//padding-left: 5%
+.button
+	display: inline-block
+	//vertical-align: top
+	padding: 15px
+	font-size: em(16px)
+	line-height: 20px
+	text-align: center
+	outline: none
+	border: none
+	border-radius: 0 0 3px 3px
+	background-color: $s4_button_bg
+	color: $s4_button_color
+	border-bottom: 4px solid $s4_button_border_color
+	&:hover,&:focus
+		text-decoration: none
+		color: $s4_button_sel_color
+		background-color: $s4_button_sel_bg
+		background: linear-gradient(145deg, $s4_button_sel_bg 0%, $s4_button_bg 100%)
+	&:active
+		margin-top: 2px
+		border-bottom-width: 2px
+		background: linear-gradient(145deg, darken($s4_button_sel_bg, 2%) 0%, darken($s4_button_bg, 2%) 100%)
+	// i
+	// 	display: inline-block
+	// 	margin-left: 5px
+	// 	vertical-align: top
+	// 	font-size: em(16px)
+	// 	line-height: 20px
+
+.button_contact
+	width: 90%
+
+@media only screen and (max-width : 425px)
+	.button
+		line-height: 14px
+
+//- ______________________ FOOTER ______________________ -//
+
+.footer
+	position: static
+	width: 100%
+	text-align: center
+	font-size: em(14px)
+	padding: 10px 15px
+	//background-color: $footer_bg
+	//background: linear-gradient(135deg, rgba(#1b1b1b, 1) 50%, rgba(#000, .3) 50%)
+	//box-shadow: inset 0 2px 8px #000
+.footer_fixed
+	position: fixed
+	bottom: 0
+.footer_internal
+	position: relative
+	bottom: 0
+	margin-top: -47px
+	background-color: $footer_internal_bg
+	box-shadow: none
+	.footer__wrapper
+		color: $footer_internal_color
+.footer__wrapper
+	display: inline-block
+	color: $footer_color
+	& > div
+		display: inline-block
+		vertical-align: middle
+
+.social
+	margin: 0
+	font-size: em(22px)
+.footer__link
+	color: inherit
+	transition: all 0.15s
+	&:hover,&:focus
+		color: $footer_color_hover
+	i
+		margin: 0 5px
+.current-lang
+	//
+.footer__divider
+	margin: 0 10px
+	color: $footer_devider_color
+
+// Prevent blocking .fa-facebook-square class by ADBlock
+.fa-facebook:before
+	content: '\f082'
+
+//- Tooltip
+.tooltip
+	position: relative
+	display: inline-block
+	border-bottom: 1px dotted black
+	&:hover .tooltiptext
+		visibility: visible
+		opacity: 1
+.tooltiptext
+	visibility: hidden
+	width: 120px
+	background-color: black
+	color: #fff
+	text-align: center
+	border-radius: 6px
+	padding: 5px 0
+	position: absolute
+	z-index: 1
+	bottom: 100%
+	left: 50%
+	margin-left: -60px
+	opacity: 0
+	transition: opacity 0.25s
+
+
+@media only screen and (max-width : 425px)
+	.footer
+		font-size: em(13px)
+	.footer__divider
+		margin: 0 8px
+	.footer_internal
+		margin-top: -45px
+
+@media only screen and (max-width : 374px)
+	.footer
+		font-size: em(12px)
+	.footer__divider
+		margin: 0 3px
+	.footer_internal
+		margin-top: -43px
+
+//- ______________________ ARROW ______________________ -//
+
+.to-top
+	position: absolute
+	bottom: 10px
+	right: 20px
+	z-index: 100
+	background-color: #666
+	border-radius: 50%
+	border-bottom: 4px solid #444
+	&:hover,&:focus
+		background-color: #727272
+		background: linear-gradient(145deg, #727272 0%, #666 100%)
+	a
+		padding: 0 15px
+	i
+		font-size: em(24px)
+		line-height: 36px
+		color: darken($body_second_color, 10%)
+		text-shadow: 1px 1px 0 #333
+
+//- ______________________ MODAL ______________________ -//
+
+.modal
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	padding: 3%
+	text-align: center
+	background-color: $modal_bg
+	overflow-y: auto
+	z-index: 99
+.modal.modal_visible
+	display: block
+.modal__close-btn
+	position: fixed
+	top: 20px
+	right: 20px
+	width: 46px
+	height: 46px
+	font-size: em(32px)
+	background-color: rgba($modal_btn_bg, .9)
+	color: rgba($modal_color, .9)
+	cursor: pointer
+	overflow: hidden
+	border-radius: 50%
+	transition: background .25s, color .25s
+	//box-shadow: 0 0 3px 2px rgba(#000, .5)
+	i
+		position: relative
+		top: 2px
+	&:hover,&:focus
+		background-color: rgba($modal_btn_bg, 1)
+		color: $modal_color
+	&:active
+		transition: transform .2s
+		transform: rotate(90deg)
+.modal__img
+	display: inline-block
+	max-width: 100%
+	height: auto

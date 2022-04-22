@@ -1,0 +1,463 @@
+/* GLOBALS */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap')
+
+*::-webkit-input-placeholder
+  color: $inputPlaceholder !important
+  opacity: 1 !important
+
+*:-moz-placeholder
+  color: $inputPlaceholder !important
+  opacity: 1 !important
+
+*::-moz-placeholder
+  color: $inputPlaceholder !important
+  opacity: 1 !important
+
+*:-ms-input-placeholder
+  color: $inputPlaceholder !important
+  opacity: 1 !important
+
+// body input:required:valid,
+// body textarea:required:valid
+//  color: $inputRequireValid
+// body input:focus:required:invalid,
+// body textarea:focus:required:invalid
+//  color: $inputRequireInvalid
+
+// Hiding vertical scrollbar in Chrome (for perfectpixel)
+// ::-webkit-scrollbar
+//  display: none
+
+// .row>div
+//  border: 1px solid red
+
+// *,:before,:after
+//  box-sizing: border-box
+
+// html
+  // overflow: hidden // For Magnific Popup scrollbar problem
+  //margin-right: 0 !important // For Magnific Popup scrollbar problem
+  // overflow-y: auto !important
+  // Заплатка для ошибки c .row
+  // Не годится !!! smooth scroll и подобные не пашут
+  // overflow: hidden
+
+// Disable android font boosting
+html *
+  max-height: 1000000px
+
+html
+  font-size: $baseFontSize
+
+  &::-webkit-scrollbar-track
+    background-color: $menuBgc
+  &::-webkit-scrollbar
+    width: 10px
+    background-color: $menuBgc
+  &::-webkit-scrollbar-thumb
+    background-color: $bgColor
+
+html, body
+  // For gradient background
+  min-height: 100%
+  height: 100%
+  -webkit-overflow-scrolling: touch !important
+  scroll-behavior: smooth
+
+body
+  position: relative
+  min-width: 320px
+  height: 100%
+  font-family: $defaultFontFamily
+  // font-size: $baseFontSize
+  line-height: $baseLineHeight
+  // font-weight: 500
+  // font-family: Consolas
+  background-color: $bgColor
+  color: $textColor
+  // color: $textColor
+  // overflow-x: hidden
+  // overflow: hidden
+  /* font-family: 'Ubuntu', sans-serif */
+
+  ::selection
+    background-color: #FFE800
+    color: black
+
+// .container
+//   @media (min-width: 1200px)
+//     max-width: 1310px
+
+// .wrapper
+//  position: relative
+//  // For Magnific Popup scrollbar problem ( Better to use 100% with html, body {height 100%} )
+//  // min-height: 100vh
+//  min-height: 100%
+//  height: auto
+
+  // overflow-x: hidden
+
+input:not([type="checkbox"]):not([type="radio"]), textarea//, select
+  -webkit-appearance: none !important // Remove inputs and textareas inner shadow on Mobile Safari (iPhone)
+  // border-radius: 0 !important // Если бордюры не нужны, нужно сбросить иначе на ios будут по дефолту
+
+a
+  color: $linkColor
+
+  // color: $link
+  // &:hover, &:focus
+  //  color: $linkHover
+  //  text-decoration: none
+
+iframe
+  border: none
+
+// p
+  // margin-bottom: 20px
+
+/* Headings */
+// h1, .h1, h2, .h2
+
+// h1, .h1
+
+// h2, .h2
+
+// h3, .h3
+
+// /* Hidden/Visible classes */
+
+// ol, ul
+//  li
+
+// ol
+//  li
+
+// dl
+// dt,dd
+
+// dt
+
+// dd
+
+/* Text */
+
+// .text-center
+//  text-align: center
+
+// .text-color-green
+//  color: $green
+
+// .text-accent
+//  color: $accent
+
+// .text-upperscase
+//  text-transform: uppercase
+
+/* Inputs */
+
+// input:not([type="checkbox"]):not([type="radio"]), textarea // Плохо, т.к. перебивает все последующие стили
+
+// input, textarea
+
+// input
+//  height: 45px
+
+// textarea
+//  resize: none
+
+// input[type="checkbox"], input[type="radio"]
+//  display: none
+
+// input[type=number]::-webkit-inner-spin-button,
+// input[type=number]::-webkit-outer-spin-button
+//  -webkit-appearance: none
+//  margin: 0
+
+// select
+
+/* Buttons */
+
+// .container
+//   position: absolute
+//   top: 50%
+//   left: 50%
+//   transform: translate(-50%, -50%)
+//   width: 100%
+//   max-width: 380px
+//   /* height: 100vh */
+//   margin: 0 auto
+//   /* padding: 320px 0 0 */
+//   padding: 40px 20px 20px 0
+//   background-color: #f6f6f6
+
+// $gridBdc: #ededed
+// .grid
+//   position: absolute
+//   top: 0
+//   /* right: 0 */
+//   bottom: 0
+//   left: 50%
+//   z-index: -1
+//   display: flex
+//   width: 100%
+//   max-width: 910px
+//   border-right: 1px solid $gridBdc
+//   border-left: 1px solid $gridBdc
+//   transform: translateX(-50%)
+// .grid__col
+//   flex: 1
+//   &:not(:last-child)
+//     border-right: 1px solid $gridBdc
+
+.logo, .social, .menu, .mailto
+  z-index: 1
+
+.logo
+  position: fixed
+  /* left: 50% */
+  font-weight: bold
+  font-size: 18px
+  font-size: 1.125rem
+  // line-height: 22px
+  /* letter-spacing: 5px */
+  text-decoration: none
+  /* text-align: center */
+  color: $textColor
+  /* transform: translateX(-50%) */
+  &:hover, &:focus
+    opacity: 0.7
+  @media (min-width: 768px)
+    top: 20px
+    top: 1.25rem
+    left: 30px
+    left: 1.875rem
+  @media (max-width: 767px)
+    top: 23px
+    left: 20px
+
+.social
+  display: none
+  @media (min-width: 768px)
+    display: flex
+    position: fixed
+    /* top: 16px */
+    top: 22px
+    top: 1.375rem
+    right: 27px
+    right: 1.6875rem
+    /* left: 100px */
+    /* background-color: rgba(red, 0.2) */
+    /* padding: 7px */
+    /* background-color: #d9d9d9 */
+    /* background-color: #000 */
+    /* border-radius: 30px */
+    a
+      margin-left: 6.5px
+      // margin-left: 0.40625rem
+      margin-left: 8px
+      margin-left: 0.5rem
+      padding: 0 3px
+      padding: 0 0.1875rem
+      color: $textColor
+      &:hover, &:focus
+        opacity: 0.7
+
+/* $menuBgc: #111 */
+.menu
+  display: none
+  @media (min-width: 768px)
+    display: block
+    position: fixed
+    // bottom: 20px
+    // left: 30px
+    bottom: 0
+    left: 0
+    background-color: $menuBgc
+    /* transform: translateX(-50%) */
+    /* transform: translateX(-500px) */
+    /* opacity: 0.5 */
+    ul
+      display: flex
+      /* margin: 0 20px */
+      margin: 0
+      padding: 0
+      list-style-type: none
+      li
+        /* margin: 0 20px */
+        font-size: 12px
+        font-size: 0.75rem
+        &:first-child
+          a
+            padding-left: 40px
+            padding-left: 2.5rem
+        &:last-child
+          a
+            padding-right: 40px
+            padding-right: 2.5rem
+        a
+          display: block
+          padding: 20px 20px
+          padding: 1.25rem
+          text-decoration: none
+          color: $textColor
+          &:hover, &:focus
+            /* text-decoration: underline */
+            background-color: $menuBgcHover
+            /* background-color: lighten($menuBgc, 5%) */
+
+.mailto
+  position: fixed
+  bottom: 20px
+  bottom: 1.25rem
+  font-size: 12px
+  font-size: 0.75rem
+  color: $linkColor
+  @media (min-width: 768px)
+    right: 30px
+    right: 1.875rem
+  @media (max-width: 767px)
+    // padding: 10px 30px
+    // left: 50%
+    left: 20px
+    // background-color: #eee
+    // transform: translateX(-50%)
+  @media (max-height: 599px)
+    left: auto
+    right: 20px
+
+.about
+  // max-width: 743px
+  font-family: Ubuntu
+  @media (min-width: 768px)
+    display: flex
+    max-width: 46.4375rem
+
+.greeting
+  // min-width: 233px
+  // max-width: 233px
+  min-width: 14.5625rem
+  max-width: 14.5625rem
+  font-weight: bold
+  font-size: 42px
+  font-size: 2.625rem
+  line-height: 1.17
+  letter-spacing: 0.065em
+  letter-spacing: 0.170625rem
+  text-transform: uppercase
+  // strong
+    // border-bottom: 5px solid
+  a
+    text-decoration: none
+    border-bottom: 5px solid
+
+.about__text
+  max-width: 320px
+  margin: 25px 0 0 0
+  font-size: 1rem
+  line-height: 1.56
+  // color: #aaa
+  opacity: 0.6
+  @media (min-width: 360px)
+    font-size: 1.2rem
+  @media (min-width: 768px)
+    max-width: none
+    margin: 1px 0 0 20px
+    // font-size: 22px
+    font-size: 1.375rem
+
+  a
+    text-decoration: none
+    border-bottom: 2px solid rgba($linkColor, 0.8)
+    &:hover
+      border-color: rgba($linkColor, 1)
+
+.burger
+  @media (max-width: 767px)
+    position: fixed
+    // bottom: -10px
+    top: 15px
+    right: 15px
+    width: 40px
+    height: 40px
+    background: #000
+    border: none
+    border-radius: 50%
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      z-index: 2
+      background: #000
+      border-radius: 50%
+      opacity: 0
+      transform: scale(1)
+      transition: transform 3s, opacity 0.3s
+    &:hover
+      &::after
+        transform: scale(1000)
+        opacity: 1
+    span
+      position: absolute
+      top: 50%
+      left: 50%
+      display: block
+      width: 22px
+      height: 2px
+      background-color: white
+      transform: translate(-50%, -50%)
+      border-radius: 5px
+      &::before, &::after
+        content: ''
+        position: absolute
+        right: 0
+        left: 0
+        height: 2px
+        background-color: white
+        border-radius: 5px
+      &::before
+        top: -7px
+      &::after
+        bottom: -7px
+  @media (min-width: 768px)
+    display: none
+
+.page
+  // position: absolute
+  // top: 0
+  // right: 0
+  // bottom: 0
+  // left: 0
+  // height: 800px
+  padding: 65px 20px
+  font-size: 60px
+  // background-color: white
+  // transform: translateY(100%)
+  // opacity: 0
+  $cubic-bezier: .22,.98,.73,.99
+  transition: all 0.9s cubic-bezier($cubic-bezier)
+  @media (min-height: 600px)
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+    padding: 0 20px
+  // scroll-snap-align: center
+  // scroll-snap-align: start
+  // scroll-snap-stop: normal
+
+// .page--1
+//   background-color: rgba(#faa, 0.2)
+// .page--2
+//   background-color: rgba(#afa, 0.2)
+// .page--3
+//   background-color: rgba(#aff, 0.2)
+// .page--4
+//   background-color: rgba(#aaf, 0.2)
+
+.page--show
+  transform: translateY(0)
+  opacity: 1

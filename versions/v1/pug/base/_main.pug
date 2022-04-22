@@ -1,0 +1,246 @@
+//- Preloader
+#preloader
+	.preloader__icon
+script
+	= "document.getElementById('preloader').style.display = 'block';"
+
+//- menu
+nav.nav__wrapper
+	.nav_container
+		ul.nav__list
+			li.nav__item
+				a(href="#header" class="nav__link") Home
+			li.nav__item
+				a(href="#about" class="nav__link nav__link_1") About
+			li.nav__item
+				a(href="#skills" class="nav__link nav__link_2") Skills
+			li.nav__item
+				a(href="#work" class="nav__link nav__link_3") Work
+			li.nav__item
+				a(href="#contact" class="nav__link nav__link_4") Contact
+
+header.sections.sections_center#header
+	.container
+		.header__content
+			//-p Hi, My name is
+			h1.header__heading.header__heading_ultra.
+				Kit Carver
+			//-p I am a
+			h2.header__heading.header__heading_hypo.
+				Front End #[b &amp;] WordPress Developer
+			.header-list__wrapper
+				ul.header-list__list
+					li.header-list__item
+						a.header-list__link(href="#about") About Me
+					li.header-list__item
+						a.header-list__link(href="#skills") Skills
+					li.header-list__item
+						a.header-list__link(href="#work") Work / Examples
+					li.header-list__item
+						a.header-list__link(href="#contact") Contact
+.header__arrow
+	i(class="ion-ios-arrow-thin-down")
+
+section.sections.sections_top#about
+	.container
+		.about__wrapper
+			h3.heading Front-end Developer
+			p.
+				I am a front-end developer, graduate of Internet Technology, based in Minsk, Belarus. I am new in freelance, but I have 6+ years experience creating responsive websites using HTML, CSS, and JavaScript.
+			p.
+				I write code that conforms to the W3C's web standards and semantic best practices. I use technologies like HTML5 (Jade), CSS3 (SASS) and JavaScript (jQuery), to transform static artwork into mobile first, pixel perfect, interactive and fully functional interfaces, exactly the way your designers intend them to be.
+			h3.heading WordPress Developer
+			p.
+				In many projects, client’s require the ability to manage the content of their website. To do this, I integrate front-end templates into WordPress themes and offer custom functionality via PHP.
+			p.
+				WordPress has become the simplest and quickest way for me to develop new, fully content managed websites. Sell your products online or set up a blog, either way, you'll have the ability to manage your content just the way you want to with only the parts you really need and nothing in your way.
+
+section.sections.sections_top#skills
+	.container
+		h3.heading.heading_center.heading_remove-mb I have some skills, which can be usefull for you
+
+		.skills__joint
+			.skills__left
+				h4.heading
+					i(class="fa fa-code" aria-hidden="true")
+					span Languages
+				ul.skills__list
+					li.skills__item HTML / HTML5
+					li.skills__item CSS / CSS3
+					li.skills__item JavaScript
+					li.skills__item PHP
+					li.skills__item SQL
+					li.skills__item XML
+
+				h4.heading
+					i(class="fa fa-cogs" aria-hidden="true")
+					span Libraries / Frameworks
+				ul.skills__list
+					li.skills__item JQuery (+AJAX)
+					li.skills__item Bootstrap 3 &amp; 4
+					li.skills__item Materialize
+					li.skills__item MDL
+
+			.skills__right
+				h4.heading
+					i(class="fa fa-cog" aria-hidden="true")
+					span Tools / Apps
+				ul.skills__list
+					li.skills__item Pug (Jade)
+					li.skills__item SASS (SCSS) / LESS
+					li.skills__item Node.js / NPM
+					li.skills__item Git / GitHub
+					li.skills__item Gulp
+					li.skills__item Photoshop
+					li.skills__item Illustrator
+
+				h4.heading
+					i(class="fa fa-wordpress" aria-hidden="true")
+					span WordPress Development
+				ul.skills__list
+					li.skills__item Custom Functionality
+					li.skills__item Admin/Plugin Setup
+					li.skills__item Themes
+
+		//- .skills__icons
+		//- 	.skills__icon
+		//- 		img(src="img/html5-icon.png" alt="html5")
+		//- 	.skills__icon
+		//- 		img(src="img/css3-icon.png" alt="css3")
+		//- 	.skills__icon
+		//- 		img(src="img/js-icon.png" alt="javascript")
+		//- 	.skills__icon
+		//- 		img(src="img/wp-icon.png" alt="wordpress")
+
+		//- .resume-wrapper
+		//- 	//i(class="ion-ios-arrow-thin-down")
+		//- 	.resume-text If you're looking to hire, here is my 
+		//- 		a.resume-link(href="resume.pdf" target="_blank") Resume
+
+section.sections.sections_top#work
+	.container
+		h3.heading Here you can read about my work
+		p.
+			If you need to create responsive website from your design that allow the user to experience your website in the best and most appropriate way suited to the device they are using. Or if you need WordPress website based on your design or you already have front-end template, you can easily order it from me.
+		p.
+			The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. Writing semantic markup that is documented and easy to read means it can be maintained and scaled in the future, and allows co-workers to quickly work with it.
+			My front-end build process involves the use of tools such as Jade, Sass, Gulp, Bower, and NPM to speed up development.
+		h4.heading.work__heading Here you can order some works from me:
+		.work__links
+			ul
+				li
+					a.work__link(href='#message' data-value="PSD to HTML") PSD to HTML
+				li
+					a.work__link(href='#message' data-value="PSD to Wordpress") PSD to Wordpress
+				li
+					a.work__link(href='#message' data-value="Fix issues") Fixing ANY issues on your website
+				li
+					a.work__link(href='#message' data-value="Improvements") All kind of improvements on your website
+				li
+					a.work__link(href='#message' data-value="Other works") Something else
+		h4.heading.work__heading Examples:
+		p.
+			This section is currently under construction.
+		//- h4.heading.work__heading Here some of my #[span &laquo;psd to html&raquo;] works:
+		//- .examples__wrapper
+		//- 	.examples__item
+		//- 		a.examples__img-link(target="_blank" href="img/template3-mid.jpg")
+		//- 			img.examples__img(src="img/template3.jpg" alt="template3")
+		//- 		.examples__panel
+		//- 			a.examples__link(target="_blank" href="img/template3-big.jpg")
+		//- 				span Source Image
+		//- 			a.examples__link.open-frame(target="_blank" href="examples/template3/index.html")
+		//- 				span Final result
+
+		//- 	.examples__item
+		//- 		a.examples__img-link(target="_blank" href="img/template2-mid.jpg")
+		//- 			img.examples__img(src="img/template2.jpg" alt="template2")
+		//- 		.examples__panel
+		//- 			a.examples__link(target="_blank" href="img/template2-big.jpg")
+		//- 				span Source Image
+		//- 			a.examples__link.open-frame(target="_blank" href="examples/template2/index.html")
+		//- 				span Final result
+
+		//- 	.examples__item
+		//- 		a.examples__img-link(target="_blank" href="img/template1-mid.jpg")
+		//- 			img.examples__img(src="img/template1.jpg" alt="template1")
+		//- 		.examples__panel
+		//- 			a.examples__link(target="_blank" href="img/template1-big.jpg")
+		//- 				span Source Image
+		//- 			a.examples__link.open-frame(target="_blank" href="examples/template1/index.html")
+		//- 				span Final result
+
+		//- h4 WordPress Examples will be soon...
+
+
+section.sections.sections_top#contact
+	.container
+		h3.heading.heading_center Here you can write me
+		form(method="POST" action="https://formspree.io/kitcarver@outlook.com")
+			input(type="hidden" name="_cc" value="nikitachigik@gmail.com")
+			.contact__input
+				input#name(type='text' name="name" placeholder="Name*" required)
+				.contact__input_hr
+				//- label(for='name') Name
+			.contact__input
+				input#email(type='email' name="_replyto" placeholder="E-Mail*" required)
+				.contact__input_hr
+				//- label(for='email') Email
+			.contact__input
+				input#subject(type='text' name="_subject" placeholder="Subject")
+				.contact__input_hr
+				//- label(for='subject') Subject
+			.contact__input
+				textarea#message(name="message" placeholder="Message*" required)
+				.contact__input_hr
+				//- label(for='textarea') Textarea
+			.button__wrapper
+				button.button.button_contact(type='submit') Submit
+					//- i(class="ion-paper-airplane")
+					//- i.material-icons.right send
+
+		.contact-wrapper
+			.contact-info__text See more contact information
+			.contact-info__content
+				.contact-info__item.
+					#[i(class="fa fa-envelope" aria-hidden="true")]
+					#[span(class='selectable') kitcarver@outlook.com]
+				.contact-info__item.
+					#[i(class="fa fa-skype" aria-hidden="true")]
+					#[span(class='selectable') kitcarver-webdevelopment]
+				.contact-info__item.
+					#[i(class="fa fa-twitter" aria-hidden="true")]
+					#[span(class='selectable') twitter.com/KitCarver]
+				.contact-info__item.
+					#[i(class="fa fa-facebook-square" aria-hidden="true")]
+					#[span(class='selectable') facebook.com/carverkit]
+
+
+	.to-top
+		a(href="#")
+			i(class="ion-ios-arrow-thin-up")
+
+footer.footer
+	.footer__wrapper
+		.copy Copyright © 2017
+		.footer__divider /
+		.social
+			a(class="footer__link" target="_blank" href="https://twitter.com/KitCarver")
+				i(class="fa fa-twitter" aria-hidden="true")
+			a(class="footer__link" target="_blank" href="https://github.com/KitCarver")
+				i(class="fa fa-github" aria-hidden="true")
+			a(class="footer__link" target="_blank" href="https://www.facebook.com/carverkit")
+				i(class="fa fa-facebook" aria-hidden="true")
+			//- a(class="footer__link" target="_blank" href="mailto:KitCarver@outlook.com")
+			//- 	i(class="fa fa-at" aria-hidden="true")
+		.footer__divider /
+		.lang
+			a(id="russian" class="footer__link tooltip" href="#") Русский
+				span.tooltiptext включите javascript
+			span  / 
+			span.current-lang English
+
+.modal
+	.modal__close-btn
+		i(class="ion-close")
+	//-img.modal__img(src="http://placehold.it/800x2333/4499ff/eeeeee/")
