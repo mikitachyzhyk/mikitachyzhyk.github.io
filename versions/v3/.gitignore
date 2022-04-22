@@ -1,7 +1,0 @@
-/node_modules/
-/dist/
-/psd/
-/**/*.psd
-/**/Thumbs.db
-/**/*cache
-sublime-gulp.log
