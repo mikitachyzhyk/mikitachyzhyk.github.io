@@ -32,114 +32,187 @@
     <script src="js/common.js" defer></script>
   </head>
   <body>
-    <div class="wrapper">
-      <a class="logo" href="#">michy.dev</a>
-      <div class="social">
-        <!-- <a href="#"><i class="far fa-circle"></i></a> -->
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/mikitachyzhyk"
-          title="GitHub"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://codepen.io/michydev"
-          title="CodePen"
-          ><i class="fab fa-codepen"></i
-        ></a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://twitter.com/michydev"
-          title="Twitter"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/mikitachyzhyk/"
-          title="LinkedIn"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://dev.to/mikitachyzhyk"
-          title="Dev.to"
-          ><i class="fab fa-dev"></i
-        ></a>
+    <a class="logo" href="#">michy.dev</a>
+    <div class="social">
+      <!-- <a href="#"><i class="far fa-circle"></i></a> -->
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/mikitachyzhyk"
+        title="GitHub"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://codepen.io/michydev"
+        title="CodePen"
+        ><i class="fab fa-codepen"></i
+      ></a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://twitter.com/michydev"
+        title="Twitter"
+        ><i class="fab fa-twitter"></i
+      ></a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.linkedin.com/in/mikitachyzhyk/"
+        title="LinkedIn"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://dev.to/mikitachyzhyk"
+        title="Dev.to"
+        ><i class="fab fa-dev"></i
+      ></a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a draggable="false" href="#about">About Me</a></li>
+        <li><a draggable="false" href="#works">Works</a></li>
+        <li><a draggable="false" href="#proof">Social Proof / Reviews</a></li>
+        <li><a draggable="false" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <a class="mailto" href="mailto:mikitachyzhyk@gmail.com"
+      >mikitachyzhyk@gmail.com</a
+    >
+    <button class="burger"><span></span></button>
+    <div class="mmenu"></div>
+    <div class="page page--centered page--1 page--show" id="about">
+      <div class="about">
+        <div class="greeting">
+          Hello, my name is
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/mikitachyzhyk/"
+            ><strong>Mikita Chyzhyk</strong></a
+          >
+        </div>
+        <div class="about__text">
+          Hi, I'm a Web Developer, I've been working in this field for more than
+          5 years. I live and work in cyberspace, like many of us. I love
+          everything related to
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://en.wikipedia.org/wiki/React_(JavaScript_library)"
+            >React</a
+          >
+          and
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://en.wikipedia.org/wiki/JavaScript"
+            >JavaScript</a
+          >, including
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.mongodb.com/mern-stack"
+            >MERN</a
+          >
+          &
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://jamstack.org/"
+            >JAM</a
+          >
+          stacks. I'm also interested in everything about the
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://en.wikipedia.org/wiki/User_experience"
+          >
+            User Experience (UX) </a
+          >.
+        </div>
       </div>
-      <div class="menu">
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#proof">Social Proof / Reviews</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <a class="mailto" href="mailto:mikitachyzhyk@gmail.com"
-        >mikitachyzhyk@gmail.com</a
-      >
-      <button class="burger"><span></span></button>
-      <div class="mmenu"></div>
-      <div class="page page--1 page--show" id="about">
-        <div class="about">
-          <div class="greeting">
-            Hello, my name is
+    </div>
+
+    <div class="page page--3" id="works">
+      <div class="works">
+        <div class="worksNav">
+          <button id="prev" disabled="disabled">Prev</button
+          ><button id="next">Next</button>
+        </div>
+        <div class="worksList">
+          <div class="worksItem">
             <a
+              href="https://wikipedia.org"
               target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/mikitachyzhyk/"
-              ><strong>Mikita Chyzhyk</strong></a
-            >
+              rel="noopener norefferer"
+              draggable="false"
+              >Link 0</a
+            ><img src="https://picsum.photos/800/450?s=0" />
           </div>
-          <div class="about__text">
-            Hi, I'm a Web Developer, I've been working in this field for more
-            than 5 years. I live and work in cyberspace, like many of us. I love
-            everything related to
+          <div class="worksItem">
             <a
+              href="https://wikipedia.org"
               target="_blank"
-              rel="noopener noreferrer"
-              href="https://en.wikipedia.org/wiki/React_(JavaScript_library)"
-              >React</a
-            >
-            and
+              rel="noopener norefferer"
+              draggable="false"
+              >Link 1</a
+            ><img src="https://picsum.photos/800/450?s=1" />
+          </div>
+          <div class="worksItem">
             <a
+              href="https://wikipedia.org"
               target="_blank"
-              rel="noopener noreferrer"
-              href="https://en.wikipedia.org/wiki/JavaScript"
-              >JavaScript</a
-            >, including
+              rel="noopener norefferer"
+              draggable="false"
+              >Link 2</a
+            ><img src="https://picsum.photos/800/450?s=2" />
+          </div>
+          <div class="worksItem">
             <a
+              href="https://wikipedia.org"
               target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.mongodb.com/mern-stack"
-              >MERN</a
-            >
-            &
+              rel="noopener norefferer"
+              draggable="false"
+              >Link 3</a
+            ><img src="https://picsum.photos/800/450?s=3" />
+          </div>
+          <div class="worksItem">
             <a
+              href="https://wikipedia.org"
               target="_blank"
-              rel="noopener noreferrer"
-              href="https://jamstack.org/"
-              >JAM</a
-            >
-            stacks. I'm also interested in everything about the
+              rel="noopener norefferer"
+              draggable="false"
+              >Link 4</a
+            ><img src="https://picsum.photos/800/450?s=4" />
+          </div>
+          <div class="worksItem">
             <a
+              href="https://wikipedia.org"
               target="_blank"
-              rel="noopener noreferrer"
-              href="https://en.wikipedia.org/wiki/User_experience"
-            >
-              User Experience (UX) </a
-            >.
+              rel="noopener norefferer"
+              draggable="false"
+              >Link 5</a
+            ><img src="https://picsum.photos/800/450?s=5" />
+          </div>
+          <div class="worksItem">
+            <a
+              href="https://wikipedia.org"
+              target="_blank"
+              rel="noopener norefferer"
+              draggable="false"
+              >Link 6</a
+            ><img src="https://picsum.photos/800/450?s=6" />
           </div>
         </div>
       </div>
-      <div class="page page--3" id="works">How was your day?</div>
-      <div class="page page--2" id="proof">Here I am!</div>
-      <div class="page page--4" id="contact">Great!</div>
     </div>
+
+    <div class="page page--2" id="proof"></div>
+
+    <div class="page page--4" id="contact"></div>
   </body>
 </html>

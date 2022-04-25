@@ -45,19 +45,6 @@ html {
   font-size: 19px;
 }
 
-html::-webkit-scrollbar-track {
-  background-color: rgba(35, 35, 35, 0.8);
-}
-
-html::-webkit-scrollbar {
-  width: 10px;
-  background-color: rgba(35, 35, 35, 0.8);
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: #111;
-}
-
 html, body {
   min-height: 100%;
   height: 100%;
@@ -69,10 +56,12 @@ body {
   position: relative;
   min-width: 320px;
   height: 100%;
+  margin: 0;
   font-family: Consolas;
   line-height: 1.225;
   background-color: #111;
   color: #fff;
+  overflow: hidden;
   /* font-family: 'Ubuntu', sans-serif */
 }
 
@@ -218,6 +207,10 @@ iframe {
     padding: 1.25rem;
     text-decoration: none;
     color: #fff;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   .menu ul li a:hover, .menu ul li a:focus {
     /* text-decoration: underline */
@@ -386,14 +379,22 @@ iframe {
 }
 
 .page {
-  padding: 65px 20px;
-  font-size: 60px;
   -webkit-transition: all 0.9s cubic-bezier(0.22, 0.98, 0.73, 0.99);
   transition: all 0.9s cubic-bezier(0.22, 0.98, 0.73, 0.99);
 }
 
 @media (min-height: 600px) {
   .page {
+    height: 100%;
+  }
+}
+
+.page--centered {
+  padding: 65px 20px;
+}
+
+@media (min-height: 600px) {
+  .page--centered {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -403,7 +404,6 @@ iframe {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100vh;
     padding: 0 20px;
   }
 }
@@ -415,5 +415,159 @@ iframe {
 }
 
 /* Header */
+.works {
+  position: relative;
+  height: 100%;
+}
+
+.worksList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background: rgba(0, 0, 255, 0.8);
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+@media (max-width: 575px) {
+  .worksList {
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
+}
+
+@media (min-width: 400px) {
+  .worksList {
+    padding: 0 calc(50% - 200px - 10px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .worksList {
+    padding: 0 calc(50% - 400px - 10px);
+  }
+}
+
+.worksList::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.worksItem {
+  position: relative;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+@media (max-width: 575px) {
+  .worksItem {
+    scroll-snap-align: center;
+  }
+}
+
+@media (min-width: 400px) {
+  .worksItem {
+    min-width: 400px;
+    max-width: 400px;
+    height: 225px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .worksItem {
+    min-width: 800px;
+    max-width: 800px;
+    height: 450px;
+  }
+}
+
+.worksItem a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  padding: 10px 30px;
+  background: white;
+  color: black;
+}
+
+.worksItem img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.worksNav {
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+  z-index: 1;
+}
+
+@media (min-width: 440px) {
+  .worksNav {
+    bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .worksNav {
+    bottom: 50%;
+    -webkit-transform: translateY(178px);
+            transform: translateY(178px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .worksNav {
+    -webkit-transform: translateY(290px);
+            transform: translateY(290px);
+  }
+}
+
+.worksNav button {
+  padding: 15px 30px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+.worksNav button:not(:last-child) {
+  margin-right: 5px;
+}
+
+.worksNav button:enabled:active {
+  -webkit-transform: translate(1px, 1px);
+          transform: translate(1px, 1px);
+}
+
+.worksNav button:disabled {
+  opacity: 0.4;
+}
+
 /* Footer */
 /*# sourceMappingURL=style.css.map */

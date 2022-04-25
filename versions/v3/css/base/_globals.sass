@@ -50,13 +50,13 @@ html *
 html
   font-size: $baseFontSize
 
-  &::-webkit-scrollbar-track
-    background-color: $menuBgc
-  &::-webkit-scrollbar
-    width: 10px
-    background-color: $menuBgc
-  &::-webkit-scrollbar-thumb
-    background-color: $bgColor
+  // &::-webkit-scrollbar-track
+  //   background-color: $menuBgc
+  // &::-webkit-scrollbar
+  //   width: 10px
+  //   background-color: $menuBgc
+  // &::-webkit-scrollbar-thumb
+  //   background-color: $bgColor
 
 html, body
   // For gradient background
@@ -69,6 +69,7 @@ body
   position: relative
   min-width: 320px
   height: 100%
+  margin: 0
   font-family: $defaultFontFamily
   // font-size: $baseFontSize
   line-height: $baseLineHeight
@@ -78,8 +79,9 @@ body
   color: $textColor
   // color: $textColor
   // overflow-x: hidden
-  // overflow: hidden
+  overflow: hidden
   /* font-family: 'Ubuntu', sans-serif */
+  // overflow-x: hidden
 
   ::selection
     background-color: #FFE800
@@ -301,6 +303,7 @@ iframe
           padding: 1.25rem
           text-decoration: none
           color: $textColor
+          user-select: none
           &:hover, &:focus
             /* text-decoration: underline */
             background-color: $menuBgcHover
@@ -432,19 +435,22 @@ iframe
   // bottom: 0
   // left: 0
   // height: 800px
-  padding: 65px 20px
-  font-size: 60px
+  // padding: 65px 20px
+  // font-size: 60px
   // background-color: white
   // transform: translateY(100%)
   // opacity: 0
   $cubic-bezier: .22,.98,.73,.99
   transition: all 0.9s cubic-bezier($cubic-bezier)
   @media (min-height: 600px)
-    display: flex
-    justify-content: center
-    align-items: center
-    height: 100vh
-    padding: 0 20px
+    height: 100%
+  &--centered
+    padding: 65px 20px
+    @media (min-height: 600px)
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0 20px
   // scroll-snap-align: center
   // scroll-snap-align: start
   // scroll-snap-stop: normal
