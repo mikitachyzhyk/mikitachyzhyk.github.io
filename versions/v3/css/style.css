@@ -58,7 +58,7 @@ body {
   font-family: Consolas;
   line-height: 1.225;
   background-color: #111;
-  color: #fff;
+  color: white;
   /* font-family: 'Ubuntu', sans-serif */
 }
 
@@ -103,12 +103,48 @@ body ::selection {
   }
 }
 
+@media (max-height: 599px) {
+  .page--2 {
+    height: 100vh;
+  }
+}
+
+@media (max-height: 599px) {
+  .page--3 {
+    height: 100vh;
+  }
+}
+
+@media (max-height: 599px) {
+  .page--4 {
+    height: 100vh;
+  }
+}
+
 input:not([type="checkbox"]):not([type="radio"]), textarea {
   -webkit-appearance: none !important;
 }
 
 a {
   color: white;
+}
+
+a:active, button:active {
+  -webkit-transform: translate(1px, 1px);
+          transform: translate(1px, 1px);
+}
+
+a:disabled, button:disabled {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+a:disabled:active, button:disabled:active {
+  -webkit-transform: none;
+          transform: none;
 }
 
 iframe {
@@ -132,7 +168,7 @@ iframe {
   /* letter-spacing: 5px */
   text-decoration: none;
   /* text-align: center */
-  color: #fff;
+  color: white;
   /* transform: translateX(-50%) */
 }
 
@@ -184,7 +220,7 @@ iframe {
     margin-left: 0.5rem;
     padding: 0 3px;
     padding: 0 0.1875rem;
-    color: #fff;
+    color: white;
   }
   .social a:hover, .social a:focus {
     opacity: 0.7;
@@ -236,16 +272,11 @@ iframe {
     padding: 20px 20px;
     padding: 1.25rem;
     text-decoration: none;
-    color: #fff;
+    color: white;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-  }
-  .menu ul li a:hover, .menu ul li a:focus {
-    /* text-decoration: underline */
-    background-color: rgba(53, 53, 53, 0.8);
-    /* background-color: lighten($menuBgc, 5%) */
   }
 }
 
@@ -490,10 +521,13 @@ iframe {
   position: absolute;
   right: 0;
   bottom: 0;
-  display: block;
-  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 25px;
   background: white;
-  color: black;
+  color: #111;
+  text-decoration: none;
 }
 
 .worksItem img {
@@ -530,8 +564,10 @@ iframe {
 
 @media (min-width: 1200px) {
   .worksNav {
-    -webkit-transform: translateY(290px);
-            transform: translateY(290px);
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 290px);
+            transform: translate(-50%, 290px);
   }
 }
 
@@ -540,7 +576,7 @@ iframe {
   font-family: Consolas;
   font-size: 0.75rem;
   background-color: rgba(35, 35, 35, 0.8);
-  color: #fff;
+  color: white;
   border-radius: 3px;
   border: none;
   cursor: pointer;
@@ -554,11 +590,6 @@ iframe {
 
 .worksNav button:not(:last-child) {
   margin-right: 5px;
-}
-
-.worksNav button:enabled:active {
-  -webkit-transform: translate(1px, 1px);
-          transform: translate(1px, 1px);
 }
 
 .worksNav button:disabled {

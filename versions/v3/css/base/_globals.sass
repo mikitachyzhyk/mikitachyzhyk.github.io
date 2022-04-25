@@ -112,17 +112,20 @@ body
       justify-content: center
       align-items: center
       padding: 0 20px
-  // scroll-snap-align: center
-  // scroll-snap-align: start
-  // scroll-snap-stop: normal
 
 // .page--1
 //   background-color: rgba(#faa, 0.2)
-// .page--2
+.page--2
+  @media (max-height: 599px)
+    height: 100vh
 //   background-color: rgba(#afa, 0.2)
-// .page--3
+.page--3
+  @media (max-height: 599px)
+    height: 100vh
 //   background-color: rgba(#aff, 0.2)
-// .page--4
+.page--4
+  @media (max-height: 599px)
+    height: 100vh
 //   background-color: rgba(#aaf, 0.2)
 
 .page--show
@@ -135,6 +138,15 @@ input:not([type="checkbox"]):not([type="radio"]), textarea//, select
 
 a
   color: $linkColor
+
+a, button
+  &:active
+    transform: translate(1px, 1px)
+  &:disabled
+    user-select: none
+    pointer-events: none
+    &:active
+      transform: none
 
   // color: $link
   // &:hover, &:focus
@@ -335,10 +347,8 @@ iframe
           text-decoration: none
           color: $textColor
           user-select: none
-          &:hover, &:focus
-            /* text-decoration: underline */
-            background-color: $menuBgcHover
-            /* background-color: lighten($menuBgc, 5%) */
+          // &:hover, &:focus
+            // background-color: $menuBgcHover
 
 .mailto
   position: fixed

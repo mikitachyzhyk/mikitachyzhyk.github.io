@@ -51,10 +51,11 @@ $itemBorderWidth: 10px
     position: absolute
     right: 0
     bottom: 0
-    display: block
-    padding: 10px 30px
-    background: white
-    color: black
+    display: flex
+    padding: 15px 25px
+    background: $textColor
+    color: $bgColor
+    text-decoration: none
 
   img
     display: block
@@ -74,7 +75,10 @@ $itemBorderWidth: 10px
     bottom: 50%
     transform: translateY(178px)
   @media(min-width: 1200px)
-    transform: translateY(290px)
+    right: auto
+    left: 50%
+    transform: translate(-50%, 290px)
+
   button
     padding: 15px 30px
     font-family: $defaultFontFamily
@@ -88,8 +92,5 @@ $itemBorderWidth: 10px
     touch-action: none
     &:not(:last-child)
       margin-right: 5px
-    &:enabled
-      &:active
-        transform: translate(1px, 1px)
     &:disabled
       opacity: 0.4
