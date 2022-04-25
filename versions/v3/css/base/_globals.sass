@@ -59,16 +59,13 @@ html
   //   background-color: $bgColor
 
 html, body
-  // For gradient background
   min-height: 100%
   height: 100%
   -webkit-overflow-scrolling: touch !important
-  scroll-behavior: smooth
 
 body
   position: relative
   min-width: 320px
-  height: 100%
   margin: 0
   font-family: $defaultFontFamily
   // font-size: $baseFontSize
@@ -77,9 +74,10 @@ body
   // font-family: Consolas
   background-color: $bgColor
   color: $textColor
+  @media (min-width: 576px)
+    overflow: hidden
   // color: $textColor
   // overflow-x: hidden
-  overflow: hidden
   /* font-family: 'Ubuntu', sans-serif */
   // overflow-x: hidden
 
@@ -91,14 +89,45 @@ body
 //   @media (min-width: 1200px)
 //     max-width: 1310px
 
-// .wrapper
-//  position: relative
-//  // For Magnific Popup scrollbar problem ( Better to use 100% with html, body {height 100%} )
-//  // min-height: 100vh
-//  min-height: 100%
-//  height: auto
+.page
+  // position: absolute
+  // top: 0
+  // right: 0
+  // bottom: 0
+  // left: 0
+  // height: 800px
+  // padding: 65px 20px
+  // font-size: 60px
+  // background-color: white
+  // transform: translateY(100%)
+  // opacity: 0
+  // $cubic-bezier: .22,.98,.73,.99
+  // transition: all 0.9s cubic-bezier($cubic-bezier)
+  @media (min-height: 600px)
+    height: 100%
+  &--centered
+    padding: 65px 20px
+    @media (min-height: 600px)
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0 20px
+  // scroll-snap-align: center
+  // scroll-snap-align: start
+  // scroll-snap-stop: normal
 
-  // overflow-x: hidden
+// .page--1
+//   background-color: rgba(#faa, 0.2)
+// .page--2
+//   background-color: rgba(#afa, 0.2)
+// .page--3
+//   background-color: rgba(#aff, 0.2)
+// .page--4
+//   background-color: rgba(#aaf, 0.2)
+
+.page--show
+  // transform: translateY(0)
+  // opacity: 1
 
 input:not([type="checkbox"]):not([type="radio"]), textarea//, select
   -webkit-appearance: none !important // Remove inputs and textareas inner shadow on Mobile Safari (iPhone)
@@ -276,6 +305,8 @@ iframe
     bottom: 0
     left: 0
     background-color: $menuBgc
+    border-top-right-radius: $baseBorderRadius
+    overflow: hidden
     /* transform: translateX(-50%) */
     /* transform: translateX(-500px) */
     /* opacity: 0.5 */
@@ -427,43 +458,3 @@ iframe
         bottom: -7px
   @media (min-width: 768px)
     display: none
-
-.page
-  // position: absolute
-  // top: 0
-  // right: 0
-  // bottom: 0
-  // left: 0
-  // height: 800px
-  // padding: 65px 20px
-  // font-size: 60px
-  // background-color: white
-  // transform: translateY(100%)
-  // opacity: 0
-  $cubic-bezier: .22,.98,.73,.99
-  transition: all 0.9s cubic-bezier($cubic-bezier)
-  @media (min-height: 600px)
-    height: 100%
-  &--centered
-    padding: 65px 20px
-    @media (min-height: 600px)
-      display: flex
-      justify-content: center
-      align-items: center
-      padding: 0 20px
-  // scroll-snap-align: center
-  // scroll-snap-align: start
-  // scroll-snap-stop: normal
-
-// .page--1
-//   background-color: rgba(#faa, 0.2)
-// .page--2
-//   background-color: rgba(#afa, 0.2)
-// .page--3
-//   background-color: rgba(#aff, 0.2)
-// .page--4
-//   background-color: rgba(#aaf, 0.2)
-
-.page--show
-  transform: translateY(0)
-  opacity: 1

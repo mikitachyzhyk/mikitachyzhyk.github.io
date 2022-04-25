@@ -10,7 +10,7 @@ $itemBorderWidth: 10px
   display: flex
   align-items: center
   height: 100%
-  background: rgba(blue, 0.8)
+  // background: rgba(blue, 0.8)
   overflow-y: hidden
   // https://blog.hubspot.com/website/hide-scrollbar-css
   // https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll
@@ -77,8 +77,11 @@ $itemBorderWidth: 10px
     transform: translateY(290px)
   button
     padding: 15px 30px
-    background: black
-    color: white
+    font-family: $defaultFontFamily
+    font-size: 0.75rem
+    background-color: $menuBgc
+    color: $textColor
+    border-radius: $baseBorderRadius
     border: none
     cursor: pointer
     user-select: none
