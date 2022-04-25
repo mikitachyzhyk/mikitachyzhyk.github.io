@@ -53,12 +53,18 @@ class PortfolioSlider {
     this.prevBtn.disabled = this.nextBtn.disabled = false
   }
 
-  changeNavBtnsState() {
+  updateSliderElems() {
     this.enableNavBtns()
 
     const centeredElem = this.getCenteredElem()
     const itemContainerHalfWidth =
       this.container.firstElementChild.clientWidth / 2
+
+    for (let child of this.container.children) {
+      child.classList.remove('active')
+    }
+
+    if (centeredElem) centeredElem.classList.add('active')
 
     if (
       !this.container.contains(centeredElem) ||
@@ -84,7 +90,7 @@ class PortfolioSlider {
 
   initDragBehavior() {
     this.container.addEventListener('scroll', () => {
-      this.changeNavBtnsState()
+      this.updateSliderElems()
     })
 
     if (this.isTouchDevice()) return
@@ -149,7 +155,7 @@ class PortfolioSlider {
     this.prevBtn.addEventListener('click', this.navBtnsClickHandler('prev'))
     this.nextBtn.addEventListener('click', this.navBtnsClickHandler('next'))
 
-    this.changeNavBtnsState()
+    this.updateSliderElems()
   }
 
   onKeyDownHandler = (e) => {
@@ -174,7 +180,7 @@ class PortfolioSlider {
     this.initKeyboardControls()
 
     document.addEventListener('scroll', () => {
-      if (this.isItemHorizontallyVisible()) this.changeNavBtnsState()
+      if (this.isItemHorizontallyVisible()) this.updateSliderElems()
       else this.disableNavBtns()
     })
   }
