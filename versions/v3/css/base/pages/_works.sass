@@ -47,15 +47,31 @@ $itemBorderWidth: 10px
     max-width: $itemWidth * 2
     height: $itemHeight * 2
 
+  &.active
+    img
+      // filter: grayscale(0)
+
   a
     position: absolute
-    right: 0
-    bottom: 0
+    right: 10px
+    bottom: 10px
     display: flex
-    padding: 15px 25px
-    background: $textColor
-    color: $bgColor
+    justify-content: center
+    align-items: center
+    width: 60px
+    height: 60px
+    font-size: 0.8rem
+    border-radius: 50%
+    // border: 2px solid
+    z-index: 1
+    display: flex
+    // padding: 20px
+    background: $bgColor
+    color: $textColor
     text-decoration: none
+    opacity: 0.5
+    &:hover
+      opacity: 1
 
   img
     display: block
@@ -63,6 +79,8 @@ $itemBorderWidth: 10px
     height: 100%
     user-select: none
     pointer-events: none
+    // opacity: 0.8
+    // filter: grayscale(100%)
 
 .worksNav
   position: absolute
