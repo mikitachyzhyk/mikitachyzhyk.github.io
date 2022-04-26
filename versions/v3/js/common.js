@@ -1,3 +1,16 @@
+function centerCurrentPage() {
+  const hash = window.location.hash
+  const currentPage = document.querySelector(hash)
+
+  if (currentPage && window.matchMedia('(min-width: 576px)').matches) {
+    currentPage.scrollIntoView(top)
+  }
+}
+
+document.addEventListener('scroll', centerCurrentPage)
+
+/* Works section */
+
 class PortfolioSlider {
   constructor(
     containerSelector,
