@@ -101,6 +101,7 @@ class PortfolioSlider {
     }
 
     this.container.addEventListener('mousedown', (e) => {
+      if (e.which !== 1) return
       if (e.target.tagName === 'A') return
 
       this.dragStartCoordinates.clientX = e.clientX
@@ -110,7 +111,9 @@ class PortfolioSlider {
       this.container.style.userSelect = 'none'
     })
 
-    document.addEventListener('mouseup', () => {
+    document.addEventListener('mouseup', (e) => {
+      if (e.which !== 1) return
+
       document.removeEventListener('mousemove', this.dragHandler)
       this.container.style.cursor = 'default'
       this.container.style.userSelect = ''
