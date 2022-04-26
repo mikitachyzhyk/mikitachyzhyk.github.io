@@ -550,6 +550,10 @@ iframe {
   opacity: 1;
 }
 
+.worksItem picture {
+  pointer-events: none;
+}
+
 .worksItem img {
   position: relative;
   z-index: 1;

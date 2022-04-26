@@ -1,6 +1,12 @@
 class PortfolioSlider {
-  constructor(containerSelector, prevBtnSelector, nextBtnSelector) {
+  constructor(
+    containerSelector,
+    itemSelector,
+    prevBtnSelector,
+    nextBtnSelector
+  ) {
     this.selectors = {}
+    this.selectors.itemSelector = itemSelector
     this.selectors.prevBtnSelector = prevBtnSelector
     this.selectors.nextBtnSelector = nextBtnSelector
 
@@ -43,7 +49,13 @@ class PortfolioSlider {
       Math.max(this.container.offsetHeight / 2 + containerRect.top, 0),
       document.documentElement.clientHeight - 1
     )
-    return document.elementFromPoint(containerCenterX, containerCenterY)
+
+    const centeredElem = document.elementFromPoint(
+      containerCenterX,
+      containerCenterY
+    )
+
+    return centeredElem.closest(this.selectors.itemSelector)
   }
 
   disableNavBtns() {
@@ -189,4 +201,9 @@ class PortfolioSlider {
   }
 }
 
-const portfolioSlider = new PortfolioSlider('.worksList', '#prev', '#next')
+const portfolioSlider = new PortfolioSlider(
+  '.worksList',
+  '.worksItem',
+  '#prev',
+  '#next'
+)
