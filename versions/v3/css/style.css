@@ -78,6 +78,10 @@ body ::selection {
   color: black;
 }
 
+.pages {
+  height: 100%;
+}
+
 @media (min-height: 600px) {
   .page {
     height: 100%;
