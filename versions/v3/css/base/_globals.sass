@@ -49,6 +49,7 @@ html *
 
 html
   font-size: $baseFontSize
+  scrollbar-width: none // For Firefix, must be set on the root element
 
   // &::-webkit-scrollbar-track
   //   background-color: $menuBgc
@@ -74,8 +75,17 @@ body
   // font-family: Consolas
   background-color: $bgColor
   color: $textColor
-  @media (min-width: 576px)
-    overflow: hidden
+
+  @media (min-height: 600px)
+    overflow-x: hidden
+    overflow-y: scroll
+    -ms-overflow-style: none // For IE10+
+    // WebKit
+    &::-webkit-scrollbar
+      display: none
+
+  // @media (min-width: 576px)
+    // overflow: hidden
   // color: $textColor
   // overflow-x: hidden
   /* font-family: 'Ubuntu', sans-serif */
@@ -90,7 +100,9 @@ body
 //     max-width: 1310px
 
 .pages
-  height: 100%
+  @media (min-height: 600px)
+    position: relative
+    height: 400%
 
 .page
   // position: absolute
@@ -107,7 +119,9 @@ body
   // $cubic-bezier: .22,.98,.73,.99
   // transition: all 0.9s cubic-bezier($cubic-bezier)
   @media (min-height: 600px)
-    height: 100%
+    position: sticky
+    top: 0
+    height: 25%
   &--centered
     padding: 65px 20px
     @media (min-height: 600px)
@@ -124,10 +138,12 @@ body
     height: 100vh
 //   background-color: rgba(#afa, 0.2)
 .page--3
+  background-color: $bgColor
   @media (max-height: 599px)
     height: 100vh
 //   background-color: rgba(#aff, 0.2)
 .page--4
+  background-color: #e01141
   @media (max-height: 599px)
     height: 100vh
 //   background-color: rgba(#aaf, 0.2)

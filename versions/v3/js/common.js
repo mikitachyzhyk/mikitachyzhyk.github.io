@@ -1,13 +1,22 @@
-function centerCurrentPage() {
+// function centerCurrentPage() {
+//   const hash = window.location.hash
+//   const currentPage = document.querySelector(hash)
+
+//   if (currentPage && window.matchMedia('(min-width: 576px)').matches) {
+//     currentPage.scrollIntoView(top)
+//   }
+// }
+
+// document.addEventListener('scroll', centerCurrentPage)
+
+window.addEventListener('hashchange', function () {
   const hash = window.location.hash
-  const currentPage = document.querySelector(hash)
+  if (!hash) return
 
-  if (currentPage && window.matchMedia('(min-width: 576px)').matches) {
-    currentPage.scrollIntoView(top)
-  }
-}
-
-document.addEventListener('scroll', centerCurrentPage)
+  const target = document.querySelector(hash)
+  document.documentElement.scrollTop = 0
+  if (target) target.scrollIntoView(top)
+})
 
 /* Works section */
 

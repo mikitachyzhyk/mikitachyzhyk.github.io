@@ -43,6 +43,7 @@ html * {
 
 html {
   font-size: 19px;
+  scrollbar-width: none;
 }
 
 html, body {
@@ -62,9 +63,14 @@ body {
   /* font-family: 'Ubuntu', sans-serif */
 }
 
-@media (min-width: 576px) {
+@media (min-height: 600px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -78,13 +84,19 @@ body ::selection {
   color: black;
 }
 
-.pages {
-  height: 100%;
+@media (min-height: 600px) {
+  .pages {
+    position: relative;
+    height: 400%;
+  }
 }
 
 @media (min-height: 600px) {
   .page {
-    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 25%;
   }
 }
 
@@ -117,10 +129,18 @@ body ::selection {
   }
 }
 
+.page--3 {
+  background-color: #111;
+}
+
 @media (max-height: 599px) {
   .page--3 {
     height: 100vh;
   }
+}
+
+.page--4 {
+  background-color: #e01141;
 }
 
 @media (max-height: 599px) {
