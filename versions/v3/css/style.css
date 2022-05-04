@@ -183,7 +183,7 @@ iframe {
 /* Text */
 /* Inputs */
 /* Buttons */
-.logo, .social, .menu, .mailto {
+.logo, .social, .pageNav, .mailto {
   z-index: 1;
 }
 
@@ -256,12 +256,12 @@ iframe {
   }
 }
 
-.menu {
+.pageNav {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .menu {
+  .pageNav {
     display: block;
     position: fixed;
     bottom: 0;
@@ -269,42 +269,36 @@ iframe {
     background-color: #202020;
     border-top-right-radius: 3px;
     overflow: hidden;
-    /* transform: translateX(-50%) */
-    /* transform: translateX(-500px) */
-    /* opacity: 0.5 */
   }
-  .menu ul {
+  .pageNav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* margin: 0 20px */
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
-  .menu ul li {
-    /* margin: 0 20px */
-    font-size: 12px;
+  .pageNav ul li {
     font-size: 0.75rem;
   }
-  .menu ul li:first-child a {
-    padding-left: 40px;
+  .pageNav ul li:first-child a {
     padding-left: 2.5rem;
   }
-  .menu ul li:last-child a {
-    padding-right: 40px;
+  .pageNav ul li:last-child a {
     padding-right: 2.5rem;
   }
-  .menu ul li a {
+  .pageNav ul li > a {
     display: block;
-    padding: 20px 20px;
     padding: 1.25rem;
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.6);
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+  }
+  .pageNav ul li > a:hover, .pageNav ul li.active a {
+    color: white;
   }
 }
 

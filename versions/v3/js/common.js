@@ -1,22 +1,93 @@
-// function centerCurrentPage() {
-//   const hash = window.location.hash
-//   const currentPage = document.querySelector(hash)
+/* Pages */
 
-//   if (currentPage && window.matchMedia('(min-width: 576px)').matches) {
-//     currentPage.scrollIntoView(top)
-//   }
-// }
+class PagesBehavior {
+  selectors = {
+    activeClass: 'active',
+  }
 
-// document.addEventListener('scroll', centerCurrentPage)
+  constructor(pagesSelector, pagesNavSelector) {
+    this.selectors.pagesSelector = pagesSelector
+    this.selectors.pagesNavSelector = pagesNavSelector
 
-window.addEventListener('hashchange', function () {
-  const hash = window.location.hash
-  if (!hash) return
+    this.init()
+  }
 
-  const target = document.querySelector(hash)
-  document.documentElement.scrollTop = 0
-  if (target) target.scrollIntoView(top)
-})
+  getPagesPositions() {
+    const pages = document.querySelectorAll(
+      `${this.selectors.pagesSelector} > *`
+    )
+    const positions = {}
+
+    const currentScrollY = window.scrollY
+    window.scrollTo(window.scrollX, 0)
+
+    pages.forEach((page) => {
+      positions[page.id] = page.getBoundingClientRect()
+    })
+
+    window.scrollTo(window.scrollX, currentScrollY)
+
+    this.pagesPositions = positions
+  }
+
+  handleResize = () => {
+    this.getPagesPositions()
+  }
+
+  handleLinkClick = (e) => {
+    if (!e.target.closest(this.selectors.pagesNavSelector)) return
+    if (e.target.tagName !== 'A') return
+
+    e.preventDefault()
+
+    const top = this.pagesPositions[e.target.getAttribute('href').slice(1)].top
+
+    window.scrollTo({
+      top,
+      left: window.scrollX,
+      behavior: 'smooth',
+    })
+  }
+
+  updateNavBtnState(currentBtn) {
+    const pageNavBtns = document.querySelectorAll(
+      `${this.selectors.pagesNavSelector} a`
+    )
+
+    pageNavBtns.forEach((btn) => {
+      btn.closest('li').classList.remove(this.selectors.activeClass)
+    })
+
+    if (currentBtn)
+      currentBtn.closest('li').classList.add(this.selectors.activeClass)
+  }
+
+  handleScroll = () => {
+    const vh = document.documentElement.offsetHeight
+    const oneThirdOfVh = Math.round(vh / 3)
+    const twoThirdsOfVh = vh - oneThirdOfVh
+
+    for (let page in this.pagesPositions) {
+      const pageTop = this.pagesPositions[page].top
+
+      if (
+        pageTop > window.scrollY - twoThirdsOfVh &&
+        pageTop < window.scrollY + oneThirdOfVh
+      )
+        this.updateNavBtnState(document.querySelector(`[href="#${page}"`))
+    }
+  }
+
+  init() {
+    this.getPagesPositions()
+
+    document.addEventListener('click', this.handleLinkClick)
+    window.addEventListener('resize', this.handleResize)
+    document.addEventListener('scroll', this.handleScroll)
+  }
+}
+
+new PagesBehavior('.pages', '.pageNav')
 
 /* Works section */
 

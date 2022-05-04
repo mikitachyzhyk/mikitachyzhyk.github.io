@@ -269,7 +269,7 @@ iframe
 //   &:not(:last-child)
 //     border-right: 1px solid $gridBdc
 
-.logo, .social, .menu, .mailto
+.logo, .social, .pageNav, .mailto
   z-index: 1
 
 .logo
@@ -324,48 +324,37 @@ iframe
       // &:hover, &:focus
       //   opacity: 0.7
 
-.menu
+.pageNav
   display: none
   @media (min-width: 768px)
     display: block
     position: fixed
-    // bottom: 20px
-    // left: 30px
     bottom: 0
     left: 0
     background-color: $menuBgc
     border-top-right-radius: $baseBorderRadius
     overflow: hidden
-    /* transform: translateX(-50%) */
-    /* transform: translateX(-500px) */
-    /* opacity: 0.5 */
     ul
       display: flex
-      /* margin: 0 20px */
       margin: 0
       padding: 0
       list-style-type: none
       li
-        /* margin: 0 20px */
-        font-size: 12px
         font-size: 0.75rem
         &:first-child
           a
-            padding-left: 40px
             padding-left: 2.5rem
         &:last-child
           a
-            padding-right: 40px
             padding-right: 2.5rem
-        a
+        > a
           display: block
-          padding: 20px 20px
           padding: 1.25rem
           text-decoration: none
-          color: $textColor
+          color: rgba($textColor, 0.6)
           user-select: none
-          // &:hover, &:focus
-            // background-color: $menuBgcHover
+        & > a:hover, &.active a
+          color: white
 
 .mailto
   position: fixed
