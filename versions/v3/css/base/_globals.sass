@@ -92,7 +92,7 @@ body
   // overflow-x: hidden
 
   ::selection
-    background-color: #FFE800
+    background-color: $selectionColor
     color: black
 
 // .container
@@ -401,13 +401,14 @@ iframe
     text-decoration: none
     border-bottom: 5px solid
 
+$aboutBg: darken($linkColor, 37%)
 .about__text
   max-width: 320px
   margin: 25px 0 0 0
   font-size: 1rem
   line-height: 1.56
-  // color: #aaa
-  opacity: 0.6
+  color: $aboutBg
+  // opacity: 0.6
   @media (min-width: 360px)
     font-size: 1.2rem
   @media (min-width: 768px)
@@ -417,10 +418,18 @@ iframe
     font-size: 1.375rem
 
   a
-    text-decoration: none
-    border-bottom: 2px solid rgba($linkColor, 0.8)
+    // text-decoration: none
+    // text-decoration: $selectionColor wavy underline
+    // text-decoration: #ff6d91 wavy underline
+    text-decoration: wavy underline
+    text-decoration-color: rgba($aboutBg, 0.55)
+    text-decoration-thickness: 2px
+    // text-decoration-skip-ink: none
+    color: $aboutBg
+    // border-bottom: 1px dashed rgba($aboutBg, 0.5)
     &:hover
-      border-color: rgba($linkColor, 1)
+      // border-color: $aboutBg
+      // text-decoration-color: $aboutBg
 
 .burger
   @media (max-width: 767px)
