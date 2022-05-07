@@ -91,7 +91,7 @@ new PagesBehavior('.pages', '.pageNav')
 
 /* Works section */
 
-class PortfolioSlider {
+class Slider {
   constructor(
     containerSelector,
     itemSelector,
@@ -294,9 +294,21 @@ class PortfolioSlider {
   }
 }
 
-const portfolioSlider = new PortfolioSlider(
-  '.worksList',
-  '.worksItem',
-  '#prev',
-  '#next'
-)
+new Slider('.worksList', '.worksItem', '.worksNavPrev', '.worksNavNext')
+
+/* Reviews section */
+
+function splitReviewStars() {
+  const reviewStarsSpans = document.querySelectorAll('.reviewStars > span')
+
+  reviewStarsSpans.forEach((reviewStarsSpan) => {
+    reviewStarsSpan.innerHTML = reviewStarsSpan.innerHTML
+      .split('')
+      .map((star) => `<span>${star}</span>`)
+      .join('')
+  })
+}
+
+splitReviewStars()
+
+new Slider('.reviews', '.review', '.reviewsNavPrev', '.reviewsNavNext')

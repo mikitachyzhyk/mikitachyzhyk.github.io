@@ -1,0 +1,167 @@
+.reviewsContainer
+  display: flex
+  align-items: center
+  height: 100%
+
+$itemWidth: 750px //30em
+$itemHalfWidth: $itemWidth / 2
+$itemBorderWidth: 150px
+.reviews
+  display: flex
+  // justify-content: center
+  align-items: flex-start
+  // height: 100%
+  font-family: 'Ubuntu', sans-serif
+  font-size: 1rem
+
+  overflow-y: hidden
+  overflow-x: scroll
+  scrollbar-width: none
+  -ms-overflow-style: none
+  touch-action: manipulation
+  @media(max-width: 575px)
+    scroll-snap-type: x mandatory
+  @media(min-width: $itemWidth)
+    padding: 0 calc(50% - #{$itemHalfWidth} - #{$itemBorderWidth})
+  // @media(min-width: 1200px)
+    // padding: 0 calc(50% - #{$itemHalfWidth} - #{$itemBorderWidth})
+  &::-webkit-scrollbar
+    display: none
+    width: 0
+    height: 0
+
+.review
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  // min-width: 30em
+  // max-width: 30em
+  // margin: 20px
+  font-weight: 300
+  font-size: 1em
+  line-height: 1.56
+  user-select: none
+
+  min-width: 100%
+  max-width: 100%
+  border-left: 20px solid transparent
+  border-right: 20px solid transparent
+
+  opacity: 0.5
+  transition: opacity 500ms
+
+  &.active
+    opacity: 1
+
+  @media(max-width: 575px)
+    scroll-snap-align: center
+
+  @media(max-width: $itemWidth + $itemBorderWidth * 2 - 1px)
+    box-sizing: border-box
+  @media(min-width: $itemWidth + $itemBorderWidth * 2)
+    min-width: $itemWidth
+    max-width: $itemWidth
+    min-height: 225px
+    font-size: 1.25em
+    border-left: $itemBorderWidth solid transparent
+    border-right: $itemBorderWidth solid transparent
+
+.reviewText
+  quotes: '«' '»' '‹' '›'
+  font-style: italic
+  &::before
+    content: open-quote
+  &::after
+    content: close-quote
+
+$mediaMaxWidth: 26.5rem
+.reviewBottomBar
+  display: flex
+  align-items: center
+  margin-top: 1em
+  @media (max-width: $mediaMaxWidth)
+    justify-content: space-between
+
+.reviewStars
+  display: inline-block
+  position: relative
+  font-family: monospace
+  font-size: 2em
+  font-style: normal
+  line-height: 1
+  letter-spacing: -0.025em
+  color: rgba(white, 0.2)
+  user-select: none
+  & > span
+    display: inline-flex
+    & > span
+      transform-origin: 50% 50%
+      transform: rotate(-10deg)
+      transition: transform 200ms
+    &:nth-child(2)
+      position: absolute
+      top: 0
+      left: 0
+      width: 0%
+      overflow: hidden
+      color: #febd30
+
+.reviewLink
+  position: relative
+  top: 0.15em
+  display: flex
+  align-items: center
+  margin-left: 1em
+  font-style: italic
+  color: white
+  text-decoration: none
+  user-select: none
+  opacity: 0.5
+  &:hover
+    opacity: 1
+  & > span
+    &:nth-child(1)
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 2.344em
+      height: 2.344em
+      margin-right: 0.625em
+      font-size: 0.64em
+      background: rgba(white, 0.2)
+      border-radius: 50%
+    &:nth-child(2)
+      font-size: 0.88em
+      @media (max-width: $mediaMaxWidth)
+        display: none
+
+.reviewsNav
+  position: absolute
+  bottom: 60px
+  right: 20px
+  z-index: 1
+  @media(min-width: 440px)
+    bottom: 10px
+  @media(min-width: 768px)
+    bottom: 50%
+    transform: translateY(178px)
+  @media(min-width: 1200px)
+    right: auto
+    left: 50%
+    transform: translate(-50%, 290px)
+
+  button
+    padding: 15px 30px
+    font-family: $defaultFontFamily
+    font-size: 0.75rem
+    background-color: $menuBgc
+    color: $textColor
+    border-radius: $baseBorderRadius
+    border: none
+    cursor: pointer
+    user-select: none
+    touch-action: none
+    &:not(:last-child)
+      margin-right: 5px
+    &:disabled
+      opacity: 0.4
