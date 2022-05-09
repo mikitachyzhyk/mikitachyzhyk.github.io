@@ -387,8 +387,8 @@ iframe {
 .about__text a {
   -webkit-text-decoration: wavy underline;
           text-decoration: wavy underline;
-  -webkit-text-decoration-color: rgba(161, 161, 161, 0.55);
-          text-decoration-color: rgba(161, 161, 161, 0.55);
+  -webkit-text-decoration-color: rgba(161, 161, 161, 0.45);
+          text-decoration-color: rgba(161, 161, 161, 0.45);
   text-decoration-thickness: 2px;
   color: #a1a1a1;
 }
