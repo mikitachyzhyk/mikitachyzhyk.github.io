@@ -30,10 +30,6 @@ class PagesBehavior {
     this.pagesPositions = positions
   }
 
-  handleResize = () => {
-    this.getPagesPositions()
-  }
-
   handleLinkClick = (e) => {
     if (!e.target.closest(this.selectors.pagesNavSelector)) return
     if (e.target.tagName !== 'A') return
@@ -78,11 +74,24 @@ class PagesBehavior {
     }
   }
 
-  init() {
+  handleResize = () => {
     this.getPagesPositions()
 
-    document.addEventListener('click', this.handleLinkClick)
+    document.removeEventListener('click', this.handleLinkClick)
+    document.removeEventListener('scroll', this.handleScroll)
+
+    this.init()
+  }
+
+  init() {
+    window.removeEventListener('resize', this.handleResize)
     window.addEventListener('resize', this.handleResize)
+    if (window.matchMedia('(max-width: 767px)').matches) return
+
+    this.getPagesPositions()
+
+    // don't forget to update the rezise method if you're going to change listeners below
+    document.addEventListener('click', this.handleLinkClick)
     document.addEventListener('scroll', this.handleScroll)
   }
 }

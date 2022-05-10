@@ -1,11 +1,15 @@
 .reviewsContainer
+  position: relative
   display: flex
   align-items: center
   height: 100%
 
-$itemWidth: 750px //30em
-$itemHalfWidth: $itemWidth / 2
-$itemBorderWidth: 150px
+$itemWidthMd: 300px
+$itemHalfWidthMd: $itemWidthMd / 2
+$itemWidthLg: 750px //30em
+$itemHalfWidthLg: $itemWidthLg / 2
+$itemBorderWidthMd: 75px
+$itemBorderWidthLg: 150px
 .reviews
   display: flex
   // justify-content: center
@@ -21,10 +25,12 @@ $itemBorderWidth: 150px
   touch-action: manipulation
   @media(max-width: 575px)
     scroll-snap-type: x mandatory
-  @media(min-width: $itemWidth)
-    padding: 0 calc(50% - #{$itemHalfWidth} - #{$itemBorderWidth})
+  @media(min-width: $itemWidthMd + $itemBorderWidthMd * 2) and (max-width: $itemWidthLg + $itemBorderWidthLg * 2 - 1px)
+    padding: 0 calc(50% - #{$itemHalfWidthMd} - #{$itemBorderWidthMd})
+  @media(min-width: $itemWidthLg + $itemBorderWidthLg * 2)
+    padding: 0 calc(50% - #{$itemHalfWidthLg} - #{$itemBorderWidthLg})
   // @media(min-width: 1200px)
-    // padding: 0 calc(50% - #{$itemHalfWidth} - #{$itemBorderWidth})
+    // padding: 0 calc(50% - #{$itemHalfWidthLg} - #{$itemBorderWidthLg})
   &::-webkit-scrollbar
     display: none
     width: 0
@@ -33,7 +39,6 @@ $itemBorderWidth: 150px
 .review
   display: flex
   flex-direction: column
-  justify-content: space-between
   // min-width: 30em
   // max-width: 30em
   // margin: 20px
@@ -44,6 +49,7 @@ $itemBorderWidth: 150px
 
   min-width: 100%
   max-width: 100%
+  min-height: 50vh
   border-left: 20px solid transparent
   border-right: 20px solid transparent
 
@@ -56,15 +62,22 @@ $itemBorderWidth: 150px
   @media(max-width: 575px)
     scroll-snap-align: center
 
-  @media(max-width: $itemWidth + $itemBorderWidth * 2 - 1px)
+  @media(min-width: $itemWidthMd + $itemBorderWidthMd * 2)
+    min-width: $itemWidthMd
+    max-width: $itemWidthMd
+    border-left: $itemBorderWidthMd solid transparent
+    border-right: $itemBorderWidthMd solid transparent
+
+  @media(max-width: 449px)
     box-sizing: border-box
-  @media(min-width: $itemWidth + $itemBorderWidth * 2)
-    min-width: $itemWidth
-    max-width: $itemWidth
+  @media(min-width: $itemWidthLg + $itemBorderWidthLg * 2)
+    justify-content: space-between
+    min-width: $itemWidthLg
+    max-width: $itemWidthLg
     min-height: 225px
     font-size: 1.25em
-    border-left: $itemBorderWidth solid transparent
-    border-right: $itemBorderWidth solid transparent
+    border-left: $itemBorderWidthLg solid transparent
+    border-right: $itemBorderWidthLg solid transparent
 
 .reviewText
   quotes: '«' '»' '‹' '›'
@@ -74,7 +87,7 @@ $itemBorderWidth: 150px
   &::after
     content: close-quote
 
-$mediaMaxWidth: 26.5rem
+$mediaMaxWidth: 1049px // 26.5rem
 .reviewBottomBar
   display: flex
   align-items: center

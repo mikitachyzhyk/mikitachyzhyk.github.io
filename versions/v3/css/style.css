@@ -94,10 +94,15 @@ body ::selection {
 
 @media (min-height: 600px) {
   .page {
+    height: 25%;
+  }
+}
+
+@media (min-height: 600px) and (min-width: 768px) {
+  .page {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    height: 25%;
   }
 }
 
@@ -641,6 +646,7 @@ iframe {
 }
 
 .reviewsContainer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -674,7 +680,13 @@ iframe {
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 450px) and (max-width: 1049px) {
+  .reviews {
+    padding: 0 calc(50% - 150px - 75px);
+  }
+}
+
+@media (min-width: 1050px) {
   .reviews {
     padding: 0 calc(50% - 375px - 150px);
   }
@@ -694,9 +706,6 @@ iframe {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   font-weight: 300;
   font-size: 1em;
   line-height: 1.56;
@@ -706,6 +715,7 @@ iframe {
           user-select: none;
   min-width: 100%;
   max-width: 100%;
+  min-height: 50vh;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   opacity: 0.5;
@@ -723,7 +733,16 @@ iframe {
   }
 }
 
-@media (max-width: 1049px) {
+@media (min-width: 450px) {
+  .review {
+    min-width: 300px;
+    max-width: 300px;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+  }
+}
+
+@media (max-width: 449px) {
   .review {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -732,6 +751,9 @@ iframe {
 
 @media (min-width: 1050px) {
   .review {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     min-width: 750px;
     max-width: 750px;
     min-height: 225px;
@@ -764,7 +786,7 @@ iframe {
   margin-top: 1em;
 }
 
-@media (max-width: 26.5rem) {
+@media (max-width: 1049px) {
   .reviewBottomBar {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -859,7 +881,7 @@ iframe {
   font-size: 0.88em;
 }
 
-@media (max-width: 26.5rem) {
+@media (max-width: 1049px) {
   .reviewLink > span:nth-child(2) {
     display: none;
   }
