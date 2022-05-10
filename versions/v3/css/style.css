@@ -346,7 +346,7 @@ iframe {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 46.4375rem;
+    max-width: 45.915rem;
   }
 }
 
@@ -384,7 +384,7 @@ iframe {
 @media (min-width: 768px) {
   .about__text {
     max-width: none;
-    margin: 1px 0 0 20px;
+    margin: 1px 0 0 10px;
     font-size: 1.375rem;
   }
 }
