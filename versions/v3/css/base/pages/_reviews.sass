@@ -71,7 +71,7 @@ $itemBorderWidthLg: 150px
   @media(max-width: 449px)
     box-sizing: border-box
   @media(min-width: $itemWidthLg + $itemBorderWidthLg * 2)
-    justify-content: space-between
+    // justify-content: space-between
     min-width: $itemWidthLg
     max-width: $itemWidthLg
     min-height: 225px
@@ -162,19 +162,3 @@ $mediaMaxWidth: 1049px // 26.5rem
     right: auto
     left: 50%
     transform: translate(-50%, 290px)
-
-  button
-    padding: 15px 30px
-    font-family: $defaultFontFamily
-    font-size: 0.75rem
-    background-color: $menuBgc
-    color: $textColor
-    border-radius: $baseBorderRadius
-    border: none
-    cursor: pointer
-    user-select: none
-    touch-action: none
-    &:not(:last-child)
-      margin-right: 5px
-    &:disabled
-      opacity: 0.4
