@@ -76,12 +76,12 @@ body {
 }
 
 body ::-moz-selection {
-  background-color: #ffe800;
+  background-color: Khaki;
   color: black;
 }
 
 body ::selection {
-  background-color: #ffe800;
+  background-color: Khaki;
   color: black;
 }
 
@@ -912,6 +912,124 @@ iframe {
     -webkit-transform: translate(-50%, 290px);
             transform: translate(-50%, 290px);
   }
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.contactsForm {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 0 20px;
+}
+
+@media (min-width: 425px) {
+  .contactsForm {
+    width: 85vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .contactsForm {
+    width: 55vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contactsForm {
+    width: 40vw;
+  }
+}
+
+.contactsField {
+  margin-bottom: 10px;
+}
+
+.contactsField label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.contactsField input, .contactsField textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.25rem;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.contactsField input:-webkit-autofill, .contactsField input:-webkit-autofill:hover, .contactsField input:-webkit-autofill:focus, .contactsField textarea:-webkit-autofill, .contactsField textarea:-webkit-autofill:hover, .contactsField textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: Khaki;
+  -webkit-box-shadow: 0 0 0px 1000px #333 inset;
+}
+
+.contactsField input:focus, .contactsField textarea:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.contactsField input {
+  height: 70px;
+}
+
+.contactsField textarea {
+  min-height: 170px;
+  resize: none;
+}
+
+.contactsBtn {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+}
+
+.contactsOr {
+  margin: 35px 0 30px;
+  font-size: 1.25rem;
+  opacity: 0.7;
+}
+
+.contactsLinks {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 425px) {
+  .contactsLinks li {
+    display: inline;
+  }
+  .contactsLinks li::after {
+    content: ', ';
+  }
+  .contactsLinks li:last-child::after {
+    content: '.';
+  }
+}
+
+.contactsLink {
+  color: Khaki;
 }
 
 /* Footer */
