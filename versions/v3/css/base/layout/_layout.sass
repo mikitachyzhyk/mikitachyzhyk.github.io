@@ -1,0 +1,32 @@
+.pages
+  @media (min-height: 600px)
+    position: relative
+    height: 400%
+
+.page
+  @media (min-height: 600px)
+    height: 25%
+  @media (min-height: 600px) and (min-width: 768px)
+    position: sticky
+    top: 0
+  &--centered
+    padding: 65px 20px
+    @media (min-height: 600px)
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0 20px
+
+// .page--1
+.page--2
+  background-color: $worksBGColor
+  @media (max-height: 599px)
+    height: 100vh
+.page--3
+  background-color: $bgColor
+  @media (max-height: 599px)
+    height: 100vh
+.page--4
+  background-color: $contactsBGColor
+  @media (max-height: 599px)
+    height: 100vh
