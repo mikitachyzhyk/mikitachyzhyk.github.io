@@ -262,52 +262,6 @@ iframe {
   }
 }
 
-.pageNav {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .pageNav {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: #202020;
-    border-top-right-radius: 3px;
-    overflow: hidden;
-  }
-  .pageNav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  .pageNav ul li {
-    font-size: 0.75rem;
-  }
-  .pageNav ul li:first-child a {
-    padding-left: 2.5rem;
-  }
-  .pageNav ul li:last-child a {
-    padding-right: 2.5rem;
-  }
-  .pageNav ul li > a {
-    display: block;
-    padding: 1.25rem;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
-  .pageNav ul li > a:hover, .pageNav ul li.active a {
-    color: white;
-  }
-}
-
 .mailto {
   position: fixed;
   bottom: 20px;
@@ -1036,6 +990,57 @@ iframe {
   color: Khaki;
   -webkit-text-decoration-color: rgba(240, 230, 140, 0.6);
           text-decoration-color: rgba(240, 230, 140, 0.6);
+}
+
+.pageNav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .pageNav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #202020;
+    border-top-right-radius: 3px;
+    overflow: hidden;
+  }
+  .pageNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .pageNav ul li {
+    font-size: 0.75rem;
+  }
+  .pageNav ul li:first-child a {
+    padding-left: 2.5rem;
+  }
+  .pageNav ul li:last-child a {
+    padding-right: 2.5rem;
+  }
+  .pageNav ul li > a {
+    display: block;
+    padding: 1.25rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .pageNav ul li > a:focus {
+    outline: none;
+    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.7);
+            box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.7);
+  }
+  .pageNav ul li > a:hover, .pageNav ul li.active a {
+    color: white;
+  }
 }
 
 /* Footer */
