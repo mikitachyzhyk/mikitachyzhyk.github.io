@@ -126,7 +126,7 @@ body ::selection {
 }
 
 .page--2 {
-  background-color: #5c11e0;
+  background-color: #5f6367;
 }
 
 @media (max-height: 599px) {
@@ -146,7 +146,7 @@ body ::selection {
 }
 
 .page--4 {
-  background-color: #e01141;
+  background-color: #5f6367;
 }
 
 @media (max-height: 599px) {
