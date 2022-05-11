@@ -131,7 +131,7 @@ body
     height: 100vh
 //   background-color: rgba(#aff, 0.2)
 .page--4
-  background-color: #e01141
+  background-color: $contactsBGColor
   @media (max-height: 599px)
     height: 100vh
 //   background-color: rgba(#aaf, 0.2)
@@ -407,18 +407,12 @@ $aboutBg: darken($linkColor, 37%)
     font-size: 1.375rem
 
   a
-    // text-decoration: none
-    // text-decoration: $selectionColor wavy underline
-    // text-decoration: #ff6d91 wavy underline
-    text-decoration: wavy underline
     text-decoration-color: rgba($aboutBg, 0.45)
-    text-decoration-thickness: 2px
-    // text-decoration-skip-ink: none
     color: $aboutBg
-    // border-bottom: 1px dashed rgba($aboutBg, 0.5)
-    &:hover
-      // border-color: $aboutBg
-      // text-decoration-color: $aboutBg
+
+.wavyLink
+  text-decoration: wavy underline
+  text-decoration-thickness: 2px
 
 .burger
   @media (max-width: 767px)

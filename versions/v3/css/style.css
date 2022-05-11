@@ -390,12 +390,15 @@ iframe {
 }
 
 .about__text a {
-  -webkit-text-decoration: wavy underline;
-          text-decoration: wavy underline;
   -webkit-text-decoration-color: rgba(161, 161, 161, 0.45);
           text-decoration-color: rgba(161, 161, 161, 0.45);
-  text-decoration-thickness: 2px;
   color: #a1a1a1;
+}
+
+.wavyLink {
+  -webkit-text-decoration: wavy underline;
+          text-decoration: wavy underline;
+  text-decoration-thickness: 2px;
 }
 
 @media (max-width: 767px) {
@@ -1004,6 +1007,7 @@ iframe {
 }
 
 .contactsOr {
+  position: relative;
   margin: 35px 0 30px;
   font-size: 1.25rem;
   opacity: 0.7;
@@ -1030,6 +1034,8 @@ iframe {
 
 .contactsLink {
   color: Khaki;
+  -webkit-text-decoration-color: rgba(240, 230, 140, 0.6);
+          text-decoration-color: rgba(240, 230, 140, 0.6);
 }
 
 /* Footer */
