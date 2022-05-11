@@ -706,7 +706,6 @@ iframe {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-weight: 300;
   font-size: 1em;
   line-height: 1.56;
   -webkit-user-select: none;
@@ -762,7 +761,6 @@ iframe {
 
 .reviewText {
   quotes: '«' '»' '‹' '›';
-  font-style: italic;
 }
 
 .reviewText::before {
