@@ -5,6 +5,9 @@
   align-items: center
   height: 100%
   font-family: 'Ubuntu', sans-serif
+  font-size: 1rem
+  @media (min-width: 425px)
+    font-size: 1.25rem
 
 .contactsForm
   box-sizing: border-box
@@ -22,13 +25,14 @@
   label
     display: block
     margin-bottom: 10px
-    font-size: 1.25rem
+
+    user-select: none
   input, textarea
     box-sizing: border-box
     width: 100%
     padding: 20px
     font-family: 'Ubuntu', sans-serif
-    font-size: 1.25rem
+
     background: #333
     color: white
     border: none
@@ -37,29 +41,27 @@
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
-      // border: 1px solid green
       -webkit-text-fill-color: $selectionColor
       -webkit-box-shadow: 0 0 0px 1000px #333 inset
-      // transition: background-color 5000s ease-in-out 0s
     &:focus
       outline: 2px solid $focusColor
-      // outline: none
-      // box-shadow: 1px 1px 30px rgba(black, 0.2)
   input
     height: 70px
   textarea
+    display: block
     min-height: 170px
     resize: none
 
 .contactsBtn
+  margin-top: 5px
   font-family: 'Ubuntu', sans-serif
-  font-size: 1rem
+  font-size: 0.8em
 
 .contactsOr
   position: relative
   margin: 35px 0 30px
-  font-size: 1.25rem
   opacity: 0.7
+  user-select: none
   // &::after
   //   content: ''
   //   position: absolute
@@ -80,7 +82,6 @@
   margin: 0
   padding: 0
   list-style-type: none
-  font-size: 1.25rem
   li
     @media (min-width: 425px)
       display: inline
