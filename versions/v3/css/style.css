@@ -355,75 +355,6 @@ iframe {
   text-decoration-thickness: 2px;
 }
 
-@media (max-width: 767px) {
-  .burger {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    width: 40px;
-    height: 40px;
-    background: #000;
-    border: none;
-    border-radius: 50%;
-  }
-  .burger::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    background: #000;
-    border-radius: 50%;
-    opacity: 0;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: opacity 0.3s, -webkit-transform 3s;
-    transition: opacity 0.3s, -webkit-transform 3s;
-    transition: transform 3s, opacity 0.3s;
-    transition: transform 3s, opacity 0.3s, -webkit-transform 3s;
-  }
-  .burger:hover::after {
-    -webkit-transform: scale(1000);
-            transform: scale(1000);
-    opacity: 1;
-  }
-  .burger span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    width: 22px;
-    height: 2px;
-    background-color: white;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    border-radius: 5px;
-  }
-  .burger span::before, .burger span::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    left: 0;
-    height: 2px;
-    background-color: white;
-    border-radius: 5px;
-  }
-  .burger span::before {
-    top: -7px;
-  }
-  .burger span::after {
-    bottom: -7px;
-  }
-}
-
-@media (min-width: 768px) {
-  .burger {
-    display: none;
-  }
-}
-
 .btn {
   padding: 15px 30px;
   font-family: Consolas;
@@ -1033,7 +964,7 @@ iframe {
         -ms-user-select: none;
             user-select: none;
   }
-  .pageNav ul li > a:focus {
+  .pageNav ul li > a:focus-visible {
     outline: none;
     -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.7);
             box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.7);

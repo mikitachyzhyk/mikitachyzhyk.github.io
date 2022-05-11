@@ -382,58 +382,58 @@ $aboutBg: darken($linkColor, 37%)
   text-decoration: wavy underline
   text-decoration-thickness: 2px
 
-.burger
-  @media (max-width: 767px)
-    position: fixed
-    // bottom: -10px
-    top: 15px
-    right: 15px
-    width: 40px
-    height: 40px
-    background: #000
-    border: none
-    border-radius: 50%
-    &::after
-      content: ''
-      position: absolute
-      top: 0
-      right: 0
-      bottom: 0
-      left: 0
-      z-index: 2
-      background: #000
-      border-radius: 50%
-      opacity: 0
-      transform: scale(1)
-      transition: transform 3s, opacity 0.3s
-    &:hover
-      &::after
-        transform: scale(1000)
-        opacity: 1
-    span
-      position: absolute
-      top: 50%
-      left: 50%
-      display: block
-      width: 22px
-      height: 2px
-      background-color: white
-      transform: translate(-50%, -50%)
-      border-radius: 5px
-      &::before, &::after
-        content: ''
-        position: absolute
-        right: 0
-        left: 0
-        height: 2px
-        background-color: white
-        border-radius: 5px
-      &::before
-        top: -7px
-      &::after
-        bottom: -7px
-  @media (min-width: 768px)
-    display: none
+// .burger
+//   @media (max-width: 767px)
+//     position: fixed
+//     // bottom: -10px
+//     top: 15px
+//     right: 15px
+//     width: 40px
+//     height: 40px
+//     background: #000
+//     border: none
+//     border-radius: 50%
+//     &::after
+//       content: ''
+//       position: absolute
+//       top: 0
+//       right: 0
+//       bottom: 0
+//       left: 0
+//       z-index: 2
+//       background: #000
+//       border-radius: 50%
+//       opacity: 0
+//       transform: scale(1)
+//       transition: transform 3s, opacity 0.3s
+//     &:hover
+//       &::after
+//         transform: scale(1000)
+//         opacity: 1
+//     span
+//       position: absolute
+//       top: 50%
+//       left: 50%
+//       display: block
+//       width: 22px
+//       height: 2px
+//       background-color: white
+//       transform: translate(-50%, -50%)
+//       border-radius: 5px
+//       &::before, &::after
+//         content: ''
+//         position: absolute
+//         right: 0
+//         left: 0
+//         height: 2px
+//         background-color: white
+//         border-radius: 5px
+//       &::before
+//         top: -7px
+//       &::after
+//         bottom: -7px
+//   @media (min-width: 768px)
+//     display: none
 
 .btn
   padding: 15px 30px
