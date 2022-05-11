@@ -777,15 +777,25 @@
 
       <div class="page page--4" id="contact">
         <div class="contacts">
-          <form class="contactsForm" onsubmit="return false">
+          <form
+            class="contactsForm"
+            action="https://formspree.io/f/xvodaepb"
+            method="POST"
+          >
             <div class="contactsField">
-              <label for="email">Email:</label><input id="email" type="email" />
+              <label for="email">Email:</label
+              ><input id="email" type="email" name="email" required />
             </div>
             <div class="contactsField">
               <label for="message">Message:</label
-              ><textarea id="message"></textarea>
+              ><textarea id="message" name="message" required></textarea>
             </div>
-            <button class="btn contactsBtn">Send</button>
+            <input
+              type="hidden"
+              name="subject"
+              value="Submission from michy.dev"
+            />
+            <button class="btn contactsBtn" type="submit">Send</button>
             <div class="contactsOr"><span>Or find me on:</span></div>
             <ul class="contactsLinks">
               <li>
