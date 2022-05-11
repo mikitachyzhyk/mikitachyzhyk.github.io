@@ -129,6 +129,37 @@ iframe {
   text-decoration-thickness: 2px;
 }
 
+@media (max-width: 991px) {
+  .draggable {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .draggable {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 10px auto 0;
+    font-size: 0.7rem;
+    opacity: 0.6;
+    white-space: nowrap;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -ms-touch-action: none;
+        touch-action: none;
+  }
+  .draggable::before {
+    content: '← ';
+  }
+  .draggable::after {
+    content: ' →';
+  }
+}
+
 @media (min-height: 600px) {
   .pages {
     position: relative;
@@ -369,7 +400,7 @@ iframe {
   opacity: 0.4;
 }
 
-.btn:not(:last-child) {
+.btn:not(:last-of-type) {
   margin-right: 5px;
 }
 
@@ -618,9 +649,9 @@ iframe {
   }
 }
 
-@media (min-width: 450px) and (max-width: 1049px) {
+@media (min-width: 550px) and (max-width: 1049px) {
   .reviews {
-    padding: 0 calc(50% - 150px - 75px);
+    padding: 0 calc(50% - 200px - 75px);
   }
 }
 
@@ -670,16 +701,16 @@ iframe {
   }
 }
 
-@media (min-width: 450px) {
+@media (min-width: 550px) {
   .review {
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 400px;
+    max-width: 400px;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
   }
 }
 
-@media (max-width: 449px) {
+@media (max-width: 549px) {
   .review {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;

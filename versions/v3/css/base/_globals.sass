@@ -227,6 +227,24 @@ iframe
   text-decoration: wavy underline
   text-decoration-thickness: 2px
 
+.draggable
+  @media (max-width: 991px)
+    display: none
+  @media (min-width: 992px)
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    margin: 10px auto 0
+    font-size: 0.7rem
+    opacity: 0.6
+    white-space: nowrap
+    user-select: none
+    touch-action: none
+    &::before
+      content: '← '
+    &::after
+      content: ' →'
+
 // .burger
 //   @media (max-width: 767px)
 //     position: fixed
