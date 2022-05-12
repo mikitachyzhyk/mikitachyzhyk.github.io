@@ -43,6 +43,8 @@ class PagesBehavior {
       left: window.scrollX,
       behavior: 'smooth',
     })
+
+    document.location.href = e.target.getAttribute('href')
   }
 
   updateNavBtnState(currentBtn) {

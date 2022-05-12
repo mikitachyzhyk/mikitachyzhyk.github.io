@@ -10,4 +10,5 @@
 - [x] pageNav focus state & put it to separate file
 - [x] delete mmenu
 - [x] make a hint to the works section about the possibility of dragging
+- [ ] check IE11 and use babel + polyfills
 - [ ] here is a way to make different icons for dark and light theme (https://media-link.glitch.me/, chrome 91)
