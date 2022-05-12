@@ -36,7 +36,8 @@ class PagesBehavior {
 
     e.preventDefault()
 
-    const top = this.pagesPositions[e.target.getAttribute('href').slice(1)].top
+    const href = e.target.getAttribute('href')
+    const top = this.pagesPositions[href.slice(1)].top
 
     window.scrollTo({
       top,
@@ -44,7 +45,7 @@ class PagesBehavior {
       behavior: 'smooth',
     })
 
-    document.location.href = e.target.getAttribute('href')
+    document.location.href = href
   }
 
   updateNavBtnState(currentBtn) {
