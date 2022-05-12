@@ -167,6 +167,12 @@ iframe {
   }
 }
 
+@media (max-height: 599px) {
+  .page {
+    padding: 100px 0;
+  }
+}
+
 @media (min-height: 600px) {
   .page {
     height: 25%;
@@ -204,30 +210,12 @@ iframe {
   background-color: #5f6367;
 }
 
-@media (max-height: 599px) {
-  .page--2 {
-    height: 100vh;
-  }
-}
-
 .page--3 {
   background-color: #111;
 }
 
-@media (max-height: 599px) {
-  .page--3 {
-    height: 100vh;
-  }
-}
-
 .page--4 {
   background-color: #5f6367;
-}
-
-@media (max-height: 599px) {
-  .page--4 {
-    height: 100vh;
-  }
 }
 
 .logo {
@@ -303,7 +291,7 @@ iframe {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .pageNav {
     display: block;
     position: fixed;
@@ -597,6 +585,12 @@ iframe {
   }
 }
 
+@media (max-height: 599px) {
+  .worksNav {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .worksNav {
     bottom: 50%;
@@ -866,6 +860,12 @@ iframe {
   }
 }
 
+@media (max-height: 599px) {
+  .reviewsNav {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .reviewsNav {
     bottom: 50%;
@@ -902,7 +902,7 @@ iframe {
   font-size: 1rem;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 425px) and (min-height: 600px) {
   .contacts {
     font-size: 1.25rem;
   }
