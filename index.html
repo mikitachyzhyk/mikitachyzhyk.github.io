@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Ubuntu:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&family=Ubuntu:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <!--Scripts-->
@@ -75,9 +75,9 @@
             <li><a href="#works" draggable="false">Работы</a></li>
           </ul>
           <div class="langs">
-            <a href="?lang=en">EN</a>
+            <a href="?lang=en" draggable="false">EN</a>
             <span>/</span>
-            <a href="?lang=ru">RU</a>
+            <a href="?lang=ru" draggable="false">RU</a>
           </div>
         </nav>
       </div>
@@ -86,13 +86,26 @@
     <main>
       <div class="container">
         <div class="grid">
+          <script>
+            const yearsOfExperience = Math.floor(
+              (new Date(Date.now()) - new Date('2017-01-26')) /
+                1000 /
+                60 /
+                60 /
+                24 /
+                365
+            )
+          </script>
           <section id="about" lang="en">
             <h2>About me</h2>
             <p>
-              I am a web developer with over 6 years of experience. I love my
-              job and always try to do my job right. I always approach the work
-              responsibly, keep the deadlines, as evidenced by the large number
-              of satisfied customers.
+              I am a web developer with over
+              <script>
+                document.write(yearsOfExperience)
+              </script>
+              years of experience. I love my job and always try to do my job
+              right. I always approach the work responsibly, keep the deadlines,
+              as evidenced by the large number of satisfied customers.
             </p>
             <p>I have experience in web design, UI/UX.</p>
             <p>
@@ -103,10 +116,13 @@
           <section lang="ru">
             <h2>Обо мне</h2>
             <p>
-              Я веб-разработчик с более чем 6 годами опыта. Люблю свое дело и
-              всегда стараюсь делать свою работу как надо. К работе всегда
-              подхожу ответственно, соблюдаю сроки, о чем свидетельствует
-              большое кол-во довольных клиентов.
+              Я веб-разработчик с более чем
+              <script>
+                document.write(yearsOfExperience)
+              </script>
+              годами опыта. Люблю свое дело и всегда стараюсь делать свою работу
+              как надо. К работе всегда подхожу ответственно, соблюдаю сроки, о
+              чем свидетельствует большое кол-во довольных клиентов.
             </p>
             <p>Есть опыт в веб-дизайне, UI/UX.</p>
             <p>
@@ -118,7 +134,7 @@
             <h2>What can I do</h2>
             <p>
               HTML, CSS, JavaScript, WordPress, WooCommerce, PHP, MySQL, jQuery,
-              Bootstrap, Responsive Design, Full stack development.
+              Bootstrap, Responsive Design, Full Stack Development.
             </p>
             <p>
               I also have experience in developing SPA and mobile applications
@@ -233,7 +249,7 @@
           <section id="contacts">
             <h2 lang="en">Contacts</h2>
             <h2 lang="ru">Контакты</h2>
-            <ul>
+            <ul class="contacts-list">
               <li>
                 <span class="iconed-link">
                   <i class="fa-regular fa-envelope"></i>
@@ -347,6 +363,7 @@
               class="work"
               rel="noopener noreferrer nofollow"
               target="_blank"
+              draggable="false"
             >
               <picture>
                 <source
@@ -388,6 +405,7 @@
               class="work"
               rel="noopener noreferrer nofollow"
               target="_blank"
+              draggable="false"
             >
               <picture>
                 <source
@@ -429,6 +447,7 @@
               class="work"
               rel="noopener noreferrer nofollow"
               target="_blank"
+              draggable="false"
             >
               <picture>
                 <source
@@ -470,6 +489,7 @@
               class="work"
               rel="noopener noreferrer nofollow"
               target="_blank"
+              draggable="false"
             >
               <picture>
                 <source
@@ -511,6 +531,7 @@
               class="work"
               rel="noopener noreferrer nofollow"
               target="_blank"
+              draggable="false"
             >
               <picture>
                 <source

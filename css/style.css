@@ -47,7 +47,17 @@ a {
   align-items: center;
 }
 .iconed-link i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 1;
   margin-right: 6px;
+  color: white;
+  background: #1A1A1A;
+  border-radius: 50%;
 }
 
 a, button {
@@ -57,9 +67,17 @@ a:active, button:active {
   transform: translate(1px, 1px);
 }
 
+b {
+  font-weight: 500;
+}
+
 img {
   max-width: 100%;
   height: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 ul {
@@ -140,21 +158,26 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 64px;
-}
 @media (max-width: 767.9px) {
   nav ul {
-    display: none;
+    position: absolute;
+    top: 210%;
   }
 }
-nav ul li {
-  display: inline-flex;
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 64px;
+  }
 }
-nav ul li:not(:last-child) {
-  margin-right: 30px;
+@media (min-width: 768px) {
+  nav ul li {
+    display: inline-flex;
+  }
+  nav ul li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 nav ul li a {
   font-family: "Ubuntu", sans-serif;
@@ -175,6 +198,11 @@ nav ul li a {
   line-height: 1.3;
   text-decoration: none;
   border: none;
+}
+
+/* Contacts */
+.contacts-list li:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 /* Works section */
@@ -202,9 +230,9 @@ nav ul li a {
   width: 100%;
   max-width: 425px;
   background: #333;
-  color: white;
+  background: #f2f3f4;
   overflow: hidden;
-  aspect-ratio: 16/10.5;
+  aspect-ratio: 16/10.4;
   padding: 10px 14px;
   text-decoration: none;
 }
@@ -228,12 +256,11 @@ nav ul li a {
 .work__title {
   margin-bottom: 6px;
   font-size: 15px;
-  font-weight: 500;
 }
 
 .work__text {
-  font-size: 14px;
-  opacity: 0.5;
+  font-size: 13px;
+  opacity: 0.4;
 }
 
 .work__icon {
@@ -246,6 +273,7 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   background: #1A1A1A;
+  color: white;
   border-radius: 50%;
   opacity: 0.1;
   transition: opacity 400ms;
