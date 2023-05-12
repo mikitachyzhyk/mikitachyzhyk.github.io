@@ -11,15 +11,18 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <!--Favicon-->
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="img/favicon/ukraine/favicon.svg"
-    />
-    <link rel="icon" type="image/png" href="img/favicon/ukraine/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+    <link rel="icon" type="image/png" href="img/favicon/favicon.jpg" />
     <!--Stylesheets-->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <!--Scripts-->
     <script
       src="https://kit.fontawesome.com/84649f8dd1.js"
@@ -28,816 +31,533 @@
     <script src="js/common.js" defer></script>
   </head>
   <body>
-    <a class="logo" href="#" draggable="false">michy.dev</a>
-    <div class="social">
-      <!-- <a href="#"><i class="far fa-circle"></i></a> -->
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://github.com/mikitachyzhyk"
-        title="GitHub"
-        draggable="false"
-        ><i class="fab fa-github"></i
-      ></a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://codepen.io/michydev"
-        title="CodePen"
-        draggable="false"
-        ><i class="fab fa-codepen"></i
-      ></a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://twitter.com/michydev"
-        title="Twitter"
-        draggable="false"
-        ><i class="fab fa-twitter"></i
-      ></a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.linkedin.com/in/mikitachyzhyk/"
-        title="LinkedIn"
-        draggable="false"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://dev.to/mikitachyzhyk"
-        title="Dev.to"
-        draggable="false"
-        ><i class="fab fa-dev"></i
-      ></a>
-    </div>
-    <div class="pageNav">
-      <ul>
-        <li class="active"><a href="#about" draggable="false">About Me</a></li>
-        <li><a href="#works" draggable="false">Works</a></li>
-        <li><a href="#reviews" draggable="false">Social Proof / Reviews</a></li>
-        <li><a href="#contact" draggable="false">Contact</a></li>
-      </ul>
-    </div>
-    <a class="mailto" href="mailto:mikitachyzhyk@gmail.com"
-      >mikitachyzhyk@gmail.com</a
-    >
-    <div class="pages">
-      <div class="page page--centered page--1" id="about">
-        <div class="about">
-          <div class="greeting">
-            Hello, my name is
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/mikitachyzhyk/"
-              ><strong>Mikita Chyzhyk</strong></a
-            >
+    <header>
+      <div class="container">
+        <nav>
+          <a class="logo" href="/" draggable="false">
+            <picture>
+              <source
+                srcset="
+                  img/logo.avif    1x,
+                  img/logo@2x.avif 2x,
+                  img/logo@3x.avif 3x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  img/logo.webp    1x,
+                  img/logo@2x.webp 2x,
+                  img/logo@3x.webp 3x
+                "
+                type="image/webp"
+              />
+              <img
+                src="img/logo.jpg"
+                loading="lazy"
+                decoding="async"
+                srcset="img/logo.jpg 1x, img/logo@2x.jpg 2x, img/logo@3x.jpg 3x"
+              />
+            </picture>
+            <span lang="en">Mikita Chyzhyk</span>
+            <span lang="ru">Никита Чижик</span>
+          </a>
+          <ul lang="en">
+            <li><a href="#about" draggable="false">About</a></li>
+            <li><a href="#contacts" draggable="false">Contacts</a></li>
+            <li><a href="#reviews" draggable="false">Reviews</a></li>
+            <li><a href="#works" draggable="false">Works</a></li>
+          </ul>
+          <ul lang="ru">
+            <li><a href="#about" draggable="false">Обо мне</a></li>
+            <li><a href="#contacts" draggable="false">Контакты</a></li>
+            <li><a href="#reviews" draggable="false">Отзывы</a></li>
+            <li><a href="#works" draggable="false">Работы</a></li>
+          </ul>
+          <div class="langs">
+            <a href="?lang=en">EN</a>
+            <span>/</span>
+            <a href="?lang=ru">RU</a>
           </div>
-          <div class="aboutText">
-            I'm a Web Developer, I've been working in this field for more than 5
-            years. I live and work in cyberspace, like many of us. I love
-            everything related to
-            <a
-              class="wavyLink"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://en.wikipedia.org/wiki/React_(JavaScript_library)"
-              >React</a
-            >
-            and
-            <a
-              class="wavyLink"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://en.wikipedia.org/wiki/JavaScript"
-              >JavaScript</a
-            >, including
-            <a
-              class="wavyLink"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.mongodb.com/mern-stack"
-              >MERN</a
-            >
-            &
-            <a
-              class="wavyLink"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://jamstack.org/"
-              >JAM</a
-            >
-            stacks. I'm also interested in everything about the
-            <a
-              class="wavyLink"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://en.wikipedia.org/wiki/User_experience"
-            >
-              User Experience (UX) </a
-            >.
-          </div>
-        </div>
+        </nav>
       </div>
+    </header>
 
-      <div class="page page--2" id="works">
-        <div class="works">
-          <div class="worksNav">
-            <button class="btn worksNavPrev" disabled="disabled">Prev</button
-            ><button class="btn worksNavNext">Next</button>
-            <div class="draggable">draggable</div>
-          </div>
-          <div class="worksList">
-            <div class="worksItem">
-              <a
-                href="https://fortfamily.ru/"
-                target="_blank"
-                rel="nofollow noopener norefferer"
-                draggable="false"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-
-              <picture>
-                <source
-                  srcset="
-                    img/works/work1-lg-320px.avif    1x,
-                    img/works/work1-lg-320px@2x.avif 2x,
-                    img/works/work1-lg-320px@3x.avif 3x
-                  "
-                  media="(max-width: 399px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work1-lg-320px.webp    1x,
-                    img/works/work1-lg-320px@2x.webp 2x,
-                    img/works/work1-lg-320px@3x.webp 3x
-                  "
-                  media="(max-width: 399px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    img/works/work1-lg-320px.png    1x,
-                    img/works/work1-lg-320px@2x.png 2x,
-                    img/works/work1-lg-320px@3x.png 3x
-                  "
-                  media="(max-width: 399px)"
-                />
-                <source
-                  srcset="
-                    img/works/work1-lg-400px.avif    1x,
-                    img/works/work1-lg-400px@2x.avif 2x,
-                    img/works/work1-lg-400px@3x.avif 3x
-                  "
-                  media="(max-width: 1199px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work1-lg-400px.webp    1x,
-                    img/works/work1-lg-400px@2x.webp 2x,
-                    img/works/work1-lg-400px@3x.webp 3x
-                  "
-                  media="(max-width: 1199px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    img/works/work1-lg-400px.png    1x,
-                    img/works/work1-lg-400px@2x.png 2x,
-                    img/works/work1-lg-400px@3x.png 3x
-                  "
-                  media="(max-width: 1199px)"
-                />
-                <source
-                  srcset="
-                    img/works/work1-lg.avif    1x,
-                    img/works/work1-lg@2x.avif 2x
-                  "
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work1-lg.webp    1x,
-                    img/works/work1-lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  src="img/works/work1-lg.png"
-                  alt="The image of my work in the portfolio section."
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    img/works/work1-lg.png    1x,
-                    img/works/work1-lg@2x.png 2x
-                  "
-                />
-              </picture>
-            </div>
-            <div class="worksItem">
-              <a
-                href="https://sb-market.ru/"
-                target="_blank"
-                rel="nofollow noopener norefferer"
-                draggable="false"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
-              ><picture>
-                <source
-                  srcset="
-                    img/works/work2-lg-320px.avif    1x,
-                    img/works/work2-lg-320px@2x.avif 2x,
-                    img/works/work2-lg-320px@3x.avif 3x
-                  "
-                  media="(max-width: 399px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work2-lg-320px.webp    1x,
-                    img/works/work2-lg-320px@2x.webp 2x,
-                    img/works/work2-lg-320px@3x.webp 3x
-                  "
-                  media="(max-width: 399px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    img/works/work2-lg-320px.png    1x,
-                    img/works/work2-lg-320px@2x.png 2x,
-                    img/works/work2-lg-320px@3x.png 3x
-                  "
-                  media="(max-width: 399px)"
-                />
-                <source
-                  srcset="
-                    img/works/work2-lg-400px.avif    1x,
-                    img/works/work2-lg-400px@2x.avif 2x,
-                    img/works/work2-lg-400px@3x.avif 3x
-                  "
-                  media="(max-width: 1199px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work2-lg-400px.webp    1x,
-                    img/works/work2-lg-400px@2x.webp 2x,
-                    img/works/work2-lg-400px@3x.webp 3x
-                  "
-                  media="(max-width: 1199px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    img/works/work2-lg-400px.png    1x,
-                    img/works/work2-lg-400px@2x.png 2x,
-                    img/works/work2-lg-400px@3x.png 3x
-                  "
-                  media="(max-width: 1199px)"
-                />
-                <source
-                  srcset="
-                    img/works/work2-lg.avif    1x,
-                    img/works/work2-lg@2x.avif 2x
-                  "
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work2-lg.webp    1x,
-                    img/works/work2-lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  src="img/works/work2-lg.png"
-                  alt="The image of my work in the portfolio section."
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    img/works/work2-lg.png    1x,
-                    img/works/work2-lg@2x.png 2x
-                  "
-                />
-              </picture>
-            </div>
-            <div class="worksItem">
-              <a
-                href="https://yustroy.ru/"
-                target="_blank"
-                rel="nofollow noopener norefferer"
-                draggable="false"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
-              ><picture>
-                <source
-                  srcset="
-                    img/works/work3-lg-320px.avif    1x,
-                    img/works/work3-lg-320px@2x.avif 2x,
-                    img/works/work3-lg-320px@3x.avif 3x
-                  "
-                  media="(max-width: 399px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work3-lg-320px.webp    1x,
-                    img/works/work3-lg-320px@2x.webp 2x,
-                    img/works/work3-lg-320px@3x.webp 3x
-                  "
-                  media="(max-width: 399px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    img/works/work3-lg-320px.png    1x,
-                    img/works/work3-lg-320px@2x.png 2x,
-                    img/works/work3-lg-320px@3x.png 3x
-                  "
-                  media="(max-width: 399px)"
-                />
-                <source
-                  srcset="
-                    img/works/work3-lg-400px.avif    1x,
-                    img/works/work3-lg-400px@2x.avif 2x,
-                    img/works/work3-lg-400px@3x.avif 3x
-                  "
-                  media="(max-width: 1199px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work3-lg-400px.webp    1x,
-                    img/works/work3-lg-400px@2x.webp 2x,
-                    img/works/work3-lg-400px@3x.webp 3x
-                  "
-                  media="(max-width: 1199px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    img/works/work3-lg-400px.png    1x,
-                    img/works/work3-lg-400px@2x.png 2x,
-                    img/works/work3-lg-400px@3x.png 3x
-                  "
-                  media="(max-width: 1199px)"
-                />
-                <source
-                  srcset="
-                    img/works/work3-lg.avif    1x,
-                    img/works/work3-lg@2x.avif 2x
-                  "
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work3-lg.webp    1x,
-                    img/works/work3-lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  src="img/works/work3-lg.png"
-                  alt="The image of my work in the portfolio section."
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    img/works/work3-lg.png    1x,
-                    img/works/work3-lg@2x.png 2x
-                  "
-                />
-              </picture>
-            </div>
-            <div class="worksItem">
-              <a
-                href="https://metal.nanohata.ru/"
-                target="_blank"
-                rel="nofollow noopener norefferer"
-                draggable="false"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
-              ><picture>
-                <source
-                  srcset="
-                    img/works/work4-lg-320px.avif    1x,
-                    img/works/work4-lg-320px@2x.avif 2x,
-                    img/works/work4-lg-320px@3x.avif 3x
-                  "
-                  media="(max-width: 399px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work4-lg-320px.webp    1x,
-                    img/works/work4-lg-320px@2x.webp 2x,
-                    img/works/work4-lg-320px@3x.webp 3x
-                  "
-                  media="(max-width: 399px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    img/works/work4-lg-320px.png    1x,
-                    img/works/work4-lg-320px@2x.png 2x,
-                    img/works/work4-lg-320px@3x.png 3x
-                  "
-                  media="(max-width: 399px)"
-                />
-                <source
-                  srcset="
-                    img/works/work4-lg-400px.avif    1x,
-                    img/works/work4-lg-400px@2x.avif 2x,
-                    img/works/work4-lg-400px@3x.avif 3x
-                  "
-                  media="(max-width: 1199px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work4-lg-400px.webp    1x,
-                    img/works/work4-lg-400px@2x.webp 2x,
-                    img/works/work4-lg-400px@3x.webp 3x
-                  "
-                  media="(max-width: 1199px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    img/works/work4-lg-400px.png    1x,
-                    img/works/work4-lg-400px@2x.png 2x,
-                    img/works/work4-lg-400px@3x.png 3x
-                  "
-                  media="(max-width: 1199px)"
-                />
-                <source
-                  srcset="
-                    img/works/work4-lg.avif    1x,
-                    img/works/work4-lg@2x.avif 2x
-                  "
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work4-lg.webp    1x,
-                    img/works/work4-lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  src="img/works/work4-lg.png"
-                  alt="The image of my work in the portfolio section."
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    img/works/work4-lg.png    1x,
-                    img/works/work4-lg@2x.png 2x
-                  "
-                />
-              </picture>
-            </div>
-            <div class="worksItem">
-              <a
-                href="http://www.mk-52.ru/"
-                target="_blank"
-                rel="nofollow noopener norefferer"
-                draggable="false"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
-              ><picture>
-                <source
-                  srcset="
-                    img/works/work5-lg-320px.avif    1x,
-                    img/works/work5-lg-320px@2x.avif 2x,
-                    img/works/work5-lg-320px@3x.avif 3x
-                  "
-                  media="(max-width: 399px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work5-lg-320px.webp    1x,
-                    img/works/work5-lg-320px@2x.webp 2x,
-                    img/works/work5-lg-320px@3x.webp 3x
-                  "
-                  media="(max-width: 399px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    img/works/work5-lg-320px.png    1x,
-                    img/works/work5-lg-320px@2x.png 2x,
-                    img/works/work5-lg-320px@3x.png 3x
-                  "
-                  media="(max-width: 399px)"
-                />
-                <source
-                  srcset="
-                    img/works/work5-lg-400px.avif    1x,
-                    img/works/work5-lg-400px@2x.avif 2x,
-                    img/works/work5-lg-400px@3x.avif 3x
-                  "
-                  media="(max-width: 1199px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work5-lg-400px.webp    1x,
-                    img/works/work5-lg-400px@2x.webp 2x,
-                    img/works/work5-lg-400px@3x.webp 3x
-                  "
-                  media="(max-width: 1199px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    img/works/work5-lg-400px.png    1x,
-                    img/works/work5-lg-400px@2x.png 2x,
-                    img/works/work5-lg-400px@3x.png 3x
-                  "
-                  media="(max-width: 1199px)"
-                />
-                <source
-                  srcset="
-                    img/works/work5-lg.avif    1x,
-                    img/works/work5-lg@2x.avif 2x
-                  "
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    img/works/work5-lg.webp    1x,
-                    img/works/work5-lg@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  src="img/works/work5-lg.png"
-                  alt="The image of my work in the portfolio section."
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    img/works/work5-lg.png    1x,
-                    img/works/work5-lg@2x.png 2x
-                  "
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="page page--3" id="reviews">
-        <div class="reviewsContainer">
-          <div class="reviewsNav">
-            <button class="btn reviewsNavPrev" disabled="disabled">Prev</button
-            ><button class="btn reviewsNavNext">Next</button>
-            <div class="draggable">draggable</div>
-          </div>
-          <div class="reviews">
-            <div class="review">
-              <div class="reviewText">
-                Everything is alright. Everything was done on time, Mikita is
-                always in touch. The layout was made taking into account
-                absolutely all wishes, even a little non-standard. Also,
-                excellent page loading speed, all the little things were fixed
-                very quickly. Mikita is very polite and a true professional in
-                his field, it was very pleasant to cooperate We will contact you
-                again. (translated automatically)
-              </div>
-              <div class="reviewBottomBar">
-                <div class="reviewStars" title="10 out of 10 stars">
-                  <span>★★★★★</span><span style="width: 100%">★★★★★</span>
-                </div>
+    <main>
+      <div class="container">
+        <div class="grid">
+          <section id="about" lang="en">
+            <h2>About me</h2>
+            <p>
+              I am a web developer with over 6 years of experience. I love my
+              job and always try to do my job right. I always approach the work
+              responsibly, keep the deadlines, as evidenced by the large number
+              of satisfied customers.
+            </p>
+            <p>I have experience in web design, UI/UX.</p>
+            <p>
+              Available for full-time, part-time, hourly or project-based work.
+              I will consider any options.
+            </p>
+          </section>
+          <section lang="ru">
+            <h2>Обо мне</h2>
+            <p>
+              Я веб-разработчик с более чем 6 годами опыта. Люблю свое дело и
+              всегда стараюсь делать свою работу как надо. К работе всегда
+              подхожу ответственно, соблюдаю сроки, о чем свидетельствует
+              большое кол-во довольных клиентов.
+            </p>
+            <p>Есть опыт в веб-дизайне, UI/UX.</p>
+            <p>
+              Доступен для работы на фуллтайм, парттайм, по часовой ставке либо
+              по-проектно. Рассмотрю любые варианты.
+            </p>
+          </section>
+          <section lang="en">
+            <h2>What can I do</h2>
+            <p>
+              HTML, CSS, JavaScript, WordPress, WooCommerce, PHP, MySQL, jQuery,
+              Bootstrap, Responsive Design, Full stack development.
+            </p>
+            <p>
+              I also have experience in developing SPA and mobile applications
+              using: React, React Native, Node.js, Next.js, TypeScript, Headless
+              CMS, JAMStack, MERN Stack.
+            </p>
+          </section>
+          <section lang="ru">
+            <h2>Что умею</h2>
+            <p>
+              HTML, CSS, JavaScript, WordPress, WooCommerce, PHP, MySQL, jQuery,
+              Bootstrap, адаптивная верстка, сайты под ключ.
+            </p>
+            <p>
+              А так же есть опыт разработки SPA и мобильных приложений,
+              используя: React, React Native, Node.js, Next.js, TypeScript,
+              Headless CMS, JAMStack, MERN Stack.
+            </p>
+          </section>
+          <section lang="en">
+            <h2>Benefits of working with me</h2>
+            <p>
+              I work without prepayment. First payments occur in stages:
+              <i> done -> approved -> paid </i>.
+            </p>
+            <p>
+              For regular customers, payment is possible after the completion of
+              all work.
+            </p>
+            <p>All edits are free.</p>
+          </section>
+          <section lang="ru">
+            <h2>Приемущества работы со мной</h2>
+            <p>
+              Работаю без предоплаты, оплата происходит по-этапно:
+              <i>сделал->одобрили->оплатили</i>.
+            </p>
+            <p>
+              Для постоянных клиентов возможна оплата после выполнения всех
+              работ.
+            </p>
+            <p>Все правки делаю бесплатно.</p>
+          </section>
+          <section lang="en">
+            <h2>Certificates</h2>
+            <ul>
+              <li>
                 <a
-                  class="reviewLink"
-                  href="https://freelancehunt.com/freelancer/mikitachyzhyk.html?lang=en#reviews"
+                  href="https://certification.templatemonster.com/certificates/73dae89a8f621d1bfbeb79cd1f3cdbf4/"
+                  rel="noopener noreferrer nofollow"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  draggable="false"
-                  ><span
-                    ><i
-                      class="fa-solid fa-arrow-up-right-from-square"
-                    ></i></span
-                  ><span>freelancehunt.com</span></a
+                  >Advanced WordPress</a
                 >
-              </div>
-            </div>
-
-            <div class="review">
-              <div class="reviewText">
-                Everything is awesome! Done! All edits have been made and
-                everything is brought to mind. If something doesn't work out, he
-                doesn't give up projects, tries to find solutions and always
-                finds them. Thank you! It's a pleasure to work with! (translated
-                automatically)
-              </div>
-              <div class="reviewBottomBar">
-                <div class="reviewStars" title="10 out of 10 stars">
-                  <span>★★★★★</span><span style="width: 100%">★★★★★</span>
-                </div>
+                <small>by TemplateMonster</small>
+              </li>
+              <li>
                 <a
-                  class="reviewLink"
-                  href="https://freelancehunt.com/freelancer/mikitachyzhyk.html?lang=en#reviews"
+                  href="https://certification.templatemonster.com/certificates/c83d0c0a4cb23b51d36a664366a924d7/"
+                  rel="noopener noreferrer nofollow"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  draggable="false"
-                  ><span
-                    ><i
-                      class="fa-solid fa-arrow-up-right-from-square"
-                    ></i></span
-                  ><span>freelancehunt.com</span></a
+                  >Basic WordPress</a
                 >
-              </div>
-            </div>
-
-            <div class="review">
-              <div class="reviewText">
-                Everything went great - prompt work! Mikita did the job as I
-                wanted, edits and comments were quickly eliminated. A pleasant
-                young man to talk to. I recommend to everyone for cooperation.
-                (translated automatically)
-              </div>
-              <div class="reviewBottomBar">
-                <div class="reviewStars" title="10 out of 10 stars">
-                  <span>★★★★★</span><span style="width: 100%">★★★★★</span>
-                </div>
+                <small>by TemplateMonster</small>
+              </li>
+              <li>
                 <a
-                  class="reviewLink"
-                  href="https://freelancehunt.com/freelancer/mikitachyzhyk.html?lang=en#reviews"
+                  href="https://certification.templatemonster.com/certificates/c0704aa6fc9413a976cd1621b4faf094/"
+                  rel="noopener noreferrer nofollow"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  draggable="false"
-                  ><span
-                    ><i
-                      class="fa-solid fa-arrow-up-right-from-square"
-                    ></i></span
-                  ><span>freelancehunt.com</span></a
+                  >HTML and CSS</a
                 >
-              </div>
-            </div>
-
-            <div class="review">
-              <div class="reviewText">
-                I am very grateful to Nikita. He quickly got up to speed, took
-                into account all my requests, made adjustments to the template
-                and adaptation, meeting the stated deadline. Although the amount
-                of work was considerable. I am a "harmful" client, I care about
-                every detail. But it didn't become a problem. Everything is 100%
-                done. (translated automatically)
-              </div>
-              <div class="reviewBottomBar">
-                <div class="reviewStars" title="10 out of 10 stars">
-                  <span>★★★★★</span><span style="width: 100%">★★★★★</span>
-                </div>
+                <small>by TemplateMonster</small>
+              </li>
+            </ul>
+          </section>
+          <section lang="ru">
+            <h2>Сертификаты</h2>
+            <ul>
+              <li>
+                Сертификат
                 <a
-                  class="reviewLink"
-                  href="https://kwork.com/user/michy"
+                  href="https://certification.templatemonster.com/certificates/73dae89a8f621d1bfbeb79cd1f3cdbf4/"
+                  rel="noopener noreferrer nofollow"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  draggable="false"
-                  ><span
-                    ><i
-                      class="fa-solid fa-arrow-up-right-from-square"
-                    ></i></span
-                  ><span>kwork.com</span></a
                 >
-              </div>
-            </div>
-            <div class="review">
-              <div class="reviewText">
-                Mikita made me a very nice looking site, in short time. He also
-                speaks good English and seems like a nice person. Highly
-                recommended!
-              </div>
-              <div class="reviewBottomBar">
-                <div class="reviewStars" title="10 out of 10 stars">
-                  <span>★★★★★</span><span style="width: 100%">★★★★★</span>
-                </div>
+                  Продвинутый WordPress
+                </a>
+                <small>от TemplateMonster</small>
+              </li>
+              <li>
+                Сертификат
                 <a
-                  class="reviewLink"
+                  href="https://certification.templatemonster.com/certificates/c83d0c0a4cb23b51d36a664366a924d7/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  >Базовый WordPress</a
+                >
+                <small>от TemplateMonster</small>
+              </li>
+              <li>
+                Сертификат
+                <a
+                  href="https://certification.templatemonster.com/certificates/c0704aa6fc9413a976cd1621b4faf094/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  >HTML и CSS</a
+                >
+                <small>от TemplateMonster</small>
+              </li>
+            </ul>
+          </section>
+          <section id="contacts">
+            <h2 lang="en">Contacts</h2>
+            <h2 lang="ru">Контакты</h2>
+            <ul>
+              <li>
+                <span class="iconed-link">
+                  <i class="fa-regular fa-envelope"></i>
+                  <a
+                    href="mailto:mikitachyzhyk@gmail.com"
+                    rel="noopener noreferrer nofollow"
+                    >mikitachyzhyk@gmail.com</a
+                  >
+                </span>
+              </li>
+              <li>
+                <span class="iconed-link">
+                  <i class="fab fa-linkedin-in"></i>
+                  <a
+                    href="https://linkedin.com/in/mikitachyzhyk"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    >linkedin.com/in/mikitachyzhyk</a
+                  >
+                </span>
+              </li>
+              <li>
+                <span class="iconed-link">
+                  <i class="fab fa-github"></i>
+                  <a
+                    href="https://github.com/mikitachyzhyk"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    >github.com/mikitachyzhyk</a
+                  >
+                </span>
+              </li>
+              <li>
+                <span class="iconed-link">
+                  <i class="fab fa-codepen"></i>
+                  <a
+                    href="https://codepen.io/michydev"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    >codepen.io/michydev</a
+                  >
+                </span>
+              </li>
+              <li>
+                <span class="iconed-link">
+                  <i class="fab fa-twitter"></i>
+                  <a
+                    href="https://twitter.com/michydev"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    >twitter.com/michydev</a
+                  >
+                </span>
+              </li>
+            </ul>
+          </section>
+          <section id="reviews" class="reviews">
+            <h2 lang="en">Reviews</h2>
+            <h2 lang="ru">Отзывы</h2>
+            <p lang="en">
+              Sometimes I work through freelance platforms, here you can see
+              what people say about my work.
+            </p>
+            <p lang="ru">
+              Иногда работаю через биржи фриланса, здесь можно посмотреть отзывы
+              о моей работе.
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://kwork.com/user/mikitachyzhyk"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  >kwork.com</a
+                >
+              </li>
+              <li>
+                <a
                   href="https://www.freelancer.com/u/mikitachyzhyk"
+                  rel="noopener noreferrer nofollow"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  draggable="false"
-                  ><span
-                    ><i
-                      class="fa-solid fa-arrow-up-right-from-square"
-                    ></i></span
-                  ><span>freelancer.com</span></a
+                  >freelancer.com</a
                 >
-              </div>
-            </div>
-            <div class="review">
-              <div class="reviewText">
-                Very pleasant working with this seller, I would highly recommend
-                to anyone got the job done fast and did everything I have asked
-                for.
-              </div>
-              <div class="reviewBottomBar">
-                <div class="reviewStars" title="10 out of 10 stars">
-                  <span>★★★★★</span><span style="width: 100%">★★★★★</span>
-                </div>
+              </li>
+              <li>
                 <a
-                  class="reviewLink"
-                  href="https://www.fiverr.com/mikitachyzhyk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  draggable="false"
-                  ><span
-                    ><i
-                      class="fa-solid fa-arrow-up-right-from-square"
-                    ></i></span
-                  ><span>fiverr.com</span></a
-                >
-              </div>
-            </div>
-            <div class="review">
-              <div class="reviewText">Good and fast work</div>
-              <div class="reviewBottomBar">
-                <div class="reviewStars" title="10 out of 10 stars">
-                  <span>★★★★★</span><span style="width: 100%">★★★★★</span>
-                </div>
-                <a
-                  class="reviewLink"
                   href="https://www.peopleperhour.com/freelancer/technology-programming/mikita-chyzhyk-web-developer-wamyyjm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  draggable="false"
-                  ><span
-                    ><i
-                      class="fa-solid fa-arrow-up-right-from-square"
-                    ></i></span
-                  ><span>peopleperhour.com</span></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="page page--4" id="contact">
-        <div class="contacts">
-          <form
-            class="contactsForm"
-            action="https://formspree.io/f/xvodaepb"
-            method="POST"
-          >
-            <div class="contactsField">
-              <label for="email">Email:</label
-              ><input id="email" type="email" name="email" required />
-            </div>
-            <div class="contactsField">
-              <label for="message">Message:</label
-              ><textarea id="message" name="message" required></textarea>
-            </div>
-            <input
-              type="hidden"
-              name="subject"
-              value="Submission from michy.dev"
-            />
-            <button class="btn contactsBtn" type="submit">Send</button>
-            <div class="contactsOr"><span>Or find me on:</span></div>
-            <ul class="contactsLinks">
-              <li>
-                <a
-                  target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="wavyLink contactsLink"
-                  href="https://www.linkedin.com/in/mikitachyzhyk/"
-                  >LinkedIn</a
+                  target="_blank"
+                  >peopleperhour.com</a
                 >
               </li>
               <li>
                 <a
-                  target="_blank"
+                  href="https://www.fiverr.com/mikitachyzhyk"
                   rel="noopener noreferrer nofollow"
-                  class="wavyLink contactsLink"
-                  href="https://twitter.com/michydev"
-                  >Twitter</a
-                >
-              </li>
-              <li>
-                <a
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="wavyLink contactsLink"
-                  href="https://github.com/mikitachyzhyk"
-                  >Github</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="wavyLink contactsLink"
-                  href="https://codepen.io/michydev"
-                  >CodePen</a
+                  >fiverr.com</a
                 >
               </li>
             </ul>
-          </form>
+          </section>
         </div>
+
+        <section id="works" class="works">
+          <h2 lang="en">Last works</h2>
+          <h2 lang="ru">Последние работы</h2>
+          <div class="works__grid">
+            <a
+              href="https://rebootmed.ru/"
+              class="work"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  srcset="
+                    img/works/01.avif    1x,
+                    img/works/01@2x.avif 2x,
+                    img/works/01@3x.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    img/works/01.webp    1x,
+                    img/works/01@2x.webp 2x,
+                    img/works/01@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="img/works/01.jpg"
+                  alt="The image of my work in the portfolio section"
+                  loading="lazy"
+                  decoding="async"
+                  srcset="
+                    img/works/01.jpg    1x,
+                    img/works/01@2x.jpg 2x,
+                    img/works/01@3x.jpg 3x
+                  "
+                />
+              </picture>
+              <div class="work__title">rebootmed.ru</div>
+              <div class="work__text">HTML, CSS, WordPress</div>
+              <div class="work__icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+            <a
+              href="https://reloadmed.ru/"
+              class="work"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  srcset="
+                    img/works/02.avif    1x,
+                    img/works/02@2x.avif 2x,
+                    img/works/02@3x.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    img/works/02.webp    1x,
+                    img/works/02@2x.webp 2x,
+                    img/works/02@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="img/works/02.jpg"
+                  alt="The image of my work in the portfolio section"
+                  loading="lazy"
+                  decoding="async"
+                  srcset="
+                    img/works/02.jpg    1x,
+                    img/works/02@2x.jpg 2x,
+                    img/works/02@3x.jpg 3x
+                  "
+                />
+              </picture>
+              <div class="work__title">reloadmed.ru</div>
+              <div class="work__text">HTML, CSS, WordPress</div>
+              <div class="work__icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+            <a
+              href="https://endocrin-centr.ru/"
+              class="work"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  srcset="
+                    img/works/03.avif    1x,
+                    img/works/03@2x.avif 2x,
+                    img/works/03@3x.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    img/works/03.webp    1x,
+                    img/works/03@2x.webp 2x,
+                    img/works/03@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="img/works/03.jpg"
+                  alt="The image of my work in the portfolio section"
+                  loading="lazy"
+                  decoding="async"
+                  srcset="
+                    img/works/03.jpg    1x,
+                    img/works/03@2x.jpg 2x,
+                    img/works/03@3x.jpg 3x
+                  "
+                />
+              </picture>
+              <div class="work__title">endocrin-centr.ru</div>
+              <div class="work__text">HTML, CSS, WordPress</div>
+              <div class="work__icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+            <a
+              href="https://karnizone.ru/"
+              class="work"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  srcset="
+                    img/works/04.avif    1x,
+                    img/works/04@2x.avif 2x,
+                    img/works/04@3x.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    img/works/04.webp    1x,
+                    img/works/04@2x.webp 2x,
+                    img/works/04@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="img/works/04.jpg"
+                  alt="The image of my work in the portfolio section"
+                  loading="lazy"
+                  decoding="async"
+                  srcset="
+                    img/works/04.jpg    1x,
+                    img/works/04@2x.jpg 2x,
+                    img/works/04@3x.jpg 3x
+                  "
+                />
+              </picture>
+              <div class="work__title">karnizone.ru</div>
+              <div class="work__text">HTML, CSS, WordPress</div>
+              <div class="work__icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+            <a
+              href="https://fortfamily.ru/"
+              class="work"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  srcset="
+                    img/works/05.avif    1x,
+                    img/works/05@2x.avif 2x,
+                    img/works/05@3x.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    img/works/05.webp    1x,
+                    img/works/05@2x.webp 2x,
+                    img/works/05@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="img/works/05.jpg"
+                  alt="The image of my work in the portfolio section"
+                  loading="lazy"
+                  decoding="async"
+                  srcset="
+                    img/works/05.jpg    1x,
+                    img/works/05@2x.jpg 2x,
+                    img/works/05@3x.jpg 3x
+                  "
+                />
+              </picture>
+              <div class="work__title">fortfamily.ru</div>
+              <div class="work__text">HTML, CSS</div>
+              <div class="work__icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <footer>
+          <span lang="en">Mikita Chyzhyk &copy;</span>
+          <span lang="ru">Никита Чижик &copy;</span>
+          <script>
+            document.write(new Date(Date.now()).getFullYear())
+          </script>
+        </footer>
       </div>
-    </div>
+    </main>
   </body>
 </html>
