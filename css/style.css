@@ -244,6 +244,7 @@ nav ul li a {
      object-position: top;
   transform: perspective(9cm) rotateX(-5deg) rotateY(-10deg) translate(20px, 55px);
   transition: transform 400ms;
+  box-shadow: 0 0 20px rgba(26, 26, 26, 0.07);
 }
 .work:hover img {
   transform: perspective(16cm) rotateX(-5deg) rotateY(-10deg) translate(20px, 55px);
