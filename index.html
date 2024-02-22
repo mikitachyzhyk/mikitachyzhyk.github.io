@@ -74,22 +74,21 @@
     <main>
       <div class="container">
         <div class="grid">
-          <script>
-            const yearsOfExperience = Math.floor(
-              (new Date(Date.now()) - new Date('2017-01-26')) /
-                1000 /
-                60 /
-                60 /
-                24 /
-                365
-            )
-          </script>
           <section id="about">
             <h2>About me</h2>
             <p>
               I'm a Web Developer with over
               <script>
-                document.write(yearsOfExperience)
+                document.write(
+                  Math.floor(
+                    (new Date(Date.now()) - new Date('2017-01-26')) /
+                      1000 /
+                      60 /
+                      60 /
+                      24 /
+                      365
+                  )
+                )
               </script>
               years of experience. I love my job and always try to do my job
               right. I always approach the work responsibly, keep the deadlines,
