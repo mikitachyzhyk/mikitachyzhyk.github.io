@@ -4,14 +4,6 @@ $gray: #f2f3f4
 *, :before, :after
   box-sizing: border-box
 
-html[lang="en"]
-  *[lang="ru"]
-    display: none
-
-html[lang="ru"]
-  *[lang="en"]
-    display: none
-
 body
   font-family: 'Roboto', sans-serif
   font-size: 17px
@@ -139,7 +131,6 @@ nav
       display: flex
       flex-wrap: wrap
       margin-left: 64px
-      margin-right: auto
     li
       @media (min-width: 768px)
         display: inline-flex
@@ -152,21 +143,6 @@ nav
         text-decoration: none
         color: inherit
         border: none
-
-/* Langs */
-
-html[lang="en"] *[href="?lang=en"],
-html[lang="ru"] *[href="?lang=ru"]
-        font-weight: 500
-
-.langs
-  font-family: 'Ubuntu', sans-serif
-  font-size: 14px
-  a
-    color: inherit
-    line-height: 1.3
-    text-decoration: none
-    border: none
 
 /* Contacts */
 
