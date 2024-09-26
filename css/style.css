@@ -154,7 +154,7 @@ nav {
   nav ul {
     display: flex;
     flex-wrap: wrap;
-    order: -1;
+    margin-left: 64px;
   }
 }
 @media (min-width: 768px) {
