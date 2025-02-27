@@ -1,3 +1,24 @@
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Ubuntu'
+  src: url('../fonts/Ubuntu-Medium.woff2') format('woff2')
+  font-weight: 500
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Ubuntu'
+  src: url('../fonts/Ubuntu-Regular.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
 $black: #1A1A1A
 $gray: #f2f3f4
 
@@ -45,6 +66,11 @@ a
     color: white
     background: $black
     border-radius: 50%
+  svg
+    width: 12px
+    height: 12px
+    path
+      fill: white
 
 a, button
   display: inline-flex
@@ -216,6 +242,11 @@ nav
   border-radius: 50%
   opacity: 0.1
   transition: opacity 400ms
+  i
+    width: 17px
+    height: 17px
+    background-image: url("../img/arrow.svg")
+    background-repeat: no-repeat
 
 /* Reviews */
 

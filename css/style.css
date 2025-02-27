@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 *, :before, :after {
   box-sizing: border-box;
 }
@@ -50,6 +71,13 @@ a {
   color: white;
   background: #1A1A1A;
   border-radius: 50%;
+}
+.iconed-link svg {
+  width: 12px;
+  height: 12px;
+}
+.iconed-link svg path {
+  fill: white;
 }
 
 a, button {
@@ -252,6 +280,12 @@ nav ul li a {
   border-radius: 50%;
   opacity: 0.1;
   transition: opacity 400ms;
+}
+.work__icon i {
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
 }
 
 /* Reviews */
