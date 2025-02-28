@@ -11,11 +11,11 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <!--Favicon-->
-    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
-    <link rel="icon" type="image/png" href="img/favicon/favicon.jpg" />
+    <link rel="icon" type="image/svg+xml" href="../img/favicon/favicon.svg" />
+    <link rel="icon" type="image/png" href="../img/favicon/favicon.jpg" />
     <!--Stylesheets-->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <!--Scripts-->
     <!-- <script src="js/script.js" defer></script> -->
     <script>
@@ -37,38 +37,42 @@
     <header>
       <div class="container">
         <nav>
-          <a class="logo" href="/" draggable="false">
+          <a class="logo" href="/ru/" draggable="false">
             <picture>
               <source
                 srcset="
-                  img/logo.avif    1x,
-                  img/logo@2x.avif 2x,
-                  img/logo@3x.avif 3x
+                  ../img/logo.avif    1x,
+                  ../img/logo@2x.avif 2x,
+                  ../img/logo@3x.avif 3x
                 "
                 type="image/avif"
               />
               <source
                 srcset="
-                  img/logo.webp    1x,
-                  img/logo@2x.webp 2x,
-                  img/logo@3x.webp 3x
+                  ../img/logo.webp    1x,
+                  ../img/logo@2x.webp 2x,
+                  ../img/logo@3x.webp 3x
                 "
                 type="image/webp"
               />
               <img
-                src="img/logo.jpg"
+                src="../img/logo.jpg"
                 loading="lazy"
                 decoding="async"
-                srcset="img/logo.jpg 1x, img/logo@2x.jpg 2x, img/logo@3x.jpg 3x"
+                srcset="
+                  ../img/logo.jpg    1x,
+                  ../img/logo@2x.jpg 2x,
+                  ../img/logo@3x.jpg 3x
+                "
               />
             </picture>
             Mikita Chyzhyk
           </a>
           <ul>
-            <li><a href="#about" draggable="false">About</a></li>
-            <li><a href="#contacts" draggable="false">Contacts</a></li>
-            <li><a href="#reviews" draggable="false">Reviews</a></li>
-            <li><a href="#works" draggable="false">Works</a></li>
+            <li><a href="#about" draggable="false">Обо мне</a></li>
+            <li><a href="#contacts" draggable="false">Контакты</a></li>
+            <li><a href="#reviews" draggable="false">Отзывы</a></li>
+            <li><a href="#works" draggable="false">Мои работы</a></li>
           </ul>
         </nav>
       </div>
@@ -78,37 +82,36 @@
       <div class="container">
         <div class="grid">
           <section id="about">
-            <h2>About Me</h2>
+            <h2>Обо мне</h2>
             <p>
-              I am a web developer. I have
+              Я веб-разработчик с опытом работы более
               <script>
                 getYears()
               </script>
-              years of experience, and I specialize in WordPress development. I
-              focus on creating custom themes, modifying plugins, and
-              maintaining websites.
+              лет. Специализируюсь на вёрстке, а также создании, доработке и
+              поддержке сайтов на WordPress.
             </p>
             <p>
-              I always approach each project responsibly. I always meet
-              deadlines and consider my clients' wishes.
+              Ответственно подхожу к каждому проекту, строго соблюдая сроки и
+              учитываю пожелания клиентов.
             </p>
-            <p>Positive feedback on my work proves this.</p>
+            <p>Что подтверждается положительными отзывами о моей работе.</p>
           </section>
-
           <section>
-            <h2>What I Can Do</h2>
+            <h2>Что умею</h2>
             <p>
-              HTML, CSS, JavaScript, WordPress, WooCommerce, PHP, MySQL, jQuery,
-              Responsive Design, Full Stack Development.
+              HTML, CSS, JavaScript, WordPress, WooCommerce, PHP, MySQL,
+              кросбраузерная, адаптивная вёрстка, сайты под ключ.
             </p>
             <p>
-              I have experience working with SPA using technologies like React,
-              Node.js, Next.js, TypeScript, Headless CMS, JAMstack, MERN Stack.
+              Есть опыт разработки SPA (Single Page Application) используя
+              React, Node.js, Next.js, TypeScript, Headless CMS, JAMStack, MERN
+              Stack.
             </p>
-            <p>I also have some experience in web design and UI/UX.</p>
+            <p>Также есть некоторый опыт в веб-дизайне и UI/UX.</p>
           </section>
           <section id="contacts">
-            <h2>Contacts</h2>
+            <h2>Контакты</h2>
             <ul class="contacts-list">
               <li>
                 <span class="iconed-link">
@@ -192,7 +195,7 @@
             </ul>
           </section>
           <section>
-            <h2>Certificates</h2>
+            <h2>Сертификаты</h2>
             <ul>
               <li>
                 <a
@@ -224,10 +227,10 @@
             </ul>
           </section>
           <section id="reviews" class="reviews">
-            <h2>Reviews</h2>
+            <h2>Отзывы</h2>
             <p>
-              Sometimes I work using freelance platforms, where you can find
-              reviews of my work.
+              Иногда работаю через фриланс-платформы, там вы можете увидеть
+              отзывы о сотрудничестве со мной.
             </p>
             <ul>
               <li>
@@ -267,7 +270,7 @@
         </div>
 
         <section id="works" class="works">
-          <h2>Last works</h2>
+          <h2>Последние работы</h2>
           <div class="works__grid">
             <a
               href="https://gadgetsplus.ru/"
@@ -279,21 +282,21 @@
               <picture>
                 <source
                   srcset="
-                    img/works/12.webp    1x,
-                    img/works/12@2x.webp 2x,
-                    img/works/12@3x.webp 3x
+                    ../img/works/12.webp    1x,
+                    ../img/works/12@2x.webp 2x,
+                    ../img/works/12@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <img
-                  src="img/works/12.jpg"
+                  src="../img/works/12.jpg"
                   alt="The image of my work in the portfolio section"
                   loading="lazy"
                   decoding="async"
                   srcset="
-                    img/works/12.jpg    1x,
-                    img/works/12@2x.jpg 2x,
-                    img/works/12@3x.jpg 3x
+                    ../img/works/12.jpg    1x,
+                    ../img/works/12@2x.jpg 2x,
+                    ../img/works/12@3x.jpg 3x
                   "
                 />
               </picture>
@@ -313,21 +316,21 @@
               <picture>
                 <source
                   srcset="
-                    img/works/08.webp    1x,
-                    img/works/08@2x.webp 2x,
-                    img/works/08@3x.webp 3x
+                    ../img/works/08.webp    1x,
+                    ../img/works/08@2x.webp 2x,
+                    ../img/works/08@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <img
-                  src="img/works/08.jpg"
+                  src="../img/works/08.jpg"
                   alt="The image of my work in the portfolio section"
                   loading="lazy"
                   decoding="async"
                   srcset="
-                    img/works/08.jpg    1x,
-                    img/works/08@2x.jpg 2x,
-                    img/works/08@3x.jpg 3x
+                    ../img/works/08.jpg    1x,
+                    ../img/works/08@2x.jpg 2x,
+                    ../img/works/08@3x.jpg 3x
                   "
                 />
               </picture>
@@ -347,29 +350,29 @@
               <picture>
                 <source
                   srcset="
-                    img/works/06.avif    1x,
-                    img/works/06@2x.avif 2x,
-                    img/works/06@3x.avif 3x
+                    ../img/works/06.avif    1x,
+                    ../img/works/06@2x.avif 2x,
+                    ../img/works/06@3x.avif 3x
                   "
                   type="image/avif"
                 />
                 <source
                   srcset="
-                    img/works/06.webp    1x,
-                    img/works/06@2x.webp 2x,
-                    img/works/06@3x.webp 3x
+                    ../img/works/06.webp    1x,
+                    ../img/works/06@2x.webp 2x,
+                    ../img/works/06@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <img
-                  src="img/works/06.jpg"
+                  src="../img/works/06.jpg"
                   alt="The image of my work in the portfolio section"
                   loading="lazy"
                   decoding="async"
                   srcset="
-                    img/works/06.jpg    1x,
-                    img/works/06@2x.jpg 2x,
-                    img/works/06@3x.jpg 3x
+                    ../img/works/06.jpg    1x,
+                    ../img/works/06@2x.jpg 2x,
+                    ../img/works/06@3x.jpg 3x
                   "
                 />
               </picture>
@@ -389,21 +392,21 @@
               <picture>
                 <source
                   srcset="
-                    img/works/01.webp    1x,
-                    img/works/01@2x.webp 2x,
-                    img/works/01@3x.webp 3x
+                    ../img/works/01.webp    1x,
+                    ../img/works/01@2x.webp 2x,
+                    ../img/works/01@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <img
-                  src="img/works/01.jpg"
+                  src="../img/works/01.jpg"
                   alt="The image of my work in the portfolio section"
                   loading="lazy"
                   decoding="async"
                   srcset="
-                    img/works/01.jpg    1x,
-                    img/works/01@2x.jpg 2x,
-                    img/works/01@3x.jpg 3x
+                    ../img/works/01.jpg    1x,
+                    ../img/works/01@2x.jpg 2x,
+                    ../img/works/01@3x.jpg 3x
                   "
                 />
               </picture>
@@ -423,21 +426,21 @@
               <picture>
                 <source
                   srcset="
-                    img/works/02.webp    1x,
-                    img/works/02@2x.webp 2x,
-                    img/works/02@3x.webp 3x
+                    ../img/works/02.webp    1x,
+                    ../img/works/02@2x.webp 2x,
+                    ../img/works/02@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <img
-                  src="img/works/02.jpg"
+                  src="../img/works/02.jpg"
                   alt="The image of my work in the portfolio section"
                   loading="lazy"
                   decoding="async"
                   srcset="
-                    img/works/02.jpg    1x,
-                    img/works/02@2x.jpg 2x,
-                    img/works/02@3x.jpg 3x
+                    ../img/works/02.jpg    1x,
+                    ../img/works/02@2x.jpg 2x,
+                    ../img/works/02@3x.jpg 3x
                   "
                 />
               </picture>
@@ -447,40 +450,6 @@
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </div>
             </a>
-            <!-- <a
-              href="https://det-stroy.ru/"
-              class="work"
-              rel="noopener noreferrer nofollow"
-              target="_blank"
-              draggable="false"
-            >
-              <picture>
-                <source
-                  srcset="
-                    img/works/09.webp    1x,
-                    img/works/09@2x.webp 2x,
-                    img/works/09@3x.webp 3x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  src="img/works/09.jpg"
-                  alt="The image of my work in the portfolio section"
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    img/works/09.jpg    1x,
-                    img/works/09@2x.jpg 2x,
-                    img/works/09@3x.jpg 3x
-                  "
-                />
-              </picture>
-              <div class="work__title">det-stroy.ru</div>
-              <div class="work__text">HTML, CSS, WordPress</div>
-              <div class="work__icon">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </div>
-            </a> -->
             <a
               href="https://endocrin-centr.ru/"
               class="work"
@@ -491,21 +460,21 @@
               <picture>
                 <source
                   srcset="
-                    img/works/03.webp    1x,
-                    img/works/03@2x.webp 2x,
-                    img/works/03@3x.webp 3x
+                    ../img/works/03.webp    1x,
+                    ../img/works/03@2x.webp 2x,
+                    ../img/works/03@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <img
-                  src="img/works/03.jpg"
+                  src="../img/works/03.jpg"
                   alt="The image of my work in the portfolio section"
                   loading="lazy"
                   decoding="async"
                   srcset="
-                    img/works/03.jpg    1x,
-                    img/works/03@2x.jpg 2x,
-                    img/works/03@3x.jpg 3x
+                    ../img/works/03.jpg    1x,
+                    ../img/works/03@2x.jpg 2x,
+                    ../img/works/03@3x.jpg 3x
                   "
                 />
               </picture>
@@ -525,21 +494,21 @@
               <picture>
                 <source
                   srcset="
-                    img/works/05.webp    1x,
-                    img/works/05@2x.webp 2x,
-                    img/works/05@3x.webp 3x
+                    ../img/works/05.webp    1x,
+                    ../img/works/05@2x.webp 2x,
+                    ../img/works/05@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <img
-                  src="img/works/05.jpg"
+                  src="../img/works/05.jpg"
                   alt="The image of my work in the portfolio section"
                   loading="lazy"
                   decoding="async"
                   srcset="
-                    img/works/05.jpg    1x,
-                    img/works/05@2x.jpg 2x,
-                    img/works/05@3x.jpg 3x
+                    ../img/works/05.jpg    1x,
+                    ../img/works/05@2x.jpg 2x,
+                    ../img/works/05@3x.jpg 3x
                   "
                 />
               </picture>
@@ -549,40 +518,6 @@
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </div>
             </a>
-            <!-- <a
-              href="https://karnizone.ru/"
-              class="work"
-              rel="noopener noreferrer nofollow"
-              target="_blank"
-              draggable="false"
-            >
-              <picture>
-                <source
-                  srcset="
-                    img/works/04.webp    1x,
-                    img/works/04@2x.webp 2x,
-                    img/works/04@3x.webp 3x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  src="img/works/04.jpg"
-                  alt="The image of my work in the portfolio section"
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    img/works/04.jpg    1x,
-                    img/works/04@2x.jpg 2x,
-                    img/works/04@3x.jpg 3x
-                  "
-                />
-              </picture>
-              <div class="work__title">karnizone.ru</div>
-              <div class="work__text">HTML, CSS, WordPress</div>
-              <div class="work__icon">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </div>
-            </a> -->
             <a
               href="https://cleaner-club.ru/"
               class="work"
@@ -593,21 +528,21 @@
               <picture>
                 <source
                   srcset="
-                    img/works/07.webp    1x,
-                    img/works/07@2x.webp 2x,
-                    img/works/07@3x.webp 3x
+                    ../img/works/07.webp    1x,
+                    ../img/works/07@2x.webp 2x,
+                    ../img/works/07@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <img
-                  src="img/works/07.jpg"
+                  src="../img/works/07.jpg"
                   alt="The image of my work in the portfolio section"
                   loading="lazy"
                   decoding="async"
                   srcset="
-                    img/works/07.jpg    1x,
-                    img/works/07@2x.jpg 2x,
-                    img/works/07@3x.jpg 3x
+                    ../img/works/07.jpg    1x,
+                    ../img/works/07@2x.jpg 2x,
+                    ../img/works/07@3x.jpg 3x
                   "
                 />
               </picture>
@@ -617,74 +552,6 @@
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </div>
             </a>
-            <!-- <a
-              href="https://dragonsky.group/en/"
-              class="work"
-              rel="noopener noreferrer nofollow"
-              target="_blank"
-              draggable="false"
-            >
-              <picture>
-                <source
-                  srcset="
-                    img/works/11.webp    1x,
-                    img/works/11@2x.webp 2x,
-                    img/works/11@3x.webp 3x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  src="img/works/11.jpg"
-                  alt="The image of my work in the portfolio section"
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    img/works/11.jpg    1x,
-                    img/works/11@2x.jpg 2x,
-                    img/works/11@3x.jpg 3x
-                  "
-                />
-              </picture>
-              <div class="work__title">dragonsky.group</div>
-              <div class="work__text">HTML, CSS, WordPress</div>
-              <div class="work__icon">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </div>
-            </a>
-            <a
-              href="https://medical-dev.ru/"
-              class="work"
-              rel="noopener noreferrer nofollow"
-              target="_blank"
-              draggable="false"
-            >
-              <picture>
-                <source
-                  srcset="
-                    img/works/10.webp    1x,
-                    img/works/10@2x.webp 2x,
-                    img/works/10@3x.webp 3x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  src="img/works/10.jpg"
-                  alt="The image of my work in the portfolio section"
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    img/works/10.jpg    1x,
-                    img/works/10@2x.jpg 2x,
-                    img/works/10@3x.jpg 3x
-                  "
-                />
-              </picture>
-              <div class="work__title">medical-dev.ru</div>
-              <div class="work__text">HTML, CSS, WordPress</div>
-              <div class="work__icon">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </div>
-            </a> -->
             <a
               href="https://cleaning-moscow.com/"
               class="work"
@@ -695,21 +562,21 @@
               <picture>
                 <source
                   srcset="
-                    img/works/13.webp    1x,
-                    img/works/13@2x.webp 2x,
-                    img/works/13@3x.webp 3x
+                    ../img/works/13.webp    1x,
+                    ../img/works/13@2x.webp 2x,
+                    ../img/works/13@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <img
-                  src="img/works/13.jpg"
+                  src="../img/works/13.jpg"
                   alt="The image of my work in the portfolio section"
                   loading="lazy"
                   decoding="async"
                   srcset="
-                    img/works/13.jpg    1x,
-                    img/works/13@2x.jpg 2x,
-                    img/works/13@3x.jpg 3x
+                    ../img/works/13.jpg    1x,
+                    ../img/works/13@2x.jpg 2x,
+                    ../img/works/13@3x.jpg 3x
                   "
                 />
               </picture>
@@ -729,21 +596,21 @@
               <picture>
                 <source
                   srcset="
-                    img/works/14.webp    1x,
-                    img/works/14@2x.webp 2x,
-                    img/works/14@3x.webp 3x
+                    ../img/works/14.webp    1x,
+                    ../img/works/14@2x.webp 2x,
+                    ../img/works/14@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <img
-                  src="img/works/14.jpg"
+                  src="../img/works/14.jpg"
                   alt="The image of my work in the portfolio section"
                   loading="lazy"
                   decoding="async"
                   srcset="
-                    img/works/14.jpg    1x,
-                    img/works/14@2x.jpg 2x,
-                    img/works/14@3x.jpg 3x
+                    ../img/works/14.jpg    1x,
+                    ../img/works/14@2x.jpg 2x,
+                    ../img/works/14@3x.jpg 3x
                   "
                 />
               </picture>
